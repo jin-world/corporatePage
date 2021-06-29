@@ -284,6 +284,8 @@ input, a, img, span, label, select {
     text-align: center; }
     .community table td:nth-of-type(2) {
       text-align: left; }
+    .community table td a {
+      color: #444; }
 
 /* tablet ----------------------------------------- */
 /* mobile ----------------------------------------- */
