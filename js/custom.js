@@ -8,8 +8,3 @@ btnCall.onclick = function(e){
     menuMo.classList.toggle("on"); 
 }
 
-const url = "data/board.json";
-const frame = $(".community .inner")
-
-const resultData = callData(url);
-
