@@ -1,0 +1,19 @@
+@charset 'utf-8'; 
+ 
+
+
+/* tablet ----------------------------------------- */
+@media screen and (max-width:$tablet){
+    
+}
+
+/* mobile ----------------------------------------- */
+@media screen and (max-width:$mobile){
+    .community{
+    
+        .inner{
+            h1{font-size:45px; }
+           
+        }
+    }
+}
