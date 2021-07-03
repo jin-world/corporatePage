@@ -296,6 +296,52 @@ input, a, img, span, label, select {
 /* mobile ---------------------------------- */
 /* tablet ----------------------------------------- */
 /* mobile ----------------------------------------- */
+#gallery {
+  width: 100%; }
+  #gallery::after {
+    content: "";
+    display: block;
+    clear: both; }
+  #gallery article {
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px; }
+    #gallery article .inner {
+      width: 100%; }
+      #gallery article .inner .pic {
+        width: 100%; }
+        #gallery article .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+
+#imgPop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  padding: 10vw; }
+  #imgPop .pic {
+    width: 100%;
+    height: 100%;
+    background: #000; }
+    #imgPop .pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  #imgPop span {
+    font: bold 14px/1 "arial";
+    color: orange;
+    position: absolute;
+    bottom: 4vw;
+    right: 4vw;
+    cursor: pointer; }
+
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd; }
