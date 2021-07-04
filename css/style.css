@@ -304,13 +304,37 @@ input, a, img, span, label, select {
     clear: both; }
   #gallery article {
     width: 25%;
-    box-sizing: border-box;
     float: left;
-    padding: 10px; }
+    padding: 0px 16px;
+    box-sizing: border-box;
+    border-right: 1px solid #aaa;
+    margin-bottom: 40px; }
+    #gallery article:nth-last-child(1), #gallery article:nth-last-child(5), #gallery article:nth-last-child(9), #gallery article:nth-last-child(13), #gallery article:nth-last-child(17) {
+      border-right: none; }
     #gallery article .inner {
-      width: 100%; }
+      width: 100%;
+      min-height: 300px; }
       #gallery article .inner .pic {
-        width: 100%; }
+        overflow: hidden; }
+        #gallery article .inner .pic img {
+          transition: 1s; }
+          #gallery article .inner .pic img:hover {
+            transform: scale(1.2); }
+      #gallery article .inner h2 {
+        font: 26px/1 "arial";
+        color: #666;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #aaa; }
+      #gallery article .inner p {
+        font: 14px/1 "arial";
+        color: #aaa;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #aaa; }
+      #gallery article .inner .pic {
+        width: 100%;
+        height: 200px; }
         #gallery article .inner .pic img {
           width: 100%;
           height: 100%;
@@ -323,22 +347,21 @@ input, a, img, span, label, select {
   top: 0px;
   left: 0px;
   z-index: 5;
-  background: rgba(0, 0, 0, 0.9);
+  background: #fff;
   box-sizing: border-box;
   padding: 10vw; }
   #imgPop .pic {
     width: 100%;
-    height: 100%;
-    background: #000; }
+    height: 100%; }
     #imgPop .pic img {
       width: 100%;
       height: 100%;
       object-fit: contain; }
   #imgPop span {
     font: bold 14px/1 "arial";
-    color: orange;
+    color: #666;
     position: absolute;
-    bottom: 4vw;
+    top: 4vw;
     right: 4vw;
     cursor: pointer; }
 

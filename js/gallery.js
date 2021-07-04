@@ -1,7 +1,7 @@
-var url = "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos";
-var user = "193201174@N02";
-var key = "9826483353a42d129a03d4cae76a3fb1";
-var num = 20;
+const url = "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos";
+const user = "193201174@N02";
+const key = "9826483353a42d129a03d4cae76a3fb1";
+let num = 20;
 
 //데이터 호출
 $.ajax({
@@ -21,6 +21,7 @@ $.ajax({
 
     $(imgs).each(function(index,data){
         var tit = data.title;
+        var user_ID = data.user;
         var imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg`;
 
         var imgSrcBig = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
@@ -32,6 +33,7 @@ $.ajax({
                     <img src="${imgSrc}">
                 </div>
                 <h2>${tit}</h2>
+                <p>${user}</p>
             </div>
             </article>
         `;
@@ -44,9 +46,23 @@ $.ajax({
 });
 
 
-$("body").on("click", "#gallery article .pic", function(){
-    var imgSrc = $(this).attr("data-src");
+//팝업호출
+$("body").on("click", "#gallery article .pic", function(e){
+    e.preventDefault();
 
+    var imgSrc = $(this).attr("data-src");
+    createPop(imgSrc);
+});
+
+//팝업닫기
+$("body").on("click", "#imgPop span", function(e){
+    e.preventDefault();
+    removePop();
+});
+
+
+//팝업생성 함수정의
+function createPop(imgSrc) {
     var tags = `
         <aside id="imgPop">
             <div class="pic">
@@ -56,9 +72,13 @@ $("body").on("click", "#gallery article .pic", function(){
         </aside>
     `;
 
-    $("body").append(tags);
-});
+    $("#gallery").append(tags);
+    $("#imgPop").fadeIn();
+}
 
-$("body").on("click","#imgPop span",function(){
-    $(this).parent("#imgPop").remove();
-})
+//팝업생성제거 함수정의
+function removePop() {
+    $("#imgPop").fadeOut(500,function(){
+        $(this).remove();
+    })
+}
