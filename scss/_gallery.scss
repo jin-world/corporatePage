@@ -1,26 +1,6 @@
-/*
-.inner {
-    >h1 {
-        text-align: center;
-        font:normal 50px/1 'arial'; 
-        color:#000; 
-        margin-bottom:60px; 
-    }
-}
-*/
-
-.sub_visual {
-    h1 {
-        text-align: center;
-        font:normal 28px/250px 'arial'; 
-        color:#444;
-        // margin-bottom:60px; 
-    }
-}
-
-.search {
+/*.search {
     margin-bottom: 80px;
-    text-align: center;
+    // text-align: center;
 
     input[type=text] {
         width: 30%;
@@ -40,69 +20,91 @@
         cursor: pointer;
     }
 }
+*/
 
-#gallery {
-    width: 100%;
+.gallery {
+    .sub_visual{
+        background: url(../img/galleryImg2.jpg) no-repeat center/cover;
+        position: relative;
 
-    &::after {content: ""; display: block; clear: both;}
-    
-    article {
-        width: 25%;
-        float: left;
-        padding: 0px 16px;
-        box-sizing: border-box;
-        border-right: 1px solid #aaa;
-        margin-bottom: 40px;
-
-        &:nth-last-child(1), &:nth-last-child(5),
-        &:nth-last-child(9), &:nth-last-child(13), &:nth-last-child(17) {
-            border-right: none;
-        }
-
-        .inner {
+        &::after {
+            content: '';
+            display: block;
             width: 100%;
-            min-height: 300px;
-            
-            .pic {
-                overflow: hidden;
-                
-                img {
-                    transition: 1s;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.2);
+        }
+    }
 
-                    &:hover{
-                        transform: scale(1.2);
+    #gallery {
+        width: 100%;
+    
+        &::after {content: ""; display: block; clear: both;}
+        
+        article {
+            width: 25%;
+            float: left;
+            padding: 0px 16px;
+            box-sizing: border-box;
+            border-right: 1px solid #aaa;
+            margin-bottom: 40px;
+    
+            &:nth-last-child(1), &:nth-last-child(5),
+            &:nth-last-child(9), &:nth-last-child(13), &:nth-last-child(17) {
+                border-right: none;
+            }
+    
+            .inner {
+                width: 100%;
+                min-height: 300px;
+                
+                .pic {
+                    overflow: hidden;
+                    
+                    img {
+                        transition: 1s;
+    
+                        &:hover{
+                            transform: scale(1.2);
+                        }
                     }
                 }
-            }
-
-            h2 {
-                font: 26px/1 "arial";
-                color: #666;
-                padding: 20px 0px;
-                box-sizing: border-box;
-                border-bottom: 1px solid #aaa;
-            }
-
-            p {
-                font: 14px/1 "arial";
-                color: #aaa;
-                padding: 10px 0px;
-                box-sizing: border-box;
-                border-bottom: 1px solid #aaa;
-            }
-
-            .pic {
-                width: 100%;
-                height: 200px;
-                
-                img {
+    
+                h2 {
+                    font: 23px/1 "arial";
+                    color: #666;
+                    padding: 20px 0px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #aaa;
+                }
+    
+                p {
+                    font: 12px/1 "arial";
+                    color: #aaa;
+                    padding: 10px 0px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #aaa;
+                }
+    
+                .pic {
                     width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                    height: 200px;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
         }
     }
+    
+    
+    
 }
 
 #imgPop {
@@ -127,7 +129,7 @@
         }
 
         span {
-            font: bold 14px/1 "arial";
+            font: bold 16px/1 "arial";
             color: #666;
             position: absolute;
             top: 4vw;

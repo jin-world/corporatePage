@@ -89,7 +89,7 @@ function getFlickr(url, key, num, tags) {
                 </article>
             `;
     
-            $("#gallery").append(tags);
+            $("#gallery").prepend(tags);
         })
     })
     .error(function(err){
