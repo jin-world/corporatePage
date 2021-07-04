@@ -96,3 +96,4 @@ function getFlickr(url, key, num, tags) {
         console.log(err);
     });
 }
+
