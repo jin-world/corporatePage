@@ -41,6 +41,27 @@ function createTable(target, data) {
             )
     );
 
+    target.append(
+        $("<div class='pagination'>")
+            .append(
+                $("<a class='prev'>").attr("href","#").text("<"),
+                $("<p class='numbers'>")
+                .append(
+                    $("<a>").attr("href","#").text("1"),
+                    $("<a>").attr("href","#").text("2"),
+                    $("<a>").attr("href","#").text("3"),
+                    $("<a>").attr("href","#").text("4"),
+                    $("<a>").attr("href","#").text("5"),
+                    $("<a>").attr("href","#").text("6"),
+                    $("<a>").attr("href","#").text("7"),
+                    $("<a>").attr("href","#").text("8"),
+                    $("<a>").attr("href","#").text("9"),
+                    $("<a>").attr("href","#").text("10"),
+                ),
+                $("<a class='next'>").attr("href","#").text(">")
+            )
+    );
+
     for(let key in data[0]) {
         console.log(key);
         target.find("thead tr")
@@ -61,7 +82,7 @@ function createTable(target, data) {
                             ),
                         $("<td>").text(data[i].작성자),
                         $("<td>").text(data[i].작성일)
-                    )
+                    ),
             )
     }
 }

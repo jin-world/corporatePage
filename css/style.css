@@ -286,6 +286,46 @@ input, a, img, span, label, select {
       text-align: left; }
     .community table td a:link {
       color: #444; }
+.community .pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px; }
+  .community .pagination .numbers {
+    display: inline-block;
+    font-size: 0; }
+    .community .pagination .numbers a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      font: 14px/40px "arial";
+      color: #666;
+      text-align: center;
+      margin: 0 3px;
+      transition: 0.4s; }
+      .community .pagination .numbers a:hover {
+        font-weight: bold;
+        color: #111;
+        text-decoration: underline; }
+  .community .pagination .prev {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font: 15px/40px "arial";
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: bottom; }
+  .community .pagination .next {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font: 15px/40px "arial";
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: bottom; }
 
 /* tablet ----------------------------------------- */
 /* mobile ----------------------------------------- */

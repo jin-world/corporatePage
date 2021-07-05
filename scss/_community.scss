@@ -28,6 +28,61 @@
                 color: #444;
             }
         }
+
+        
+    }
+
+    .pagination {
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+
+        .numbers {
+            display: inline-block;
+            font-size: 0;
+
+            a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                font: 14px/40px "arial";
+                color: #666;
+                text-align: center;
+                margin: 0 3px;
+                transition: 0.4s;
+
+                &:hover {
+                    font-weight: bold;
+                    color:#111;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .prev {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            font: 15px/40px "arial";
+            color: #aaa;
+            text-align: center;
+            box-sizing: border-box;
+            vertical-align: bottom;
+        }
+
+        .next {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            font: 15px/40px "arial";
+            color: #aaa;
+            text-align: center;
+            box-sizing: border-box;
+            vertical-align: bottom;
+        }
+
     }
 }
 
