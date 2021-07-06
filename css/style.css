@@ -186,11 +186,40 @@ input, a, img, span, label, select {
     margin: 0px auto;
     min-height: 500px; }
 
+.new .inner {
+  width: 1100px;
+  height: 600px;
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  position: relative; }
+  .new .inner .txt {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+    .new .inner .txt h2 {
+      font: 26px/1.2 "arial";
+      color: #888;
+      margin-bottom: 40px; }
+    .new .inner .txt p {
+      font: 14px/1.6 "arial";
+      color: #aaa; }
+  .new .inner .imgbox {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 420px;
+    background: #555; }
+
 /* footer --------------------------- */
 #footer_sub {
   width: 100%;
   padding: 100px 0;
-  background: #444; }
+  background: #f0f0f0; }
   #footer_sub .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -445,45 +474,63 @@ input, a, img, span, label, select {
       right: 4vw;
       cursor: pointer; }
 
-.youtube .sub_visual {
-  background: #7b43a1; }
-
-.vidList {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start; }
-  .vidList article {
-    width: 48%;
-    height: 400px;
-    border: 1px solid #333;
-    margin-bottom: 40px; }
-    .vidList article .pic {
-      display: block;
-      width: 100%;
-      height: 60%; }
-      .vidList article .pic > img {
+.youtube {
+  padding: 0px; }
+  .youtube .sub_visual {
+    background: #8e43a1; }
+  .youtube #ban {
+    width: 1180px;
+    height: 340px;
+    background: #f1f1f1;
+    margin: 0px auto;
+    margin-bottom: 120px; }
+  .youtube h2 {
+    font: bold 22px/1 "arial";
+    color: #555;
+    margin-bottom: 50px; }
+  .youtube p {
+    font: 13px/2 "arial";
+    color: #aaa; }
+  .youtube .vidList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 100px; }
+    .youtube .vidList article {
+      width: 27%;
+      margin: 0 auto;
+      height: 220px;
+      margin-bottom: 40px;
+      position: relative; }
+      .youtube .vidList article .pic {
+        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .vidList article .con {
-      width: 100%;
-      height: 40%;
-      box-sizing: border-box;
-      padding: 20px; }
-      .vidList article .con h2 {
-        font: bold 20px/1 "arial";
-        color: #444;
-        margin-bottom: 10px; }
-      .vidList article .con p {
-        margin-bottom: 15px;
-        font: 14px/1.4 "arial";
-        color: #666; }
-      .vidList article .con span {
-        font: bold 16px/1 "arial";
-        color: orange;
-        margin-bottom: 20px; }
+        height: 80%;
+        overflow: hidden; }
+        .youtube .vidList article .pic > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .youtube .vidList article .con {
+        width: 100%;
+        height: 40%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto; }
+        .youtube .vidList article .con h2 {
+          font: bold 16px/1 "arial";
+          color: #444;
+          margin-bottom: 10px; }
+        .youtube .vidList article .con p {
+          margin-bottom: 15px;
+          font: 14px/1.4 "arial";
+          color: #666; }
+        .youtube .vidList article .con span {
+          font: bold 16px/1 "arial";
+          color: orange;
+          margin-bottom: 20px; }
 
 .vidPop {
   position: fixed;

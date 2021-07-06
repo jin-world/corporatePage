@@ -5,7 +5,7 @@ $.ajax({
     data:{
         part:"snippet", 
         key:"AIzaSyCIOLOSoIBpxFer_M-SmkVr3F0gwnyhnO4", //api키값 
-        maxResults : 5, //호출 갯수 
+        maxResults : 9, //호출 갯수 
         playlistId: "PLg1VhWIXYL_lPOvXi-I2So7fZ0CymaqHf" // 플레이리스트 아이디 
     }
 })
@@ -24,14 +24,6 @@ $.ajax({
             title = title.substr(0,30)+"...";
         }
 
-        var con = data.snippet.description;
-        if(con.length > 100) {
-            con = con.substr(0,100)+"...";
-        }
-
-        var date = data.snippet.publishedAt;
-        date = date.split("T")[0];
-
         //빈 문자열에 계속해서 아래 문자코드를 중첩해서 더함
         result += `
             <article>
@@ -40,8 +32,6 @@ $.ajax({
             </a>
             <div class="con">
                 <h2>${title}</h2>
-                <p>${con}</p>
-                <span>${date}</span>
             </div>
             </article>
         `;
