@@ -184,29 +184,34 @@
        width:100%; height: 280px; 
        background:#ddd; 
        margin-bottom:100px; 
+       position: relative;
+
+       h1 {
+        font: bold 24px/1 "arial";
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+
+        span{
+            font:normal 16px/1 '맑은 고딕'; 
+            color:#eee; 
+
+            &::before{
+                content:'/';
+                margin-right:20px; 
+                margin-left:10px; 
+            }
+        }
+    }
     }
 
     .inner{
         width:1180px; 
         margin:0px auto; 
         min-height:500px; 
-
-        >h1{
-            font:normal 40px/1 'arial'; 
-            color:#444; 
-            margin-bottom:60px; 
-
-            span{
-                font:normal 16px/1 '맑은 고딕'; 
-                color:#aaa; 
-
-                &::before{
-                    content:'/';
-                    margin-right:20px; 
-                    margin-left:10px; 
-                }
-            }
-        }
     }
 }
 

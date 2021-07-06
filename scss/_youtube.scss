@@ -1,3 +1,9 @@
+.youtube {
+    .sub_visual {
+        background: #7b43a1;
+    }
+}
+
 .vidList {
     width: 100%;
     display: flex;
@@ -57,6 +63,7 @@
     width: 100%;
     height: 100%;
     display: none;
+    z-index: 5;
 
     .inner {
         width: 100%;

@@ -164,22 +164,27 @@ input, a, img, span, label, select {
     width: 100%;
     height: 280px;
     background: #ddd;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    position: relative; }
+    .content .sub_visual h1 {
+      font: bold 24px/1 "arial";
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; }
+      .content .sub_visual h1 span {
+        font: normal 16px/1 '맑은 고딕';
+        color: #eee; }
+        .content .sub_visual h1 span::before {
+          content: '/';
+          margin-right: 20px;
+          margin-left: 10px; }
   .content .inner {
     width: 1180px;
     margin: 0px auto;
     min-height: 500px; }
-    .content .inner > h1 {
-      font: normal 40px/1 'arial';
-      color: #444;
-      margin-bottom: 60px; }
-      .content .inner > h1 span {
-        font: normal 16px/1 '맑은 고딕';
-        color: #aaa; }
-        .content .inner > h1 span::before {
-          content: '/';
-          margin-right: 20px;
-          margin-left: 10px; }
 
 /* footer --------------------------- */
 #footer_sub {
@@ -263,6 +268,8 @@ input, a, img, span, label, select {
     #footer_sub .inner ul li {
       margin-left: 0px;
       margin: 5px; } }
+.community .sub_visual {
+  background: #435ca1; }
 .community table {
   width: 100%;
   border-bottom: 2px solid #ddd; }
@@ -332,6 +339,9 @@ input, a, img, span, label, select {
 @media screen and (max-width: 539px) {
   .community .inner h1 {
     font-size: 45px; } }
+.department .sub_visual {
+  background: #a14343; }
+
 /* tablet ------------------------------ */
 /* mobile ---------------------------------- */
 /* tablet ----------------------------------------- */
@@ -366,21 +376,6 @@ input, a, img, span, label, select {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
-  .gallery .sub_visual h1 {
-    font: bold 24px/1 "arial";
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; }
-    .gallery .sub_visual h1 span {
-      font: normal 16px/1 '맑은 고딕';
-      color: #eee; }
-      .gallery .sub_visual h1 span::before {
-        content: '/';
-        margin-right: 20px;
-        margin-left: 10px; }
 .gallery #gallery {
   width: 100%; }
   .gallery #gallery::after {
@@ -450,6 +445,9 @@ input, a, img, span, label, select {
       right: 4vw;
       cursor: pointer; }
 
+.youtube .sub_visual {
+  background: #7b43a1; }
+
 .vidList {
   width: 100%;
   display: flex;
@@ -493,7 +491,8 @@ input, a, img, span, label, select {
   left: 0px;
   width: 100%;
   height: 100%;
-  display: none; }
+  display: none;
+  z-index: 5; }
   .vidPop .inner {
     width: 100%;
     height: 100%;
@@ -510,6 +509,9 @@ input, a, img, span, label, select {
     right: 20px;
     color: orange;
     cursor: pointer; }
+
+.location .sub_visual {
+  background: #43a185; }
 
 #header {
   width: 100%;

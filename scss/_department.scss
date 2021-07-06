@@ -1,5 +1,11 @@
 @charset 'utf-8'; 
 
+.department {
+    .sub_visual {
+        background: #a14343;
+    }
+}
+
 /* tablet ------------------------------ */
 @media screen and (max-width:$tablet){
     
