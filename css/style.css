@@ -336,29 +336,24 @@ input, a, img, span, label, select {
 /* mobile ---------------------------------- */
 /* tablet ----------------------------------------- */
 /* mobile ----------------------------------------- */
-/*.search {
-    margin-bottom: 80px;
-    // text-align: center;
+.search {
+  margin-bottom: 80px;
+  text-align: center; }
+  .search input[type=text] {
+    width: 30%;
+    height: 40px;
+    border: none;
+    background: #f3f3f3;
+    padding: 20px;
+    box-sizing: border-box; }
+  .search button {
+    width: 14%;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer; }
 
-    input[type=text] {
-        width: 30%;
-        height: 40px;
-        border: none;
-        background: #f3f3f3;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    button {
-        width: 14%;
-        height: 40px;
-        background: #333;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
-}
-*/
 .gallery .sub_visual {
   background: url(../img/galleryImg2.jpg) no-repeat center/cover;
   position: relative; }
@@ -371,6 +366,21 @@ input, a, img, span, label, select {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
+  .gallery .sub_visual h1 {
+    font: bold 24px/1 "arial";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+    .gallery .sub_visual h1 span {
+      font: normal 16px/1 '맑은 고딕';
+      color: #eee; }
+      .gallery .sub_visual h1 span::before {
+        content: '/';
+        margin-right: 20px;
+        margin-left: 10px; }
 .gallery #gallery {
   width: 100%; }
   .gallery #gallery::after {
@@ -382,8 +392,8 @@ input, a, img, span, label, select {
     float: left;
     padding: 0px 16px;
     box-sizing: border-box;
-    border-right: 1px solid #aaa;
-    margin-bottom: 40px; }
+    border-right: 1px solid #ddd;
+    margin-bottom: 50px; }
     .gallery #gallery article:nth-last-child(1), .gallery #gallery article:nth-last-child(5), .gallery #gallery article:nth-last-child(9), .gallery #gallery article:nth-last-child(13), .gallery #gallery article:nth-last-child(17) {
       border-right: none; }
     .gallery #gallery article .inner {
@@ -400,7 +410,7 @@ input, a, img, span, label, select {
         color: #666;
         padding: 20px 0px;
         box-sizing: border-box;
-        border-bottom: 1px solid #aaa; }
+        border-bottom: 1px solid #bbb; }
       .gallery #gallery article .inner p {
         font: 12px/1 "arial";
         color: #aaa;

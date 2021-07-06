@@ -1,5 +1,5 @@
 let url = "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos";
-// let url_user = "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos";
+let url_user = "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos";
 let url_search = "https://www.flickr.com/services/rest/?method=flickr.photos.search";
 let user = "193201174@N02";
 let key = "9826483353a42d129a03d4cae76a3fb1";
