@@ -54,6 +54,7 @@ $.ajax({
     console.error(err);
 });
 
+
 $("body").on("click",".vidList article",function(e){
     e.preventDefault();
     var vidSrc = $(this).find(".pic").attr("href");
