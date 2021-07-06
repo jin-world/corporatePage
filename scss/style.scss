@@ -200,7 +200,7 @@ $mobile:539px;
 #visual{
     width:100%; 
     height:calc(100vh - 121px); 
-    background:#eee; 
+    background:#111; 
     position:relative; 
     overflow:hidden;         
 }
@@ -210,7 +210,7 @@ $mobile:539px;
 #footer{
     width:100%; 
     padding:100px 0; 
-    background:#444; 
+    background:#f0f0f0;  
 
     .inner{
         width:1180px; 
