@@ -49,6 +49,7 @@ $("body").on("click",".vidList article",function(e){
     e.preventDefault();
     var vidSrc = $(this).find(".pic").attr("href");
     $(".vidPop").fadeIn();
+
     $(".vidPop .inner").append(
         $("<iframe>").attr({
             src: "https://www.youtube.com/embed/"+vidSrc,

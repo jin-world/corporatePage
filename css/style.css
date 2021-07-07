@@ -479,11 +479,30 @@ input, a, img, span, label, select {
         display: block;
         width: 100%;
         height: 80%;
-        overflow: hidden; }
+        overflow: hidden;
+        position: relative; }
+        .youtube .vidList article .pic::after {
+          content: "VIEW";
+          font: 14px/1 'arial';
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: 0.5s;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: rgba(0, 0, 0, 0.7); }
+        .youtube .vidList article .pic:hover::after {
+          opacity: 1; }
         .youtube .vidList article .pic > img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: cover;
+          transition: 1s; }
       .youtube .vidList article .con {
         width: 100%;
         height: 40%;
