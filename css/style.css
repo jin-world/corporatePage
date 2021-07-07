@@ -166,6 +166,15 @@ input, a, img, span, label, select {
     background: #ddd;
     margin-bottom: 100px;
     position: relative; }
+    .content .sub_visual::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2); }
     .content .sub_visual h1 {
       font: bold 24px/1 "arial";
       color: #fff;
@@ -185,6 +194,13 @@ input, a, img, span, label, select {
     width: 1180px;
     margin: 0px auto;
     min-height: 500px; }
+    .content .inner .subtit {
+      font: bold 22px/1 "arial";
+      color: #555;
+      margin-bottom: 50px; }
+    .content .inner > p {
+      font: 13px/2 "arial";
+      color: #aaa; }
 
 /* footer --------------------------- */
 #footer_sub {
@@ -269,7 +285,8 @@ input, a, img, span, label, select {
       margin-left: 0px;
       margin: 5px; } }
 .community .sub_visual {
-  background: #435ca1; }
+  background: url(../img/communityImg4.jpg) no-repeat center/cover;
+  position: relative; }
 .community table {
   width: 100%;
   border-bottom: 2px solid #ddd; }
@@ -340,10 +357,15 @@ input, a, img, span, label, select {
   .community .inner h1 {
     font-size: 45px; } }
 .department .sub_visual {
-  background: #a14343; }
+  background: url(../img/departmentImg2.jpg) no-repeat center/cover;
+  position: relative; }
 
 /* tablet ------------------------------ */
 /* mobile ---------------------------------- */
+.join .sub_visual {
+  background: url(../img/joinImg4.jpg) no-repeat center/cover;
+  position: relative; }
+
 /* tablet ----------------------------------------- */
 /* mobile ----------------------------------------- */
 .search {
@@ -367,15 +389,6 @@ input, a, img, span, label, select {
 .gallery .sub_visual {
   background: url(../img/galleryImg2.jpg) no-repeat center/cover;
   position: relative; }
-  .gallery .sub_visual::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2); }
 .gallery #gallery {
   width: 100%; }
   .gallery #gallery::after {
@@ -448,20 +461,14 @@ input, a, img, span, label, select {
 .youtube {
   padding: 0px; }
   .youtube .sub_visual {
-    background: #8e43a1; }
+    background: url(../img/youtubeImg.jpg) no-repeat center/cover;
+    position: relative; }
   .youtube #ban {
     width: 1180px;
     height: 340px;
     background: #f1f1f1;
     margin: 0px auto;
     margin-bottom: 120px; }
-  .youtube h2 {
-    font: bold 22px/1 "arial";
-    color: #555;
-    margin-bottom: 50px; }
-  .youtube p {
-    font: 13px/2 "arial";
-    color: #aaa; }
   .youtube .vidList {
     width: 100%;
     display: flex;
@@ -548,7 +555,8 @@ input, a, img, span, label, select {
     cursor: pointer; }
 
 .location .sub_visual {
-  background: #43a185; }
+  background: url(../img/locationImg1.jpg) no-repeat center/cover;
+  position: relative; }
 
 #header {
   width: 100%;

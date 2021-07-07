@@ -1,5 +1,11 @@
 @charset 'utf-8'; 
 
+.join {
+    .sub_visual {
+        background: url(../img/joinImg4.jpg) no-repeat center/cover;
+        position: relative;
+    }
+}
 
 /* tablet ----------------------------------------- */
 @media screen and (max-width:$tablet){

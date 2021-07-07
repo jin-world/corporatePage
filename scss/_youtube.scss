@@ -2,7 +2,8 @@
     padding:0px;
 
     .sub_visual {
-        background: #8e43a1;
+        background: url(../img/youtubeImg.jpg) no-repeat center/cover;
+        position: relative;
     }
 
     #ban {
@@ -11,17 +12,6 @@
         background: #f1f1f1;
         margin: 0px auto;
         margin-bottom: 120px;
-    }
-
-    h2 {
-        font: bold 22px/1 "arial";
-        color: #555;
-        margin-bottom: 50px;
-    }
-
-    p {
-        font: 13px/2 "arial";
-        color: #aaa;
     }
     
     .vidList {

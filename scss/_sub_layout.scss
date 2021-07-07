@@ -186,6 +186,17 @@
        margin-bottom:100px; 
        position: relative;
 
+       &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.2);
+        }
+
        h1 {
         font: bold 24px/1 "arial";
         color: #fff;
@@ -205,13 +216,24 @@
                 margin-left:10px; 
             }
         }
-    }
+        }
     }
 
     .inner{
         width:1180px; 
         margin:0px auto; 
         min-height:500px; 
+
+        .subtit {
+            font: bold 22px/1 "arial";
+            color: #555;
+            margin-bottom: 50px;
+        }
+    
+        >p {
+            font: 13px/2 "arial";
+            color: #aaa;
+        }
     }
 }
 
