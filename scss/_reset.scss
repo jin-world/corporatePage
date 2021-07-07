@@ -4,7 +4,7 @@
 ul,ol,li{ list-style:none; }
 a{ text-decoration:none; }
 fieldset{ border:none; }
-table, th, td { border-collapse: collapse;}
+table, th, td { border-collapse: collapse; width: 100%;}
 .hidden{
     position:absolute; top:-9999px; opacity:0; 
 }

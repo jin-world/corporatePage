@@ -5,6 +5,216 @@
         background: url(../img/joinImg4.jpg) no-repeat center/cover;
         position: relative;
     }
+
+    .inner {
+        form {
+            padding: 40px 0px 0px;
+
+            h2 {
+                font: 18px/1 "arial";
+                color: #666;
+                text-align: left;
+                padding: 0px 0px 20px 0px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .join_wrap {
+                padding: 24px 0px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 90px;
+
+                .member_wrap {
+                    tr {
+                        th {
+                            width: 20%;
+                            font: 14px/1 "arial";
+                            color: #111;
+                            vertical-align: top;
+                            padding: 23px 12px 16px;
+                        }
+
+                        td {
+                            font: 14px/40px "arial";
+                            padding: 16px 20px;
+                            color: #666;
+
+                            input[type=radio] {
+                                margin-right: 10px;
+                                position: relative;
+                                top: -2px;
+                            }
+                            
+                            label {
+                                margin-right: 15px;
+                            }
+
+                            .phone-btn {
+                                display: block;
+                                width: 120px;
+                                height: 40px;
+                                box-sizing: border-box;
+                                border: 1px solid #444;
+                                font: bold 14px/40px "arial";
+                                color: #555;
+                                text-align: center;
+                                margin-top: 10px;
+                            }
+
+                            p {
+                                margin-top: 10px;
+                                font: 12px/1 "arial";
+                                color: #888;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .join_main {
+                padding: 24px 0px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 90px;
+
+                .member_join {
+                    tr {
+                        th {
+                            width: 20%;
+                            font: 14px/1 "arial";
+                            color: #111;
+                            vertical-align: top;
+                            padding: 23px 12px 16px;
+                        }
+                    }
+
+                    td {
+                        width: 80%;
+                        padding: 16px 20px;
+                        color: #666;
+
+                        input[type=text],
+                        input[type=password] {
+                            width: 45%;
+                            height: 30px;
+                            border: 1px solid #ddd;
+                            padding-left: 14px;
+
+                            &.error {
+                                border: 1px solid orangered; background: #fff0f0;
+                            }
+                        }
+
+                        select {
+                            width: 28%;
+                            border: 1px solid #ddd;
+                            padding: 7px 10px;
+                            box-sizing: border-box;
+    
+                            option {
+                                font-size: 14px;
+                            }
+                        }
+                        
+
+                        #phone-number2, #phone-number3,
+                        #birth, #birth-mon, #birth-day {
+                            width: 18%;
+                        }
+
+                        .gBlack5 {
+                            display: block;
+                            margin-top: 5px;
+                        }
+                        
+                        #birth-type1 { padding-right: 10px;}
+
+                        >p {
+                            margin-top: 10px;
+                            font: 12px/1 "arial";
+                            color: orangered;
+                            display: none;
+                            
+                            &.error { display: block; }
+                        }
+                    }
+                }
+            }
+
+            .agree_wrap {
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+        
+                .agree_tit {
+                    font: normal 16px/1.3 "arial";
+                    color: #222;
+                    border-bottom: none;
+                    letter-spacing: -1px;
+                    float: left;
+        
+                    &:nth-of-type(2) {
+                        margin-top: 80px;
+                    }
+                }
+            
+                .agreement {
+                    float: right;
+                    font: 12px/1 "arial";
+                    color: #222;
+        
+                    input[type=checkbox] {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            
+                textarea {
+                    width: 100%;
+                    height: 130px;
+                    resize: none;
+                    box-sizing: border-box;
+                    padding: 30px;
+                    background: #f5f5f5;
+                    border: none;
+                    font: 14px/1.8 "arial";
+                    color: #555;
+                    margin-bottom: 6px;
+
+                    &.error {
+                        border: 1px solid orangered; background: #fff0f0;
+                    }
+                }
+            }
+
+            .btn {
+                margin: 0px auto;
+                text-align: center;
+                margin-top: 90px;
+                margin-bottom: 100px;
+
+                input[type=reset], input[type=submit] {
+                    text-align: center;
+                    font: bold 14px/40px "arial";
+                    color: #eee;
+                    width: 20%; height: 40px;
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    border: 0px;
+                    background: #aaa;
+                    transition: 0.6s;
+
+                    &:hover {
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* tablet ----------------------------------------- */
