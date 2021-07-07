@@ -5,6 +5,15 @@
         background: url(../img/departmentImg2.jpg) no-repeat center/cover;
         position: relative;
     }
+
+    .inner {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+    }
 }
 
 /* tablet ------------------------------ */
