@@ -26,6 +26,7 @@
                 margin-bottom: 90px;
 
                 .member_wrap {
+                    width: 100%;
                     tr {
                         th {
                             width: 20%;
@@ -35,7 +36,7 @@
                             padding: 23px 12px 16px;
                         }
 
-                        td {
+                        >td {
                             font: 14px/40px "arial";
                             padding: 16px 20px;
                             color: #666;
@@ -79,6 +80,8 @@
                 margin-bottom: 90px;
 
                 .member_join {
+                    width: 100%;
+
                     tr {
                         th {
                             width: 20%;

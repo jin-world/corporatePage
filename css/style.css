@@ -13,8 +13,7 @@ fieldset {
   border: none; }
 
 table, th, td {
-  border-collapse: collapse;
-  width: 100%; }
+  border-collapse: collapse; }
 
 .hidden {
   position: absolute;
@@ -380,83 +379,87 @@ input, a, img, span, label, select {
     text-align: left;
     border-bottom: 1px solid #ddd;
     margin-bottom: 90px; }
-    .join .inner form .join_wrap .member_wrap tr th {
-      width: 20%;
-      font: 14px/1 "arial";
-      color: #111;
-      vertical-align: top;
-      padding: 23px 12px 16px; }
-    .join .inner form .join_wrap .member_wrap tr td {
-      font: 14px/40px "arial";
-      padding: 16px 20px;
-      color: #666; }
-      .join .inner form .join_wrap .member_wrap tr td input[type=radio] {
-        margin-right: 10px;
-        position: relative;
-        top: -2px; }
-      .join .inner form .join_wrap .member_wrap tr td label {
-        margin-right: 15px; }
-      .join .inner form .join_wrap .member_wrap tr td .phone-btn {
-        display: block;
-        width: 120px;
-        height: 40px;
-        box-sizing: border-box;
-        border: 1px solid #444;
-        font: bold 14px/40px "arial";
-        color: #555;
-        text-align: center;
-        margin-top: 10px; }
-      .join .inner form .join_wrap .member_wrap tr td p {
-        margin-top: 10px;
-        font: 12px/1 "arial";
-        color: #888; }
+    .join .inner form .join_wrap .member_wrap {
+      width: 100%; }
+      .join .inner form .join_wrap .member_wrap tr th {
+        width: 20%;
+        font: 14px/1 "arial";
+        color: #111;
+        vertical-align: top;
+        padding: 23px 12px 16px; }
+      .join .inner form .join_wrap .member_wrap tr > td {
+        font: 14px/40px "arial";
+        padding: 16px 20px;
+        color: #666; }
+        .join .inner form .join_wrap .member_wrap tr > td input[type=radio] {
+          margin-right: 10px;
+          position: relative;
+          top: -2px; }
+        .join .inner form .join_wrap .member_wrap tr > td label {
+          margin-right: 15px; }
+        .join .inner form .join_wrap .member_wrap tr > td .phone-btn {
+          display: block;
+          width: 120px;
+          height: 40px;
+          box-sizing: border-box;
+          border: 1px solid #444;
+          font: bold 14px/40px "arial";
+          color: #555;
+          text-align: center;
+          margin-top: 10px; }
+        .join .inner form .join_wrap .member_wrap tr > td p {
+          margin-top: 10px;
+          font: 12px/1 "arial";
+          color: #888; }
   .join .inner form .join_main {
     padding: 24px 0px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     margin-bottom: 90px; }
-    .join .inner form .join_main .member_join tr th {
-      width: 20%;
-      font: 14px/1 "arial";
-      color: #111;
-      vertical-align: top;
-      padding: 23px 12px 16px; }
-    .join .inner form .join_main .member_join td {
-      width: 80%;
-      padding: 16px 20px;
-      color: #666; }
-      .join .inner form .join_main .member_join td input[type=text],
-      .join .inner form .join_main .member_join td input[type=password] {
-        width: 45%;
-        height: 30px;
-        border: 1px solid #ddd;
-        padding-left: 14px; }
-        .join .inner form .join_main .member_join td input[type=text].error,
-        .join .inner form .join_main .member_join td input[type=password].error {
-          border: 1px solid orangered;
-          background: #fff0f0; }
-      .join .inner form .join_main .member_join td select {
-        width: 28%;
-        border: 1px solid #ddd;
-        padding: 7px 10px;
-        box-sizing: border-box; }
-        .join .inner form .join_main .member_join td select option {
-          font-size: 14px; }
-      .join .inner form .join_main .member_join td #phone-number2, .join .inner form .join_main .member_join td #phone-number3,
-      .join .inner form .join_main .member_join td #birth, .join .inner form .join_main .member_join td #birth-mon, .join .inner form .join_main .member_join td #birth-day {
-        width: 18%; }
-      .join .inner form .join_main .member_join td .gBlack5 {
-        display: block;
-        margin-top: 5px; }
-      .join .inner form .join_main .member_join td #birth-type1 {
-        padding-right: 10px; }
-      .join .inner form .join_main .member_join td > p {
-        margin-top: 10px;
-        font: 12px/1 "arial";
-        color: orangered;
-        display: none; }
-        .join .inner form .join_main .member_join td > p.error {
-          display: block; }
+    .join .inner form .join_main .member_join {
+      width: 100%; }
+      .join .inner form .join_main .member_join tr th {
+        width: 20%;
+        font: 14px/1 "arial";
+        color: #111;
+        vertical-align: top;
+        padding: 23px 12px 16px; }
+      .join .inner form .join_main .member_join td {
+        width: 80%;
+        padding: 16px 20px;
+        color: #666; }
+        .join .inner form .join_main .member_join td input[type=text],
+        .join .inner form .join_main .member_join td input[type=password] {
+          width: 45%;
+          height: 30px;
+          border: 1px solid #ddd;
+          padding-left: 14px; }
+          .join .inner form .join_main .member_join td input[type=text].error,
+          .join .inner form .join_main .member_join td input[type=password].error {
+            border: 1px solid orangered;
+            background: #fff0f0; }
+        .join .inner form .join_main .member_join td select {
+          width: 28%;
+          border: 1px solid #ddd;
+          padding: 7px 10px;
+          box-sizing: border-box; }
+          .join .inner form .join_main .member_join td select option {
+            font-size: 14px; }
+        .join .inner form .join_main .member_join td #phone-number2, .join .inner form .join_main .member_join td #phone-number3,
+        .join .inner form .join_main .member_join td #birth, .join .inner form .join_main .member_join td #birth-mon, .join .inner form .join_main .member_join td #birth-day {
+          width: 18%; }
+        .join .inner form .join_main .member_join td .gBlack5 {
+          display: block;
+          margin-top: 5px; }
+        .join .inner form .join_main .member_join td #birth-type1 {
+          padding-right: 10px; }
+        .join .inner form .join_main .member_join td > p {
+          margin-top: 10px;
+          font: 12px/1 "arial";
+          color: orangered;
+          display: none; }
+          .join .inner form .join_main .member_join td > p.error {
+            display: block; }
   .join .inner form .agree_wrap::after {
     content: "";
     display: block;
