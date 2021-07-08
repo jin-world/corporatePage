@@ -3,4 +3,12 @@
         background: url(../img/locationImg1.jpg) no-repeat center/cover;
         position: relative;
     }
+
+    .inner {
+        #map {
+            width: 100%;
+            height: 400px;
+            background: #000;
+        }
+    }
 }
