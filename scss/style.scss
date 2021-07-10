@@ -30,15 +30,15 @@ body { widtH: 100%; overflow-x: hidden; }
 
     .inner{
         width:1180px; 
-        height:120px; 
+        height:140px; 
         margin:0px auto; 
         position:relative; 
 
         >h1{
             position:absolute; 
-            left:50%; 
-            transform: translateX(-50%);
-            top: 20px;
+            left:0; 
+            bottom:19px; 
+            letter-spacing: 4px;
 
             a{
                 font:bold 24px/1 'arial'; 
@@ -49,37 +49,34 @@ body { widtH: 100%; overflow-x: hidden; }
         .menuWeb{
             #gnb{
                 position:absolute;
-                bottom:0; 
-                // left:50%; 
-                // transform: translateX(-50%);
-                // width: 100%;
-               
+                bottom:14px; 
+                right:0; 
                 
                 &::after{
                     content:''; 
                     display:block; 
                     clear:both; 
                 }
-                
                 >li{
                     float:left; 
 
                     >a{
                         display:block; 
                         padding:0px 40px; 
-                        height: 50px;
-                        font:bold 15px/50px 'arial'; 
-                        color:#555; 
+                        height: 42px;
+                        font: bold 15px/42px 'arial'; 
+                        color:#666; 
                         transition:all 0.5s;
 
                         &:hover{
-                            background:#555; color:#fff; 
+                            // border: 1px solid #000;
+                            color:#000;
                         } 
                     }
                     
                     .sub {
                         width: 1180px; height: 300px; position: absolute;
-                        top: 51px; right: 0px; display: none;
+                        top: 45px; right: 0px; display: none;
                         background: #fff;
 
                         .left {
@@ -120,19 +117,23 @@ body { widtH: 100%; overflow-x: hidden; }
                 position:absolute; 
                 top:20px; 
                 right:0px; 
+                background: #888;
+                padding: 8px;
                 
                 li{
                     float:left;
                     a{
                         display:block; 
-                        font:12px/1 'arial'; 
-                        color:#999; 
+                        font:14px/1 'arial'; 
+                        color:#ccc; 
                         padding:0px 10px; 
                         border-right:1px solid #aaa; 
                     } 
                     &:last-child a{
                         border-right: none;
                     }
+
+                    &:nth-child(1) a { color: #fff;}
                 }
                 &::after{
                     content:''; display:block; clear:both; 
@@ -248,7 +249,7 @@ body { widtH: 100%; overflow-x: hidden; }
 /* visual ------------------------------ */
 #visual{
     width:100%; 
-    height:calc(100vh - 121px); 
+    height:calc(100vh - 141px); 
     background:#111; 
     position:relative; 
     overflow:hidden;         
