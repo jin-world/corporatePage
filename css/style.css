@@ -771,15 +771,15 @@ body {
     position: relative; }
     #header .inner > h1 {
       position: absolute;
-      left: 0;
-      bottom: 15px; }
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20px; }
       #header .inner > h1 a {
         font: bold 24px/1 'arial';
         color: #444; }
     #header .inner .menuWeb #gnb {
       position: absolute;
-      bottom: 0;
-      right: 0; }
+      bottom: 0; }
       #header .inner .menuWeb #gnb::after {
         content: '';
         display: block;

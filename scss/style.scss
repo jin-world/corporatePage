@@ -36,8 +36,9 @@ body { widtH: 100%; overflow-x: hidden; }
 
         >h1{
             position:absolute; 
-            left:0; 
-            bottom:15px; 
+            left:50%; 
+            transform: translateX(-50%);
+            top: 20px;
 
             a{
                 font:bold 24px/1 'arial'; 
@@ -49,13 +50,17 @@ body { widtH: 100%; overflow-x: hidden; }
             #gnb{
                 position:absolute;
                 bottom:0; 
-                right:0; 
+                // left:50%; 
+                // transform: translateX(-50%);
+                // width: 100%;
+               
                 
                 &::after{
                     content:''; 
                     display:block; 
                     clear:both; 
                 }
+                
                 >li{
                     float:left; 
 
