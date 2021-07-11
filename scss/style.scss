@@ -69,23 +69,100 @@ body { widtH: 100%; overflow-x: hidden; }
                         transition:all 0.5s;
 
                         &:hover{
-                            // border: 1px solid #000;
-                            color:#000;
+                            color:#ff699b;
                         } 
                     }
                     
                     .sub {
                         width: 1180px; height: 300px; position: absolute;
-                        top: 45px; right: 0px; display: none;
-                        background: #fff;
+                        top: 56px; right: 0px;
+                        display: none;
 
                         .left {
-                            width: 30%; height: 100%; background: lightgreen;
+                            width: 65%; height: 100%;
+                            background: #f3f3f3;
                             float: left;
+                            padding: 64px;
+                            box-sizing: border-box;
+                            
+                            .sub_con1, .sub_con3{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                padding: 80px 64px;
+
+                                h3 {
+                                    font: bold 16px/1 "arial";
+                                    color: #555;
+                                    margin-bottom: 20px;
+                                }
+    
+                                >ul {
+                                    float: left;
+                                    padding-right: 34px;
+                                    box-sizing: border-box;
+
+                                    li {
+                                        a {
+                                            font: 15px/2.4 "arial";
+                                            color: #777;
+                                            transition: 0.5s;
+    
+                                            &:hover {
+                                                color: #ff698f;     
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sub_con3 { left: 480px; }
                         }
+
                         .right {
-                            width: 70%; height: 100%; background: #fff;
+                            width: 35%; height: 100%;
+                            background: #f3f3f3; 
                             float: right;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+
+                            .box {
+                                width: 260px;
+                                height: 220px;
+                                margin: 0px auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                .boxbtn {
+                                    height: 220px;
+                                    background: #ff7a9c;
+                                    padding: 16px;
+                                    box-sizing: border-box;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 85%;
+                                    transform: translateY(-50%);
+
+                                    span {
+                                        i {
+                                            font-size: 16px;
+                                            color: #fff;
+                                            margin-top: 165px;
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         &::before {
@@ -96,7 +173,7 @@ body { widtH: 100%; overflow-x: hidden; }
                             position: absolute;
                             top: 0px;
                             left: 100%;
-                            background: #fff;
+                            background: #f3f3f3;
                         }
 
                         &::after {
@@ -107,7 +184,7 @@ body { widtH: 100%; overflow-x: hidden; }
                             position: absolute;
                             top: 0px;
                             right: 100%;
-                            background: lightgreen;
+                            background: #f3f3f3;
                         }
                     }
                 }
@@ -117,23 +194,20 @@ body { widtH: 100%; overflow-x: hidden; }
                 position:absolute; 
                 top:20px; 
                 right:0px; 
-                background: #888;
-                padding: 8px;
+
                 
                 li{
                     float:left;
                     a{
                         display:block; 
-                        font:14px/1 'arial'; 
-                        color:#ccc; 
+                        font:12px/1 'arial'; 
+                        color:#999; 
                         padding:0px 10px; 
                         border-right:1px solid #aaa; 
                     } 
                     &:last-child a{
                         border-right: none;
                     }
-
-                    &:nth-child(1) a { color: #fff;}
                 }
                 &::after{
                     content:''; display:block; clear:both; 
@@ -250,7 +324,7 @@ body { widtH: 100%; overflow-x: hidden; }
 #visual{
     width:100%; 
     height:calc(100vh - 141px); 
-    background:#111; 
+    background:#fff; 
     position:relative; 
     overflow:hidden;         
 }
