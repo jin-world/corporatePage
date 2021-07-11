@@ -280,7 +280,7 @@ input, a, img, span, label, select {
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.2); }
+      background: rgba(71, 71, 71, 0.2); }
     .content .sub_visual h1 {
       font: bold 24px/1 "Nanum Myeongjo";
       color: #fff;
@@ -392,7 +392,7 @@ input, a, img, span, label, select {
       margin-left: 0px;
       margin: 5px; } }
 .community .sub_visual {
-  background: url(../img/communityImg4.jpg) no-repeat center/cover;
+  background: url(../img/communityImg5.jpg) no-repeat center/cover;
   position: relative; }
 .community table {
   width: 100%;
@@ -466,7 +466,7 @@ input, a, img, span, label, select {
   .community .inner h1 {
     font-size: 45px; } }
 .department .sub_visual {
-  background: url(../img/departmentImg2.jpg) no-repeat center/cover;
+  background: url(../img/departmentImg3.jpg) no-repeat top/cover;
   position: relative; }
 .department .inner img {
   width: 100%;
@@ -477,7 +477,7 @@ input, a, img, span, label, select {
 /* tablet ------------------------------ */
 /* mobile ---------------------------------- */
 .join .sub_visual {
-  background: url(../img/joinImg4.jpg) no-repeat center/cover;
+  background: url(../img/joinImg5.jpg) no-repeat center/cover;
   position: relative; }
 .join .inner form {
   padding: 40px 0px 0px; }
@@ -648,7 +648,7 @@ input, a, img, span, label, select {
     cursor: pointer; }
 
 .gallery .sub_visual {
-  background: url(../img/galleryImg2.jpg) no-repeat center/cover;
+  background: url(../img/galleryImg7.jpg) no-repeat center/cover;
   position: relative; }
 .gallery #gallery {
   width: 100%; }
@@ -722,7 +722,7 @@ input, a, img, span, label, select {
 .youtube {
   padding: 0px; }
   .youtube .sub_visual {
-    background: url(../img/youtubeImg.jpg) no-repeat center/cover;
+    background: url(../img/youtubeImg4.jpg) no-repeat center/cover;
     position: relative; }
   .youtube #ban {
     width: 1180px;
@@ -816,7 +816,7 @@ input, a, img, span, label, select {
     cursor: pointer; }
 
 .location .sub_visual {
-  background: url(../img/locationImg1.jpg) no-repeat center/cover;
+  background: url(../img/locationImg5.jpg) no-repeat center/cover;
   position: relative; }
 .location .inner #map {
   width: 100%;
