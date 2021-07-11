@@ -15,7 +15,8 @@
         >h1{
             position:absolute; 
             left:0; 
-            bottom:15px; 
+            bottom:19px; 
+            letter-spacing: 4px;
 
             a{
                 font:bold 24px/1 'arial'; 
@@ -26,7 +27,7 @@
         .menuWeb{
             #gnb{
                 position:absolute;
-                bottom:0; 
+                bottom:14px; 
                 right:0; 
                 
                 &::after{
@@ -40,28 +41,106 @@
                     >a{
                         display:block; 
                         padding:0px 40px; 
-                        height: 50px;
-                        font:bold 15px/50px 'arial'; 
-                        color:#555; 
+                        height: 42px;
+                        font: bold 15px/42px 'arial'; 
+                        color:#666; 
                         transition:all 0.5s;
 
                         &:hover{
-                            background:#555; color:#fff; 
+                            color:#ff699b;
                         } 
                     }
                     
                     .sub {
                         width: 1180px; height: 300px; position: absolute;
-                        top: 51px; right: 0px; display: none;
-                        background: #fff;
+                        top: 56px; right: 0px;
+                        display: none;
 
                         .left {
-                            width: 30%; height: 100%; background: lightgreen;
+                            width: 65%; height: 100%;
+                            background: #f3f3f3;
                             float: left;
+                            padding: 64px;
+                            box-sizing: border-box;
+                            
+                            .sub_con1, .sub_con3{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                padding: 80px 64px;
+
+                                h3 {
+                                    font: bold 16px/1 "arial";
+                                    color: #555;
+                                    margin-bottom: 20px;
+                                }
+    
+                                >ul {
+                                    float: left;
+                                    padding-right: 34px;
+                                    box-sizing: border-box;
+
+                                    li {
+                                        a {
+                                            font: 15px/2.4 "arial";
+                                            color: #777;
+                                            transition: 0.5s;
+    
+                                            &:hover {
+                                                color: #ff698f;     
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sub_con3 { left: 480px; }
                         }
+
                         .right {
-                            width: 70%; height: 100%; background: #fff;
+                            width: 35%; height: 100%;
+                            background: #f3f3f3; 
                             float: right;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+
+                            .box {
+                                width: 260px;
+                                height: 220px;
+                                margin: 0px auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                .boxbtn {
+                                    height: 220px;
+                                    background: #ff7a9c;
+                                    padding: 16px;
+                                    box-sizing: border-box;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 85%;
+                                    transform: translateY(-50%);
+
+                                    span {
+                                        i {
+                                            font-size: 16px;
+                                            color: #fff;
+                                            margin-top: 165px;
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         &::before {
@@ -72,8 +151,7 @@
                             position: absolute;
                             top: 0px;
                             left: 100%;
-                            background: #fff;
-                            border-bottom: 1px solid #bbb;
+                            background: #f3f3f3;
                         }
 
                         &::after {
@@ -84,12 +162,12 @@
                             position: absolute;
                             top: 0px;
                             right: 100%;
-                            background: lightgreen;
-                            border-bottom: 1px solid #bbb;
+                            background: #f3f3f3;
                         }
                     }
                 }
             }
+
             .util{
                 position:absolute; 
                 top:20px; 
