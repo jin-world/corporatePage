@@ -38,7 +38,7 @@
 
                 &::after {
                     content: "VIEW";
-                    font: 14px/1 'arial';
+                    font: 14px/1 'Open Sans';
                     color: #fff;
                     display: flex;
                     justify-content: center;
@@ -73,19 +73,19 @@
                 margin: 0 auto;
     
                 h2 {
-                    font: bold 16px/1 "arial";
+                    font: 600 16px/1 "Open Sans";
                     color: #444;
                     margin-bottom: 10px;
                 }
     
                 p {
                     margin-bottom: 15px;
-                    font: 14px/1.4 "arial";
+                    font: 14px/1.4 "Open Sans";
                     color: #666;
                 }
     
                 span {
-                    font: bold 16px/1 "arial";
+                    font: bold 16px/1 "Open Sans";
                     color: orange;
                     margin-bottom: 20px;
                 }

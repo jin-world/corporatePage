@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px; }
@@ -28,6 +29,38 @@ input, a, img, span, label, select {
   border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 2; }
+  #header_sub .util_wrap {
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5; }
+    #header_sub .util_wrap .util_main {
+      width: 1180px;
+      margin: 0px auto;
+      position: relative; }
+      #header_sub .util_wrap .util_main .util {
+        position: absolute;
+        right: 26px; }
+        #header_sub .util_wrap .util_main .util::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #header_sub .util_wrap .util_main .util li {
+          float: left; }
+          #header_sub .util_wrap .util_main .util li a {
+            display: block;
+            font: 400 12px/1 'Open Sans';
+            color: #666;
+            padding: 0px 10px;
+            border-right: 1px solid #aaa;
+            margin-top: 7px; }
+          #header_sub .util_wrap .util_main .util li:nth-child(2) a {
+            color: #999; }
+          #header_sub .util_wrap .util_main .util li:last-child a {
+            border-right: none; }
+        #header_sub .util_wrap .util_main .util::after {
+          content: '';
+          display: block;
+          clear: both; }
   #header_sub .inner {
     width: 1180px;
     height: 120px;
@@ -37,9 +70,9 @@ input, a, img, span, label, select {
       position: absolute;
       left: 0;
       bottom: 19px;
-      letter-spacing: 4px; }
+      letter-spacing: 3px; }
       #header_sub .inner > h1 a {
-        font: bold 24px/1 'arial';
+        font: 800 24px/1 'Nanum Myeongjo';
         color: #444; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
@@ -55,11 +88,11 @@ input, a, img, span, label, select {
           display: block;
           padding: 0px 40px;
           height: 42px;
-          font: bold 15px/42px 'arial';
-          color: #666;
+          font: 600 14px/42px 'Nanum Myeongjo';
+          color: #777;
           transition: all 0.5s; }
           #header_sub .inner .menuWeb #gnb > li > a:hover {
-            color: #ff699b; }
+            color: #ca6262; }
         #header_sub .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
@@ -82,7 +115,7 @@ input, a, img, span, label, select {
               left: 0;
               padding: 80px 64px; }
               #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 h3, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 h3 {
-                font: bold 16px/1 "arial";
+                font: bold 16px/1 "Open Sans";
                 color: #555;
                 margin-bottom: 20px; }
               #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul {
@@ -90,11 +123,11 @@ input, a, img, span, label, select {
                 padding-right: 34px;
                 box-sizing: border-box; }
                 #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a {
-                  font: 15px/2.4 "arial";
+                  font: 15px/2.4 "Open Sans";
                   color: #777;
                   transition: 0.5s; }
                   #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a:hover, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a:hover {
-                    color: #ff698f; }
+                    color: #ca6262; }
             #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 {
               left: 480px; }
           #header_sub .inner .menuWeb #gnb > li .sub .right {
@@ -119,7 +152,7 @@ input, a, img, span, label, select {
                 object-fit: cover; }
               #header_sub .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
                 height: 220px;
-                background: #ff7a9c;
+                background: #cfb5b5;
                 padding: 16px;
                 box-sizing: border-box;
                 position: absolute;
@@ -148,24 +181,6 @@ input, a, img, span, label, select {
             top: 0px;
             right: 100%;
             background: #f3f3f3; }
-    #header_sub .inner .menuWeb .util {
-      position: absolute;
-      top: 20px;
-      right: 0px; }
-      #header_sub .inner .menuWeb .util li {
-        float: left; }
-        #header_sub .inner .menuWeb .util li a {
-          display: block;
-          font: 12px/1 'arial';
-          color: #999;
-          padding: 0px 10px;
-          border-right: 1px solid #aaa; }
-        #header_sub .inner .menuWeb .util li:last-child a {
-          border-right: none; }
-      #header_sub .inner .menuWeb .util::after {
-        content: '';
-        display: block;
-        clear: both; }
     #header_sub .inner .btnCall {
       position: absolute;
       right: 30px;
@@ -231,7 +246,7 @@ input, a, img, span, label, select {
         padding-bottom: 30px; }
         #header_sub .inner .menuMo h1 a {
           display: block;
-          font: bold 24px/1 'arial';
+          font: bold 24px/1 'Open Sansl';
           color: #fff;
           text-align: center; }
         #header_sub .inner .menuMo h1 span {
@@ -242,7 +257,7 @@ input, a, img, span, label, select {
         width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid #444;
-        font: bold 14px/1 'arial';
+        font: bold 14px/1 'Open Sans';
         color: #888;
         text-align: center; }
       #header_sub .inner .menuMo.on {
@@ -267,7 +282,7 @@ input, a, img, span, label, select {
       left: 0;
       background: rgba(0, 0, 0, 0.2); }
     .content .sub_visual h1 {
-      font: bold 24px/1 "arial";
+      font: bold 24px/1 "Nanum Myeongjo";
       color: #fff;
       position: absolute;
       top: 50%;
@@ -275,7 +290,7 @@ input, a, img, span, label, select {
       transform: translate(-50%, -50%);
       z-index: 1; }
       .content .sub_visual h1 span {
-        font: normal 16px/1 '맑은 고딕';
+        font: 600 16px/1 'Nanum Myeongjo';
         color: #eee; }
         .content .sub_visual h1 span::before {
           content: '/';
@@ -286,42 +301,43 @@ input, a, img, span, label, select {
     margin: 0px auto;
     min-height: 500px; }
     .content .inner .subtit {
-      font: bold 22px/1 "arial";
+      font: bold 22px/1 "Nanum Myeongjo";
       color: #555;
       margin-bottom: 50px; }
     .content .inner > p {
-      font: 13px/2 "arial";
+      font: 13px/2 "Nanum Myeongjo";
       color: #aaa; }
 
 /* footer --------------------------- */
 #footer_sub {
   width: 100%;
   padding: 100px 0;
-  background: #f0f0f0; }
+  background: #ebdddd; }
   #footer_sub .inner {
     width: 1180px;
     margin: 0 auto; }
     #footer_sub .inner h1 {
-      font: bold 24px/1 'arial';
-      color: #666;
-      float: left; }
+      font: 800 24px/1 'Nanum Myeongjo';
+      color: #444;
+      float: left;
+      letter-spacing: 3px; }
     #footer_sub .inner ul {
       float: right; }
       #footer_sub .inner ul li {
         float: left;
         margin-left: 20px; }
         #footer_sub .inner ul li a {
-          font: bold 14px/1 'arial';
-          color: #666; }
+          font: 700 14px/1 'Nanum Myeongjo';
+          color: #555; }
     #footer_sub .inner address {
       width: 100%;
       float: left;
-      font: 14px/1.3 'arial';
+      font: 14px/1.3 'Open Sans';
       color: #777;
       margin-bottom: 20px;
       margin-top: 20px; }
     #footer_sub .inner p {
-      font: 12px/1 'arial';
+      font: 12px/1 'Open Sans';
       color: #777;
       width: 100%;
       float: left; }
@@ -384,7 +400,8 @@ input, a, img, span, label, select {
   .community table th {
     border-bottom: 2px solid #ddd;
     padding: 30px;
-    color: #444; }
+    color: #444;
+    font: bold 16px/1 "Open Sans"; }
     .community table th:nth-of-type(1) {
       width: 10%; }
     .community table th:nth-of-type(2) {
@@ -396,7 +413,8 @@ input, a, img, span, label, select {
   .community table td {
     padding: 30px;
     border-bottom: 1px solid #ddd;
-    text-align: center; }
+    text-align: center;
+    font: 400 15px/1 "Open Sans"; }
     .community table td:nth-of-type(2) {
       text-align: left; }
     .community table td a:link {
@@ -412,7 +430,7 @@ input, a, img, span, label, select {
       display: inline-block;
       width: 40px;
       height: 40px;
-      font: 14px/40px "arial";
+      font: 400 14px/40px "Open Sans";
       color: #666;
       text-align: center;
       margin: 0 3px;
@@ -426,7 +444,7 @@ input, a, img, span, label, select {
     width: 40px;
     height: 40px;
     border: 1px solid #ccc;
-    font: 15px/40px "arial";
+    font: 15px/40px "Open Sans";
     color: #aaa;
     text-align: center;
     box-sizing: border-box;
@@ -436,7 +454,7 @@ input, a, img, span, label, select {
     width: 40px;
     height: 40px;
     border: 1px solid #ccc;
-    font: 15px/40px "arial";
+    font: 15px/40px "Open Sans";
     color: #aaa;
     text-align: center;
     box-sizing: border-box;
@@ -657,13 +675,13 @@ input, a, img, span, label, select {
           .gallery #gallery article .inner .pic img:hover {
             transform: scale(1.2); }
       .gallery #gallery article .inner h2 {
-        font: 23px/1 "arial";
+        font: 20px/1 "Open Sans";
         color: #666;
         padding: 20px 0px;
         box-sizing: border-box;
         border-bottom: 1px solid #bbb; }
       .gallery #gallery article .inner p {
-        font: 12px/1 "arial";
+        font: 12px/1 "Open Sans";
         color: #aaa;
         padding: 10px 0px;
         box-sizing: border-box;
@@ -694,7 +712,7 @@ input, a, img, span, label, select {
       height: 100%;
       object-fit: contain; }
     #imgPop .pic span {
-      font: bold 16px/1 "arial";
+      font: bold 16px/1 "Open Sans";
       color: #666;
       position: absolute;
       top: 4vw;
@@ -733,7 +751,7 @@ input, a, img, span, label, select {
         position: relative; }
         .youtube .vidList article .pic::after {
           content: "VIEW";
-          font: 14px/1 'arial';
+          font: 14px/1 'Open Sans';
           color: #fff;
           display: flex;
           justify-content: center;
@@ -760,15 +778,15 @@ input, a, img, span, label, select {
         padding: 20px;
         margin: 0 auto; }
         .youtube .vidList article .con h2 {
-          font: bold 16px/1 "arial";
+          font: 600 16px/1 "Open Sans";
           color: #444;
           margin-bottom: 10px; }
         .youtube .vidList article .con p {
           margin-bottom: 15px;
-          font: 14px/1.4 "arial";
+          font: 14px/1.4 "Open Sans";
           color: #666; }
         .youtube .vidList article .con span {
-          font: bold 16px/1 "arial";
+          font: bold 16px/1 "Open Sans";
           color: orange;
           margin-bottom: 20px; }
 
@@ -804,6 +822,12 @@ input, a, img, span, label, select {
   width: 100%;
   height: 400px;
   background: #000; }
+.location .inner .traffic li a {
+  font: 400 16px/1 "Open Sans";
+  color: #444; }
+.location .inner .branch li a {
+  font: 400 16px/1 "Open Sans";
+  color: #444; }
 
 body {
   widtH: 100%;
@@ -814,18 +838,50 @@ body {
   border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 2; }
+  #header .util_wrap {
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5; }
+    #header .util_wrap .util_main {
+      width: 1180px;
+      margin: 0px auto;
+      position: relative; }
+      #header .util_wrap .util_main .util {
+        position: absolute;
+        right: 26px; }
+        #header .util_wrap .util_main .util::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #header .util_wrap .util_main .util li {
+          float: left; }
+          #header .util_wrap .util_main .util li a {
+            display: block;
+            font: 400 12px/1 'Open Sans';
+            color: #666;
+            padding: 0px 10px;
+            border-right: 1px solid #aaa;
+            margin-top: 7px; }
+          #header .util_wrap .util_main .util li:nth-child(2) a {
+            color: #999; }
+          #header .util_wrap .util_main .util li:last-child a {
+            border-right: none; }
+        #header .util_wrap .util_main .util::after {
+          content: '';
+          display: block;
+          clear: both; }
   #header .inner {
     width: 1180px;
-    height: 140px;
+    height: 120px;
     margin: 0px auto;
     position: relative; }
     #header .inner > h1 {
       position: absolute;
       left: 0;
       bottom: 19px;
-      letter-spacing: 4px; }
+      letter-spacing: 3px; }
       #header .inner > h1 a {
-        font: bold 24px/1 'arial';
+        font: 800 24px/1 'Nanum Myeongjo';
         color: #444; }
     #header .inner .menuWeb #gnb {
       position: absolute;
@@ -841,11 +897,11 @@ body {
           display: block;
           padding: 0px 40px;
           height: 42px;
-          font: bold 15px/42px 'arial';
-          color: #666;
+          font: 600 14px/42px 'Nanum Myeongjo';
+          color: #777;
           transition: all 0.5s; }
           #header .inner .menuWeb #gnb > li > a:hover {
-            color: #ff699b; }
+            color: #ca6262; }
         #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
@@ -868,7 +924,7 @@ body {
               left: 0;
               padding: 80px 64px; }
               #header .inner .menuWeb #gnb > li .sub .left .sub_con1 h3, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 h3 {
-                font: bold 16px/1 "arial";
+                font: bold 16px/1 "Open Sans";
                 color: #555;
                 margin-bottom: 20px; }
               #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul {
@@ -876,11 +932,11 @@ body {
                 padding-right: 34px;
                 box-sizing: border-box; }
                 #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a {
-                  font: 15px/2.4 "arial";
+                  font: 15px/2.4 "Open Sans";
                   color: #777;
                   transition: 0.5s; }
                   #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a:hover, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a:hover {
-                    color: #ff698f; }
+                    color: #ca6262; }
             #header .inner .menuWeb #gnb > li .sub .left .sub_con3 {
               left: 480px; }
           #header .inner .menuWeb #gnb > li .sub .right {
@@ -905,7 +961,7 @@ body {
                 object-fit: cover; }
               #header .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
                 height: 220px;
-                background: #ff7a9c;
+                background: #cfb5b5;
                 padding: 16px;
                 box-sizing: border-box;
                 position: absolute;
@@ -915,7 +971,8 @@ body {
                 #header .inner .menuWeb #gnb > li .sub .right .box .boxbtn span i {
                   font-size: 16px;
                   color: #fff;
-                  margin-top: 165px; }
+                  margin-top: 165px;
+                  cursor: pointer; }
           #header .inner .menuWeb #gnb > li .sub::before {
             content: "";
             width: 100%;
@@ -934,24 +991,6 @@ body {
             top: 0px;
             right: 100%;
             background: #f3f3f3; }
-    #header .inner .menuWeb .util {
-      position: absolute;
-      top: 20px;
-      right: 0px; }
-      #header .inner .menuWeb .util li {
-        float: left; }
-        #header .inner .menuWeb .util li a {
-          display: block;
-          font: 12px/1 'arial';
-          color: #999;
-          padding: 0px 10px;
-          border-right: 1px solid #aaa; }
-        #header .inner .menuWeb .util li:last-child a {
-          border-right: none; }
-      #header .inner .menuWeb .util::after {
-        content: '';
-        display: block;
-        clear: both; }
     #header .inner .btnCall {
       position: absolute;
       right: 30px;
@@ -1017,7 +1056,7 @@ body {
         padding-bottom: 30px; }
         #header .inner .menuMo h1 a {
           display: block;
-          font: bold 24px/1 'arial';
+          font: bold 24px/1 'Open Sansl';
           color: #fff;
           text-align: center; }
         #header .inner .menuMo h1 span {
@@ -1028,7 +1067,7 @@ body {
         width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid #444;
-        font: bold 14px/1 'arial';
+        font: bold 14px/1 'Open Sans';
         color: #888;
         text-align: center; }
       #header .inner .menuMo.on {
@@ -1037,7 +1076,7 @@ body {
 /* visual ------------------------------ */
 #visual {
   width: 100%;
-  height: calc(100vh - 141px);
+  height: calc(100vh - 121px);
   background: #fff;
   position: relative;
   overflow: hidden; }
@@ -1046,31 +1085,32 @@ body {
 #footer {
   width: 100%;
   padding: 100px 0;
-  background: #f0f0f0; }
+  background: #ebdddd; }
   #footer .inner {
     width: 1180px;
     margin: 0 auto; }
     #footer .inner h1 {
-      font: bold 24px/1 'arial';
-      color: #666;
-      float: left; }
+      font: 800 24px/1 'Nanum Myeongjo';
+      color: #444;
+      float: left;
+      letter-spacing: 3px; }
     #footer .inner ul {
       float: right; }
       #footer .inner ul li {
         float: left;
         margin-left: 20px; }
         #footer .inner ul li a {
-          font: bold 14px/1 'arial';
-          color: #666; }
+          font: 700 14px/1 'Nanum Myeongjo';
+          color: #555; }
     #footer .inner address {
       width: 100%;
       float: left;
-      font: 14px/1.3 'arial';
+      font: 14px/1.3 'Open Sans';
       color: #777;
       margin-bottom: 20px;
       margin-top: 20px; }
     #footer .inner p {
-      font: 12px/1 'arial';
+      font: 12px/1 'Open Sans';
       color: #777;
       width: 100%;
       float: left; }

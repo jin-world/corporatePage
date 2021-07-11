@@ -6,6 +6,47 @@
     position: relative;
     z-index: 2;
 
+    .util_wrap {
+        width: 100%;
+        height: 30px;
+        background: #f5f5f5;
+
+        .util_main {
+            width: 1180px;
+            margin: 0px auto;
+            position: relative;
+
+            .util{
+                position: absolute;
+                right: 26px;
+
+                &::after { content: ""; display: block; clear: both; }
+
+                li{
+                    float:left;
+
+                    a{
+                        display:block; 
+                        font: 400 12px/1 'Open Sans'; 
+                        color:#666; 
+                        padding: 0px 10px;
+                        border-right:1px solid #aaa; 
+                        margin-top: 7px;
+                    } 
+
+                    &:nth-child(2) a { color: #999; }
+                    &:last-child a{
+                        border-right: none;
+                    }
+                }
+
+                &::after{
+                    content:''; display:block; clear:both; 
+                }
+            }
+        }
+    }
+
     .inner{
         width:1180px; 
         height:120px; 
@@ -16,10 +57,10 @@
             position:absolute; 
             left:0; 
             bottom:19px; 
-            letter-spacing: 4px;
+            letter-spacing: 3px;
 
             a{
-                font:bold 24px/1 'arial'; 
+                font: 800 24px/1 'Nanum Myeongjo'; 
                 color:#444; 
             }
         }
@@ -42,12 +83,12 @@
                         display:block; 
                         padding:0px 40px; 
                         height: 42px;
-                        font: bold 15px/42px 'arial'; 
-                        color:#666; 
+                        font: 600 14px/42px 'Nanum Myeongjo'; 
+                        color:#777; 
                         transition:all 0.5s;
 
                         &:hover{
-                            color:#ff699b;
+                            color:#ca6262;
                         } 
                     }
                     
@@ -72,7 +113,7 @@
                                 padding: 80px 64px;
 
                                 h3 {
-                                    font: bold 16px/1 "arial";
+                                    font: bold 16px/1 "Open Sans";
                                     color: #555;
                                     margin-bottom: 20px;
                                 }
@@ -84,12 +125,12 @@
 
                                     li {
                                         a {
-                                            font: 15px/2.4 "arial";
+                                            font: 15px/2.4 "Open Sans";
                                             color: #777;
                                             transition: 0.5s;
     
                                             &:hover {
-                                                color: #ff698f;     
+                                                color: #ca6262;     
                                             }
                                         }
                                     }
@@ -124,7 +165,7 @@
 
                                 .boxbtn {
                                     height: 220px;
-                                    background: #ff7a9c;
+                                    background: #cfb5b5;
                                     padding: 16px;
                                     box-sizing: border-box;
                                     position: absolute;
@@ -165,30 +206,6 @@
                             background: #f3f3f3;
                         }
                     }
-                }
-            }
-
-            .util{
-                position:absolute; 
-                top:20px; 
-                right:0px; 
-
-                
-                li{
-                    float:left;
-                    a{
-                        display:block; 
-                        font:12px/1 'arial'; 
-                        color:#999; 
-                        padding:0px 10px; 
-                        border-right:1px solid #aaa; 
-                    } 
-                    &:last-child a{
-                        border-right: none;
-                    }
-                }
-                &::after{
-                    content:''; display:block; clear:both; 
                 }
             }
         }
@@ -267,7 +284,7 @@
                padding-bottom:30px;  
                 a{
                     display:block; 
-                    font:bold 24px/1 'arial'; 
+                    font:bold 24px/1 'Open Sansl'; 
                     color:#fff; 
                     text-align:center; 
                 }
@@ -283,7 +300,7 @@
                         width:100%; 
                         padding:20px 0; 
                         border-bottom:1px solid #444; 
-                        font:bold 14px/1 'arial'; 
+                        font:bold 14px/1 'Open Sans'; 
                         color:#888; 
                         text-align:center; 
                     }
@@ -319,7 +336,7 @@
         }
 
        h1 {
-        font: bold 24px/1 "arial";
+        font: bold 24px/1 "Nanum Myeongjo";
         color: #fff;
         position: absolute;
         top: 50%;
@@ -328,7 +345,7 @@
         z-index: 1;
 
         span{
-            font:normal 16px/1 '맑은 고딕'; 
+            font: 600 16px/1 'Nanum Myeongjo'; 
             color:#eee; 
 
             &::before{
@@ -346,13 +363,13 @@
         min-height:500px; 
 
         .subtit {
-            font: bold 22px/1 "arial";
+            font: bold 22px/1 "Nanum Myeongjo";
             color: #555;
             margin-bottom: 50px;
         }
     
         >p {
-            font: 13px/2 "arial";
+            font: 13px/2 "Nanum Myeongjo";
             color: #aaa;
         }
     }
@@ -362,14 +379,17 @@
 #footer_sub{
     width:100%; 
     padding:100px 0; 
-    background:#f0f0f0; 
+    background:#ebdddd;  
 
     .inner{
         width:1180px; 
         margin:0 auto; 
 
         h1{
-            font:bold 24px/1 'arial'; color:#666; float:left; 
+            font: 800 24px/1 'Nanum Myeongjo';
+            color:#444;
+            float:left; 
+            letter-spacing: 3px;
         }
         ul{
             float:right; 
@@ -377,18 +397,18 @@
             li{
                 float:left; margin-left:20px; 
                 a{
-                    font:bold 14px/1 'arial'; color:#666; 
+                    font: 700 14px/1 'Nanum Myeongjo'; color:#555; 
                 }
             }
         }        
 
         address{
             width:100%; float:left; 
-            font:14px/1.3 'arial'; color:#777; 
+            font: 14px/1.3 'Open Sans'; color:#777; 
             margin-bottom:20px; margin-top:20px; 
         }
         p{
-            font:12px/1 'arial'; color:#777; 
+            font:12px/1 'Open Sans'; color:#777; 
             width:100%; 
             float:left; 
         }
