@@ -279,6 +279,7 @@
             padding:35px 30px; 
             box-sizing:border-box; 
             z-index:10; 
+
             h1{
                border-bottom:1px solid #666; 
                padding-bottom:30px;  
@@ -379,7 +380,8 @@
 #footer_sub{
     width:100%; 
     padding:100px 0; 
-    background:#ebdddd;  
+    // border-top: 1px solid #ccc;
+    background:#f3e8e8;  
 
     .inner{
         width:1180px; 

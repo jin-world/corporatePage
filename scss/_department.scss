@@ -7,6 +7,8 @@
     }
 
     .inner {
+        min-height: 0px;
+
         img {
             width: 100%;
             height: 100%;
@@ -15,10 +17,182 @@
         }
     }
 
+    .contentTxt_wrap {
+        width: 75%;
+        // height: 360px;
+        background: #fef7f4;
+        // position: relative;
+        padding: 80px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+
+        .conTxt {
+            
+            // position: absolute;
+            // top: 50%;
+            // transform: translateY(-50%);
+            // left: 360px;
+            
+            position: relative;
+            
+            /*
+            &::after {
+                content: "01";
+                font: 100px/1 "Open Sansl";
+                color: #eeee;
+                z-index: -1;
+                position: absolute;
+                top: 0;
+
+            }
+            */
+
+            h2 {
+                font: 800 22px/1 "Nanum Myeongjo";
+                color: #333;
+                margin-bottom: 30px;
+                
+                &::before {
+                    content: "+";
+                    display: block;
+                    widtH: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    background: #fff;
+                    box-shadow: 2px 2px 8px 2px rgba(83, 83, 83, 0.1);
+                    text-align: center;
+                    font: 200 26px/49px "Open Sansl";
+                    color: #333;
+                    margin-bottom: 20px;
+                }
+
+                &:hover { color: #f3aeae; cursor: pointer;}
+            }
+
+            p {
+                font: 14px/1.5 "Open Sansl";
+                color: #aaa;
+                padding: 0px -20px;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    border: 0px solid #111;
+                    width: 30%;
+                    height: 0.5px;
+                    background: #666;
+                }
+            }
+
+            span {
+                font: 800 140px/1 "Nanum Myeongjo";
+                color: rgba(246, 209, 209, 0.2);
+                position: absolute;
+                top: 50px;
+                left: 100px;
+            }
+        }
+    }
+
     .mainwrap {
         width: 100%;
         height: 700px;
-        background: #eee;
+        // background: #eee;
+        margin-top: 180px;
+        padding: 40px;
+        box-sizing: border-box;
+        position: relative;
+
+        .mem_main {
+            width: 1180px;
+            margin: 0px auto;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%,-50%);
+
+            &::after { content: ""; display: block; clear: both; }
+
+            .Member_left {
+                float: left;
+                width: 19%;
+                height: 290px;
+                margin-right: 20px;
+                // border: 1px solid #ccc;
+                // transition: 0.5s;
+                // background:#ffe8dc;
+                background: #444;
+
+                // &:hover {background: #444;}
+
+                .memtit {
+                    padding: 26px;
+                    box-sizing: border-box;
+
+                    span {
+                        display: inline-block;
+                        font: 11px/1 "Open Sansl";
+                        color: #888;
+                        margin-bottom: 12px;
+                    }
+    
+                    p {
+                        font: 600 15px/1.8 "Open Sansl";
+                        color: #ccc;
+                    }
+                }
+            }
+
+            .Member_right {
+                float: right;
+                width: 75%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                article {
+                    width: 26%;
+                    height: 220px;
+                    background: #e2e4e3;
+                    margin-bottom: 50px;
+                    position: relative;
+                    
+                    .pic {
+
+                    }
+
+                    .txt {
+                        display: inline-block;
+                        position: absolute;
+                        bottom: 0;
+                        left: -10px;
+                        transform-origin: bottom left;
+                        transform: rotate(-90deg);
+
+                        h3 {
+                            font: 800 16px/1 "Nanum Myeongjo";
+                            color: #333;
+
+                            &::after {
+                                content: " / Web Designer";
+                                display: inline-block;
+                                font: 11px/1 "Open Sansl";
+                                color: #999;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    /*
+    .mainwrap {
+        width: 100%;
+        height: 700px;
+        // background: #eee;
         padding: 40px;
         box-sizing: border-box;
         position: relative;
@@ -53,12 +227,18 @@
                 article {
                     width: 180px;
                     height: 220px;
-                    background: #aaa;
+                    background: #ddd;
                     margin-bottom: 50px;
+
+                    h2 {
+                        font: 12px/1 "arial";
+                        color: #555;
+                    }
                 }
             }
         }
     }
+    */
 }
 
 /* tablet ------------------------------ */
