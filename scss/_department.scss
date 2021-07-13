@@ -14,6 +14,51 @@
             opacity: 0.8;
         }
     }
+
+    .mainwrap {
+        width: 100%;
+        height: 700px;
+        background: #eee;
+        padding: 40px;
+        box-sizing: border-box;
+        position: relative;
+
+        .mem_main {
+            width: 1180px;
+            margin: 0px auto;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%,-50%);
+
+            &::after { content: ""; display: block; clear: both; }
+
+            .Member_left {
+                float: left;
+                width: 20%;
+                height: 320px;
+                margin-right: 20px;
+                background:#cf9999;
+            }
+
+            .Member_right {
+                float: right;
+                width: 75%;
+                // height: 400px;
+                // background: #333;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                article {
+                    width: 180px;
+                    height: 220px;
+                    background: #aaa;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
 }
 
 /* tablet ------------------------------ */

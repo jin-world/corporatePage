@@ -473,6 +473,41 @@ input, a, img, span, label, select {
   height: 100%;
   object-fit: cover;
   opacity: 0.8; }
+.department .mainwrap {
+  width: 100%;
+  height: 700px;
+  background: #eee;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative; }
+  .department .mainwrap .mem_main {
+    width: 1180px;
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%); }
+    .department .mainwrap .mem_main::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .department .mainwrap .mem_main .Member_left {
+      float: left;
+      width: 20%;
+      height: 320px;
+      margin-right: 20px;
+      background: #cf9999; }
+    .department .mainwrap .mem_main .Member_right {
+      float: right;
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .department .mainwrap .mem_main .Member_right article {
+        width: 180px;
+        height: 220px;
+        background: #aaa;
+        margin-bottom: 50px; }
 
 /* tablet ------------------------------ */
 /* mobile ---------------------------------- */
