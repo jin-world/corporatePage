@@ -19,38 +19,18 @@
 
     .contentTxt_wrap {
         width: 75%;
-        // height: 360px;
-        background: #fef7f4;
-        // position: relative;
+        background: #fafafa; //fef7f4
         padding: 80px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-evenly;
 
         .conTxt {
-            
-            // position: absolute;
-            // top: 50%;
-            // transform: translateY(-50%);
-            // left: 360px;
-            
             position: relative;
             
-            /*
-            &::after {
-                content: "01";
-                font: 100px/1 "Open Sansl";
-                color: #eeee;
-                z-index: -1;
-                position: absolute;
-                top: 0;
-
-            }
-            */
-
             h2 {
                 font: 800 22px/1 "Nanum Myeongjo";
-                color: #333;
+                color: #676767;
                 margin-bottom: 30px;
                 
                 &::before {
@@ -63,17 +43,16 @@
                     box-shadow: 2px 2px 8px 2px rgba(83, 83, 83, 0.1);
                     text-align: center;
                     font: 200 26px/49px "Open Sansl";
-                    color: #333;
+                    color: #444;
                     margin-bottom: 20px;
                 }
 
-                &:hover { color: #f3aeae; cursor: pointer;}
+                &:hover { color: #000; cursor: pointer;} //f3aeae
             }
 
             p {
                 font: 14px/1.5 "Open Sansl";
                 color: #aaa;
-                padding: 0px -20px;
 
                 &::before {
                     content: "";
@@ -82,12 +61,13 @@
                     width: 30%;
                     height: 0.5px;
                     background: #666;
+                    margin-bottom: 10px;
                 }
             }
 
             span {
                 font: 800 140px/1 "Nanum Myeongjo";
-                color: rgba(246, 209, 209, 0.2);
+                color: rgba(214, 214, 214, 0.2);
                 position: absolute;
                 top: 50px;
                 left: 100px;
@@ -120,11 +100,7 @@
                 height: 290px;
                 margin-right: 20px;
                 // border: 1px solid #ccc;
-                // transition: 0.5s;
-                // background:#ffe8dc;
                 background: #444;
-
-                // &:hover {background: #444;}
 
                 .memtit {
                     padding: 26px;

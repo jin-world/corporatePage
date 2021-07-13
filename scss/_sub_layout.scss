@@ -88,7 +88,7 @@
                         transition:all 0.5s;
 
                         &:hover{
-                            color:#ca6262;
+                            color:#000; //ca6262
                         } 
                     }
                     
@@ -165,7 +165,7 @@
 
                                 .boxbtn {
                                     height: 220px;
-                                    background: #cfb5b5;
+                                    background: #444; //cfb5b5
                                     padding: 16px;
                                     box-sizing: border-box;
                                     position: absolute;
@@ -380,8 +380,8 @@
 #footer_sub{
     width:100%; 
     padding:100px 0; 
-    // border-top: 1px solid #ccc;
-    background:#f3e8e8;  
+    border-top: 1px solid #ddd;
+    // background:#fef7f4; //f3e8e8 , fef7f4
 
     .inner{
         width:1180px; 

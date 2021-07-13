@@ -115,7 +115,7 @@ body { widtH: 100%; overflow-x: hidden; }
                         transition:all 0.5s;
 
                         &:hover{
-                            color:#ca6262;
+                            color:#000;
                         } 
                     }
                     
@@ -192,7 +192,7 @@ body { widtH: 100%; overflow-x: hidden; }
 
                                 .boxbtn {
                                     height: 220px;
-                                    background: #cfb5b5;
+                                    background: #444;
                                     padding: 16px;
                                     box-sizing: border-box;
                                     position: absolute;
@@ -347,7 +347,7 @@ body { widtH: 100%; overflow-x: hidden; }
 #visual{
     width:100%; 
     height:calc(100vh - 121px); 
-    background:#fff; 
+    background:#ddd; 
     position:relative; 
     overflow:hidden;         
 }
@@ -357,7 +357,8 @@ body { widtH: 100%; overflow-x: hidden; }
 #footer{
     width:100%; 
     padding:100px 0; 
-    background:#f3e8e8;  
+    border-top: 1px solid #ddd;
+    // background:#fef7f4;  
 
     .inner{
         width:1180px; 

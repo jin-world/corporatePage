@@ -92,7 +92,7 @@ input, a, img, span, label, select {
           color: #777;
           transition: all 0.5s; }
           #header_sub .inner .menuWeb #gnb > li > a:hover {
-            color: #ca6262; }
+            color: #000; }
         #header_sub .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
@@ -152,7 +152,7 @@ input, a, img, span, label, select {
                 object-fit: cover; }
               #header_sub .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
                 height: 220px;
-                background: #cfb5b5;
+                background: #444;
                 padding: 16px;
                 box-sizing: border-box;
                 position: absolute;
@@ -312,7 +312,7 @@ input, a, img, span, label, select {
 #footer_sub {
   width: 100%;
   padding: 100px 0;
-  background: #f3e8e8; }
+  border-top: 1px solid #ddd; }
   #footer_sub .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -529,27 +529,16 @@ input, a, img, span, label, select {
       opacity: 0.8; }
   .department .contentTxt_wrap {
     width: 75%;
-    background: #fef7f4;
+    background: #fafafa;
     padding: 80px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly; }
     .department .contentTxt_wrap .conTxt {
-      position: relative;
-            /*
-            &::after {
-                content: "01";
-                font: 100px/1 "Open Sansl";
-                color: #eeee;
-                z-index: -1;
-                position: absolute;
-                top: 0;
-
-            }
-            */ }
+      position: relative; }
       .department .contentTxt_wrap .conTxt h2 {
         font: 800 22px/1 "Nanum Myeongjo";
-        color: #333;
+        color: #676767;
         margin-bottom: 30px; }
         .department .contentTxt_wrap .conTxt h2::before {
           content: "+";
@@ -561,25 +550,25 @@ input, a, img, span, label, select {
           box-shadow: 2px 2px 8px 2px rgba(83, 83, 83, 0.1);
           text-align: center;
           font: 200 26px/49px "Open Sansl";
-          color: #333;
+          color: #444;
           margin-bottom: 20px; }
         .department .contentTxt_wrap .conTxt h2:hover {
-          color: #f3aeae;
+          color: #000;
           cursor: pointer; }
       .department .contentTxt_wrap .conTxt p {
         font: 14px/1.5 "Open Sansl";
-        color: #aaa;
-        padding: 0px -20px; }
+        color: #aaa; }
         .department .contentTxt_wrap .conTxt p::before {
           content: "";
           display: block;
           border: 0px solid #111;
           width: 30%;
           height: 0.5px;
-          background: #666; }
+          background: #666;
+          margin-bottom: 10px; }
       .department .contentTxt_wrap .conTxt span {
         font: 800 140px/1 "Nanum Myeongjo";
-        color: rgba(246, 209, 209, 0.2);
+        color: rgba(214, 214, 214, 0.2);
         position: absolute;
         top: 50px;
         left: 100px; }
@@ -1073,7 +1062,7 @@ body {
           color: #777;
           transition: all 0.5s; }
           #header .inner .menuWeb #gnb > li > a:hover {
-            color: #ca6262; }
+            color: #000; }
         #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
@@ -1133,7 +1122,7 @@ body {
                 object-fit: cover; }
               #header .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
                 height: 220px;
-                background: #cfb5b5;
+                background: #444;
                 padding: 16px;
                 box-sizing: border-box;
                 position: absolute;
@@ -1249,7 +1238,7 @@ body {
 #visual {
   width: 100%;
   height: calc(100vh - 121px);
-  background: #fff;
+  background: #ddd;
   position: relative;
   overflow: hidden; }
 
@@ -1257,7 +1246,7 @@ body {
 #footer {
   width: 100%;
   padding: 100px 0;
-  background: #f3e8e8; }
+  border-top: 1px solid #ddd; }
   #footer .inner {
     width: 1180px;
     margin: 0 auto; }
