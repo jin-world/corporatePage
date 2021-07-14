@@ -5,7 +5,7 @@ $.ajax({
     data:{
         part:"snippet", 
         key:"AIzaSyCIOLOSoIBpxFer_M-SmkVr3F0gwnyhnO4", //api키값 
-        maxResults : 9, //호출 갯수 
+        maxResults : 10, //호출 갯수 
         playlistId: "PLg1VhWIXYL_lPOvXi-I2So7fZ0CymaqHf" // 플레이리스트 아이디 
     }
 })
@@ -20,9 +20,19 @@ $.ajax({
         console.log(data);
 
         var title = data.snippet.title;
-        if(title.length > 30) {
-            title = title.substr(0,30)+"...";
+        if(title.length > 59) {
+            title = title.substr(0,59)+"...";
         }
+
+        var con = data.snippet.description;
+        if(con.length >90){
+            con = con.substr(0,90)+"...";
+        } 
+
+        /*
+        var date = data.snippet.publishedAt;
+        date = date.split("T")[0];
+        */
 
         //빈 문자열에 계속해서 아래 문자코드를 중첩해서 더함
         result += `
@@ -32,6 +42,7 @@ $.ajax({
             </a>
             <div class="con">
                 <h2>${title}</h2>
+                <p>${con}</p>
             </div>
             </article>
         `;
@@ -55,8 +66,8 @@ $("body").on("click",".vidList article",function(e){
             src: "https://www.youtube.com/embed/"+vidSrc,
             frameborder: 0,
             allowfullscreen: false,
-            width: "90%",
-            height: "90%"
+            width: "75%",
+            height: "75%"
         })
     );
 });

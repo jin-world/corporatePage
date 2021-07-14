@@ -94,7 +94,7 @@ body { widtH: 100%; overflow-x: hidden; }
         .menuWeb{
             #gnb{
                 position:absolute;
-                bottom:14px; 
+                bottom:0px; 
                 right:0; 
                 
                 &::after{
@@ -108,7 +108,7 @@ body { widtH: 100%; overflow-x: hidden; }
 
                     >a{
                         display:block; 
-                        padding:0px 40px; 
+                        padding:14px 40px; 
                         height: 42px;
                         font: 600 14px/42px 'Nanum Myeongjo'; 
                         color:#777; 
@@ -121,7 +121,7 @@ body { widtH: 100%; overflow-x: hidden; }
                     
                     .sub {
                         width: 1180px; height: 300px; position: absolute;
-                        top: 56px; right: 0px;
+                        top: 70px; right: 0px;
                         display: none;
 
                         .left {

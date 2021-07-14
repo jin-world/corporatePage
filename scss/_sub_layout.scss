@@ -68,7 +68,7 @@
         .menuWeb{
             #gnb{
                 position:absolute;
-                bottom:14px; 
+                bottom:0px; 
                 right:0; 
                 
                 &::after{
@@ -76,25 +76,26 @@
                     display:block; 
                     clear:both; 
                 }
+
                 >li{
                     float:left; 
 
                     >a{
                         display:block; 
-                        padding:0px 40px; 
+                        padding:14px 40px; 
                         height: 42px;
                         font: 600 14px/42px 'Nanum Myeongjo'; 
                         color:#777; 
                         transition:all 0.5s;
 
                         &:hover{
-                            color:#000; //ca6262
+                            color:#000;
                         } 
                     }
                     
                     .sub {
                         width: 1180px; height: 300px; position: absolute;
-                        top: 56px; right: 0px;
+                        top: 70px; right: 0px;
                         display: none;
 
                         .left {
@@ -165,7 +166,7 @@
 
                                 .boxbtn {
                                     height: 220px;
-                                    background: #444; //cfb5b5
+                                    background: #444;
                                     padding: 16px;
                                     box-sizing: border-box;
                                     position: absolute;
@@ -178,6 +179,7 @@
                                             font-size: 16px;
                                             color: #fff;
                                             margin-top: 165px;
+                                            cursor: pointer;
                                         }
                                     }
                                 }
@@ -320,7 +322,7 @@
     width:100%; padding:0px 0px 150px; 
 
     .sub_visual{
-       width:100%; height: 280px; 
+       width:100%; height: 340px; 
        background:#ddd; 
        margin-bottom:100px; 
        position: relative;
@@ -337,14 +339,40 @@
         }
 
        h1 {
-        font: bold 24px/1 "Nanum Myeongjo";
+        font: 600 30px/1 "Nanum Myeongjo";
         color: #fff;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 1;
+        letter-spacing: 2px;
 
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 170px;
+            height: 1px;
+            background-color: currentColor;
+            opacity: 0.4;
+            position: absolute;
+            top: 50%;
+            left: 160%;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 170px;
+            height: 1px;
+            background-color: currentColor;
+            opacity: 0.4;
+            position: absolute;
+            top: 50%;
+            left: -160%;
+        }
+
+        /*
         span{
             font: 600 16px/1 'Nanum Myeongjo'; 
             color:#eee; 
@@ -355,6 +383,7 @@
                 margin-left:10px; 
             }
         }
+        */
         }
     }
 
@@ -364,14 +393,22 @@
         min-height:500px; 
 
         .subtit {
-            font: bold 22px/1 "Nanum Myeongjo";
-            color: #555;
-            margin-bottom: 50px;
+            font: 800 28px/1.2 "Nanum Myeongjo";
+            color: #525252;
+            margin-bottom: 45px;
+        }
+
+        .txt_subcont {
+            >p {
+                font: 13px/1.4 "Open Sans";
+                color: #888;
+                margin-bottom: 55px;
+            }
         }
     
         >p {
-            font: 13px/2 "Nanum Myeongjo";
-            color: #aaa;
+            font: 14px/2 "Nanum Myeongjo";
+            color: #c9ab81;
         }
     }
 }

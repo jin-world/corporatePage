@@ -6,15 +6,80 @@
         position: relative;
     }
 
+    .txt_subcont {
+        p {
+            margin-bottom: 70px !important;
+        }
+    }
+
+    .faq {
+        margin-bottom: 100px;
+
+        &::after { content: ""; display: block; clear: both; }
+
+        .faq_left {
+            width: 25%;
+            height: 440px;
+            float: left;
+            background: #ccc;
+            margin-right: 36px;
+
+            .picImg {
+                width: 100%;
+                height: 100%;
+                background: url("../img/communityImg2.jpg") no-repeat center/cover;
+                filter: saturate(10%);
+            }
+        }
+
+        .faq_right {
+            width: 71.9%;
+            float: left;
+
+            dt {
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+                font: 600 20px/1 'Nanum Myeongjo';
+                color: #777;
+                border-bottom: 1px solid #ddd;
+                cursor: pointer;
+                transition: 0.5s;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    right: 0;
+                    font: 25px/1 "Open Sans";
+                    color: #666;
+                }
+            }
+
+            dd {
+                width: 100%;
+                padding: 20px;
+                padding-left: 120px;
+                box-sizing: border-box;
+                font: 14px/1.5 'Nanum Myeongjo';
+                color: #888;
+                display: none;
+        
+                &:nth-of-type(1) {
+                    display: block;
+                }
+            }
+        }
+    }
+
     table {
         width: 100%;
-        border-bottom: 2px solid #ddd;
+        // border-bottom: 1px solid #888;
 
         th {
-            border-bottom: 2px solid #ddd;
-            padding: 30px;
-            color: #444;
-            font: bold 16px/1 "Open Sans";
+            border-bottom: 1px solid #888;
+            padding: 20px 30px;
+            color: #666;
+            font: 800 16px/1 "Nanum Myeongjo";
 
             &:nth-of-type(1) { width: 10%; }
             &:nth-of-type(2) { width: 60%; }
@@ -24,14 +89,16 @@
 
         td {
             padding: 30px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #ccc;
+            background: #f8f8f8;
             text-align: center;
             font: 400 15px/1 "Open Sans";
+            color: #555;
 
             &:nth-of-type(2) { text-align: left; }
 
-            a:link {
-                color: #444;
+            a:link, a:visited {
+                color: #555;
             }
         }
 
@@ -75,6 +142,9 @@
             text-align: center;
             box-sizing: border-box;
             vertical-align: bottom;
+            transition: 0.5s;
+
+            &:hover { background: #333; color: #fff; border: 0px;}
         }
 
         .next {
@@ -87,6 +157,9 @@
             text-align: center;
             box-sizing: border-box;
             vertical-align: bottom;
+            transition: 0.5s;
+
+            &:hover { background: #333; color: #fff; border: 0px;}
         }
 
     }
