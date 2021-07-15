@@ -1,9 +1,22 @@
 @charset 'utf-8'; 
 
 .join {
+    padding: 0px 0px 100px;
+    
     .sub_visual {
         background: url(../img/joinImg5.jpg) no-repeat center/cover;
         position: relative;
+
+        >h1 {
+            &::after {
+                left: 280%;
+            }
+    
+            &::before {
+                left: -350%;
+            }
+    
+            }
     }
 
     .inner {
@@ -11,7 +24,7 @@
             padding: 40px 0px 0px;
 
             h2 {
-                font: 18px/1 "arial";
+                font: 18px/1 "Nanum Myeongjo";
                 color: #666;
                 text-align: left;
                 padding: 0px 0px 20px 0px;
@@ -19,107 +32,77 @@
                 border-bottom: 1px solid #ccc;
             }
 
-            .join_wrap {
-                padding: 24px 0px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-                margin-bottom: 90px;
-
-                .member_wrap {
-                    width: 100%;
-                    tr {
-                        th {
-                            width: 20%;
-                            font: 14px/1 "arial";
-                            color: #111;
-                            vertical-align: top;
-                            padding: 23px 12px 16px;
-                        }
-
-                        >td {
-                            font: 14px/40px "arial";
-                            padding: 16px 20px;
-                            color: #666;
-
-                            input[type=radio] {
-                                margin-right: 10px;
-                                position: relative;
-                                top: -2px;
-                            }
-                            
-                            label {
-                                margin-right: 15px;
-                            }
-
-                            .phone-btn {
-                                display: block;
-                                width: 120px;
-                                height: 40px;
-                                box-sizing: border-box;
-                                border: 1px solid #444;
-                                font: bold 14px/40px "arial";
-                                color: #555;
-                                text-align: center;
-                                margin-top: 10px;
-                            }
-
-                            p {
-                                margin-top: 10px;
-                                font: 12px/1 "arial";
-                                color: #888;
-                            }
-                        }
-                    }
-                }
-            }
-
             .join_main {
                 padding: 24px 0px;
                 text-align: left;
-                border-bottom: 1px solid #ddd;
-                margin-bottom: 90px;
 
                 .member_join {
                     width: 100%;
 
                     tr {
                         th {
-                            width: 20%;
-                            font: 14px/1 "arial";
-                            color: #111;
+                            width: 15%;
+                            font: 800 16px/1 "Nanum Myeongjo";
+                            color: #525252;
                             vertical-align: top;
-                            padding: 23px 12px 16px;
+                            padding: 40px 12px;
                         }
                     }
 
                     td {
-                        width: 80%;
-                        padding: 16px 20px;
-                        color: #666;
+                        width: 100%;
+                        color: #525252;
 
                         input[type=text],
                         input[type=password] {
-                            width: 45%;
-                            height: 30px;
+                            width: 100%;
+                            height: 60px;
                             border: 1px solid #ddd;
-                            padding-left: 14px;
+                            background: #f6f6f6;
+                            border-radius: 4px;
+                            padding-left: 30px;
+                            box-sizing: border-box;
 
                             &.error {
                                 border: 1px solid orangered; background: #fff0f0;
                             }
                         }
 
+                        input[type=checkbox] {
+                            margin-right: 10px;
+                        }
+
+                        label { margin-right: 30px; }
+
                         select {
-                            width: 28%;
+                            width: 100%;
                             border: 1px solid #ddd;
-                            padding: 7px 10px;
+                            padding: 18px 10px;
                             box-sizing: border-box;
+                            margin-top: 10px;
+                            padding-left: 30px;
     
                             option {
                                 font-size: 14px;
                             }
                         }
                         
+                        textarea {
+                            width: 100%;
+                            height: 280px;
+                            resize: none;
+                            box-sizing: border-box;
+                            border: 1px solid #ddd;
+                            padding: 30px;
+                            background: #f5f5f5;
+                            font: 500 14px/2 "Open Sans";
+                            color: #525252;
+                            margin-bottom: 6px;
+        
+                            &.error {
+                                border: 1px solid orangered; background: #fff0f0;
+                            }
+                        }
 
                         #phone-number2, #phone-number3,
                         #birth, #birth-mon, #birth-day {
@@ -135,17 +118,35 @@
 
                         >p {
                             margin-top: 10px;
-                            font: 12px/1 "arial";
+                            font: 400 12px/1 "Open Sans";
                             color: orangered;
                             display: none;
                             
                             &.error { display: block; }
+                        }
+
+                        input[type=submit] {
+                            text-align: center;
+                            font: 800 14px/40px "Open Sans";
+                            color: #fff;
+                            width: 100%; height: 55px;
+                            margin: 0 auto;
+                            cursor: pointer;
+                            border: 0px;
+                            background: #333;
+                            transition: 0.6s;
+        
+                            &:hover {
+                                color: #ccc;
+                            }
                         }
                     }
                 }
             }
 
             .agree_wrap {
+                margin-bottom: 40px;
+
                 &::after {
                     content: "";
                     display: block;
@@ -153,8 +154,8 @@
                 }
         
                 .agree_tit {
-                    font: normal 16px/1.3 "arial";
-                    color: #222;
+                    font: normal 16px/1.3 "Nanum Myeongjo";
+                    color: #333;
                     border-bottom: none;
                     letter-spacing: -1px;
                     float: left;
@@ -166,8 +167,8 @@
             
                 .agreement {
                     float: right;
-                    font: 12px/1 "arial";
-                    color: #222;
+                    font: 500 13px/1 "Open Sans";
+                    color: #525252;
         
                     input[type=checkbox] {
                         width: 14px;
@@ -177,42 +178,18 @@
             
                 textarea {
                     width: 100%;
-                    height: 130px;
+                    height: 150px;
                     resize: none;
                     box-sizing: border-box;
                     padding: 30px;
                     background: #f5f5f5;
                     border: none;
-                    font: 14px/1.8 "arial";
-                    color: #555;
+                    font: 500 14px/2 "Open Sans";
+                    color: #525252;
                     margin-bottom: 6px;
 
                     &.error {
                         border: 1px solid orangered; background: #fff0f0;
-                    }
-                }
-            }
-
-            .btn {
-                margin: 0px auto;
-                text-align: center;
-                margin-top: 90px;
-                margin-bottom: 100px;
-
-                input[type=reset], input[type=submit] {
-                    text-align: center;
-                    font: bold 14px/40px "arial";
-                    color: #eee;
-                    width: 20%; height: 40px;
-                    margin: 0px 10px;
-                    cursor: pointer;
-                    border: 0px;
-                    background: #aaa;
-                    transition: 0.6s;
-
-                    &:hover {
-                        background: #333;
-                        color: #fff;
                     }
                 }
             }

@@ -381,66 +381,42 @@
 
 	<div class="inner">
 		<p>Lorem, ipsum</p>
-        <h2 class="subtit">Lorem ipsum dolor sit</h2>
+        <h2 class="subtit">JOIN PAGE</h2>
+
+		<div class="txt_subcont">
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quasi aliquam enim <br>tempore maiores est asperiores laborum unde similique harum nobis quo nihil <br>sunt voluptas, quisquam eligendi. Quam, omnis. Quis tempore facere aliquid odit eius</p>
+		</div>
 
 		<form action="result.html" method="get">
 			<fieldset>
 				<legend class="hidden">MEMBERSHIP</legend>
 
-				<h2>MEMBER CHOICE</h2>
-				<div class="join_wrap">
-					<table class="member_wrap" summary="회원구분, 회원인증 입력양식폼">
-						<caption class="hidden">회원선택</caption>
-						<tbody>
-							<tr>
-								<th scope="row">
-									<label for="memtiti">회원구분</label>
-								</th>
-								<td>
-									<label for="member1">
-										<input type="radio" name="member_type" id="member1" value="member1" checked>개인회원
-									</label>
+				<div class="agree_wrap">
+					<h2 class="agree_tit">이용약관</h2>
 
-									<label for="member2">
-										<input type="radio" name="member_type" id="member2" value="member2">사업자회원
-									</label>
+					<textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt inventore quibusdam corrupti at similique. Consequatur explicabo iure placeat sapiente nobis nisi fugiat qui aliquid facere dolorum et amet maxime voluptatibus accusantium, praesentium magnam ullam nesciunt doloribus minima dolores dolorem facilis earum. Neque, optio iste obcaecati maxime animi ut nihil mollitia cum labore adipisci ea, voluptatem illum eos facilis esse nemo error eum odit! Repudiandae aliquid nostrum commodi corporis ullam temporibus id quod et eveniet sed illo aspernatur vero deserunt, veniam nesciunt optio doloribus, molestiae fugit cum amet earum at, dicta rem quo. Ea, facere possimus quidem cupiditate dolorum rem laborum consectetur necessitatibus iste perspiciatis laboriosam quo minus voluptas aut illum porro veritatis saepe sequi, sit tempore iusto quibusdam velit repellendus atque? Totam illum eaque excepturi eveniet commodi eos, eius aliquam officiis! Perspiciatis facilis officiis ducimus eius natus. Mollitia labore blanditiis veniam delectus distinctio nisi itaque quia, eaque iste consequuntur odio quisquam excepturi voluptatem architecto sit. Maxime maiores, corrupti perspiciatis velit, rem praesentium explicabo, hic quos reprehenderit obcaecati suscipit delectus optio. Eius omnis magnam, sint corrupti fugit maiores facere maxime vel, perspiciatis tempora assumenda soluta, quam repellendus voluptates enim minima pariatur rem perferendis unde nemo quaerat eaque porro adipisci. Adipisci, molestias!
+					</textarea>
 
-									<label for="member3">
-										<input type="radio" name="member_type" id="member3" value="member3">외국인회원(foreigner)
-									</label>
-								</td>
-							</tr>
-
-							<tr>
-								<th scope="row">
-									<label for="cer_cation">회원인증</label>
-								</th>
-								<td>
-									<label for="personal_type">
-										<input type="radio" name="personal_type" id="personal_type" value="personal_type" checked>휴대폰인증
-									</label>
-									<a href="#" class="phone-btn">휴대폰인증</a>
-									<p class="txt">본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="agreement">
+						<input type="checkbox" name="agree2" id="agree2">
+						<label for="agree2">이용약관에 동의합니다.</label>
+					</div>
 				</div>
 
-				<h2>MEMBER INFORMATION</h2>
+				<!-- <h2>MEMBER INFORMATION</h2> -->
 				<div class="join_main">
 					<table class="member_join" summary="아이디, 비밀번호, 이름, 성별, 이메일 회원 입력양식폼">
 						<caption class="hidden">회원가입 인증 테이블</caption>
 						<tbody>
 							<tr>
-								<th scope="row"><label for="userid">아이디</label></th>
+								<th scope="row"><label for="userid">USER ID</label></th>
 								<td>
 									<input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
 									<p>아이디는 5글자 입력해주세요</p>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="pwd1">비밀번호</label></th>
+								<th scope="row"><label for="pwd1">PASSWORD</label></th>
 								<td>
 									<input type="password" name="pwd1" id="pwd2" placeholder="비밀번호를 입력하세요">
 									<p>비밀번호를 2개 모두 입력하세요</p>
@@ -452,13 +428,13 @@
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="pwd2">비밀번호 확인</label></th>
+								<th scope="row"><label for="pwd2">RE PASSWORD</label></th>
 								<td>
 									<input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재 입력하세요">
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="email">이메일</label></th>
+								<th scope="row"><label for="email">E-MAIL</label></th>
 								<td>
 									<input type="text" name="email1" id="email1" placeholder="이메일 아이디를 입력하세요.">
 									<label for="email2" class="hidden">메일 서비스계정을 선택하세요</label>
@@ -472,37 +448,55 @@
 									<p>이메일 서비스 선택하세요</p>
 								</td>
 							</tr>
+							<tr>
+								<th scope="row">INTERESTES</th>
+								<td>
+									<input type="checkbox" name="hobby" value="pcWeb" id="pcWeb">
+									<label for="pcWeb">PC웹</label>
+
+									<input type="checkbox" name="hobby" value="mobileWeb" id="mobileWeb">
+									<label for="mobileWeb">모바일웹</label>
+
+									<input type="checkbox" name="hobby" value="responsiveWeb" id="responsiveWeb">
+									<label for="responsiveWeb">반응형웹</label>
+
+									<input type="checkbox" name="hobby" value="mobileap" id="mobileap">
+									<label for="mobileap">모바일앱</label>
+
+									<input type="checkbox" name="hobby" value="tvuiux" id="tvuiux">
+									<label for="tvuiux">TV UI/UX</label>
+
+									<input type="checkbox" name="hobby" value="marketing" id="marketing">
+									<label for="marketing">소셜마케팅</label>
+
+									<input type="checkbox" name="hobby" value="infographic" id="infographic">
+									<label for="infographic">인포그래픽</label>
+									
+									<input type="checkbox" name="hobby" value="etc" id="etc">
+									<label for="etc">기타</label>
+									<p>관심있는 서비스를 선택해주세요.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<label for="comments">LEAVE MESSEGE</label>
+								</th>
+								<td>
+									<textarea name="comments" id="comments" cols="30" rows="10" placeholder="문의 내용을 입력하세요."></textarea>
+									<p>문의 내용을 입력하세요.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<th></th>
+								<td><input type="submit" value="CONFIRM"></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 
-				<div class="agree_wrap">
-					<h2 class="agree_tit">[필수] 이용약관</h2>
+				<!-- <article class="btn"></article> -->
 
-					<textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt inventore quibusdam corrupti at similique. Consequatur explicabo iure placeat sapiente nobis nisi fugiat qui aliquid facere dolorum et amet maxime voluptatibus accusantium, praesentium magnam ullam nesciunt doloribus minima dolores dolorem facilis earum. Neque, optio iste obcaecati maxime animi ut nihil mollitia cum labore adipisci ea, voluptatem illum eos facilis esse nemo error eum odit! Repudiandae aliquid nostrum commodi corporis ullam temporibus id quod et eveniet sed illo aspernatur vero deserunt, veniam nesciunt optio doloribus, molestiae fugit cum amet earum at, dicta rem quo. Ea, facere possimus quidem cupiditate dolorum rem laborum consectetur necessitatibus iste perspiciatis laboriosam quo minus voluptas aut illum porro veritatis saepe sequi, sit tempore iusto quibusdam velit repellendus atque? Totam illum eaque excepturi eveniet commodi eos, eius aliquam officiis! Perspiciatis facilis officiis ducimus eius natus. Mollitia labore blanditiis veniam delectus distinctio nisi itaque quia, eaque iste consequuntur odio quisquam excepturi voluptatem architecto sit. Maxime maiores, corrupti perspiciatis velit, rem praesentium explicabo, hic quos reprehenderit obcaecati suscipit delectus optio. Eius omnis magnam, sint corrupti fugit maiores facere maxime vel, perspiciatis tempora assumenda soluta, quam repellendus voluptates enim minima pariatur rem perferendis unde nemo quaerat eaque porro adipisci. Adipisci, molestias!
-					</textarea>
-
-					<div class="agreement">
-						<input type="checkbox" name="agree2" id="agree2">
-						<label for="agree2">이용약관에 동의합니다.</label>
-					</div>
-
-					<!-- 개인정보 수집 및 이용동의 -->
-					<h2 class="agree_tit">[필수] 개인정보 수집 및 이용 동의</h2>
-
-					<textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt inventore quibusdam corrupti at similique. Consequatur explicabo iure placeat sapiente nobis nisi fugiat qui aliquid facere dolorum et amet maxime voluptatibus accusantium, praesentium magnam ullam nesciunt doloribus minima dolores dolorem facilis earum. Neque, optio iste obcaecati maxime animi ut nihil mollitia cum labore adipisci ea, voluptatem illum eos facilis esse nemo error eum odit! Repudiandae aliquid nostrum commodi corporis ullam temporibus id quod et eveniet sed illo aspernatur vero deserunt, veniam nesciunt optio doloribus, molestiae fugit cum amet earum at, dicta rem quo. Ea, facere possimus quidem cupiditate dolorum rem laborum consectetur necessitatibus iste perspiciatis laboriosam quo minus voluptas aut illum porro veritatis saepe sequi, sit tempore iusto quibusdam velit repellendus atque? Totam illum eaque excepturi eveniet commodi eos, eius aliquam officiis! Perspiciatis facilis officiis ducimus eius natus. Mollitia labore blanditiis veniam delectus distinctio nisi itaque quia, eaque iste consequuntur odio quisquam excepturi voluptatem architecto sit. Maxime maiores, corrupti perspiciatis velit, rem praesentium explicabo, hic quos reprehenderit obcaecati suscipit delectus optio. Eius omnis magnam, sint corrupti fugit maiores facere maxime vel, perspiciatis tempora assumenda soluta, quam repellendus voluptates enim minima pariatur rem perferendis unde nemo quaerat eaque porro adipisci. Adipisci, molestias!
-					</textarea>
-
-					<div class="agreement">
-						<input type="checkbox" name="agree2" id="agree2">
-						<label for="agree2">개인정보 수집 및 이용에 동의합니다.</label>
-					</div>
-				</div>
-
-				<article class="btn">
-					<input type="reset" value="CANCEL">
-					<input type="submit" value="가입하기">
-				</article>
 			</fieldset>
 		</form>
 	</div>
