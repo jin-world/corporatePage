@@ -37,7 +37,6 @@
             float: left;
             padding: 0px 16px;
             box-sizing: border-box;
-            border-right: 1px solid #ddd;
             margin-bottom: 50px;
     
             &:nth-last-child(1), &:nth-last-child(5),
@@ -59,6 +58,7 @@
                         height: 100%;
                         object-fit: cover;
                         transition: 1s;
+                        filter: brightness(0.9) saturate(80%);
 
                         &:hover{
                             transform: scale(1.2);
