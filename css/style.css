@@ -915,7 +915,7 @@ input, a, img, span, label, select {
           .gallery #gallery article .inner .pic img:hover {
             transform: scale(1.2); }
       .gallery #gallery article .inner h2 {
-        font: 20px/1 "Open Sans";
+        font: 16px/1 "Open Sans";
         color: #666;
         padding: 20px 0px;
         box-sizing: border-box;
