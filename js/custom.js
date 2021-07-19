@@ -35,3 +35,38 @@ $gnb_li.each(function(index){
         $gnb_li.eq(index).find(".sub").hide();
     });
 })
+
+
+//메인 슬라이더
+const swiper = new Swiper("#Section01", {
+    effect: "coverflow",
+    loop: true,
+    direction:'horizontal',
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50, //슬라이드 회전각
+      stretch: -100, //슬라이더간 거리
+      depth: 180, //깊이 효과값
+      modifier: 1, //효과 배수
+      slideShadows: false, //슬라이더 그림자
+    },
+    // slidesPerView: 4,
+    
+    pagination: {
+      el: ".swiper-pagination",
+      type:'fraction'
+      // clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  
