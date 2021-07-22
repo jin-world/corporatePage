@@ -38,7 +38,7 @@ $gnb_li.each(function(index){
 
 
 //메인 슬라이더
-const swiper = new Swiper("#Section01", {
+const swiper = new Swiper("#galleryView", {
     effect: "coverflow",
     loop: true,
     direction:'horizontal',
