@@ -30,159 +30,163 @@ input, a, img, span, label, select {
   border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 2; }
-  #header_sub .util_wrap {
-    width: 100%;
-    height: 30px;
-    background: #f5f5f5; }
-    #header_sub .util_wrap .util_main {
-      width: 1180px;
-      margin: 0px auto;
-      position: relative; }
-      #header_sub .util_wrap .util_main .util {
-        position: absolute;
-        right: 26px; }
-        #header_sub .util_wrap .util_main .util::after {
-          content: "";
-          display: block;
-          clear: both; }
-        #header_sub .util_wrap .util_main .util li {
-          float: left; }
-          #header_sub .util_wrap .util_main .util li a {
-            display: block;
-            font: 400 12px/1 'Open Sans';
-            color: #666;
-            padding: 0px 10px;
-            border-right: 1px solid #aaa;
-            margin-top: 7px; }
-          #header_sub .util_wrap .util_main .util li:nth-child(2) a {
-            color: #999; }
-          #header_sub .util_wrap .util_main .util li:last-child a {
-            border-right: none; }
-        #header_sub .util_wrap .util_main .util::after {
-          content: '';
-          display: block;
-          clear: both; }
   #header_sub .inner {
     width: 1180px;
-    height: 120px;
+    height: 100px;
     margin: 0px auto;
     position: relative; }
     #header_sub .inner > h1 {
       position: absolute;
       left: 0;
-      bottom: 19px;
-      letter-spacing: 3px; }
+      bottom: 24px;
+      letter-spacing: 2px; }
       #header_sub .inner > h1 a {
         font: 800 24px/1 'Nanum Myeongjo';
-        color: #444; }
-    #header_sub .inner .menuWeb #gnb {
+        color: #444;
+        border: 1px solid #aaa;
+        padding: 8px 18px;
+        box-sizing: border-box;
+        text-align: center; }
+    #header_sub .inner .menuWeb {
+      width: 78%;
+      height: 100%;
       position: absolute;
-      bottom: 0px;
-      right: 0; }
-      #header_sub .inner .menuWeb #gnb::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #header_sub .inner .menuWeb #gnb > li {
-        float: left; }
-        #header_sub .inner .menuWeb #gnb > li > a {
+      right: 0;
+      bottom: 0; }
+      #header_sub .inner .menuWeb #gnb {
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+        left: 0; }
+        #header_sub .inner .menuWeb #gnb::after {
+          content: '';
           display: block;
-          padding: 14px 40px;
-          height: 42px;
-          font: 600 14px/42px 'Nanum Myeongjo';
-          color: #777;
-          transition: all 0.5s; }
-          #header_sub .inner .menuWeb #gnb > li > a:hover {
-            color: #000; }
-        #header_sub .inner .menuWeb #gnb > li .sub {
-          width: 1180px;
-          height: 300px;
-          position: absolute;
-          top: 70px;
-          right: 0px;
-          display: none; }
-          #header_sub .inner .menuWeb #gnb > li .sub .left {
-            width: 65%;
-            height: 100%;
-            background: #f3f3f3;
-            float: left;
-            padding: 64px;
-            box-sizing: border-box; }
-            #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 {
+          clear: both; }
+        #header_sub .inner .menuWeb #gnb > li {
+          float: left; }
+          #header_sub .inner .menuWeb #gnb > li > a {
+            display: block;
+            padding: 14px 20px;
+            height: 42px;
+            font: 800 14px/42px 'Nanum Myeongjo';
+            color: #555;
+            transition: all 0.5s; }
+            #header_sub .inner .menuWeb #gnb > li > a:hover {
+              color: #000; }
+          #header_sub .inner .menuWeb #gnb > li .sub {
+            width: 1180px;
+            height: 280px;
+            padding: 30px 0px;
+            box-sizing: border-box;
+            background-color: #fff;
+            position: absolute;
+            top: 70px;
+            right: -25%;
+            display: none; }
+            #header_sub .inner .menuWeb #gnb > li .sub .subtxt1, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 {
+              position: relative;
+              float: left;
+              width: 20%;
+              height: 100%; }
+              #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 h2, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 h2 {
+                font: bold 16px/1 "Open Sans";
+                color: #555;
+                border-bottom: 1px solid #888;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                width: 70%; }
+              #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 > ul, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 > ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 > ul li, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 > ul li {
+                  float: left;
+                  padding-bottom: 15px; }
+                  #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 > ul li a, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 > ul li a {
+                    font: 16px/2 "Nanum Myeongjo";
+                    color: #666;
+                    transition: 0.5s; }
+                    #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 > ul li a:hover, #header_sub .inner .menuWeb #gnb > li .sub .subtxt2 > ul li a:hover {
+                      color: #ca6262; }
+            #header_sub .inner .menuWeb #gnb > li .sub .subtxt1 {
+              margin-left: 50px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .subpic {
+              float: right;
+              width: 22%;
+              height: 100%;
+              margin-left: 40px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .subpic:nth-of-type(1) {
+                margin-left: 0px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .subpic h2 {
+                font: 600 16px/1 "Open Sans";
+                color: #777;
+                margin-bottom: 10px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .subpic img {
+                width: 100%;
+                height: 85%;
+                object-fit: cover; }
+            #header_sub .inner .menuWeb #gnb > li .sub::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              display: block;
+              position: absolute;
+              top: 0px;
+              left: 100%;
+              background: #fff; }
+            #header_sub .inner .menuWeb #gnb > li .sub::after {
+              content: "";
+              display: block;
               width: 100%;
               height: 100%;
               position: absolute;
-              top: 0;
-              left: 0;
-              padding: 80px 64px; }
-              #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 h3, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 h3 {
-                font: bold 16px/1 "Open Sans";
-                color: #555;
-                margin-bottom: 20px; }
-              #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul {
-                float: left;
-                padding-right: 34px;
-                box-sizing: border-box; }
-                #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a {
-                  font: 15px/2.4 "Open Sans";
-                  color: #777;
-                  transition: 0.5s; }
-                  #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a:hover, #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a:hover {
-                    color: #ca6262; }
-            #header_sub .inner .menuWeb #gnb > li .sub .left .sub_con3 {
-              left: 480px; }
-          #header_sub .inner .menuWeb #gnb > li .sub .right {
-            width: 35%;
-            height: 100%;
-            background: #f3f3f3;
-            float: right;
-            position: absolute;
-            top: 0;
-            right: 0; }
-            #header_sub .inner .menuWeb #gnb > li .sub .right .box {
-              width: 260px;
-              height: 220px;
-              margin: 0px auto;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
-              #header_sub .inner .menuWeb #gnb > li .sub .right .box img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; }
-              #header_sub .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
-                height: 220px;
-                background: #444;
-                padding: 16px;
-                box-sizing: border-box;
-                position: absolute;
-                top: 50%;
-                left: 85%;
-                transform: translateY(-50%); }
-                #header_sub .inner .menuWeb #gnb > li .sub .right .box .boxbtn span i {
-                  font-size: 16px;
-                  color: #fff;
-                  margin-top: 165px;
-                  cursor: pointer; }
-          #header_sub .inner .menuWeb #gnb > li .sub::before {
-            content: "";
-            width: 100%;
-            height: 100%;
+              top: 0px;
+              right: 100%;
+              background: #fff; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subpic {
+            float: left;
+            width: 23%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt1, #header_sub .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
+            width: 21%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
+            margin-left: 50px; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subpic {
+            width: 32%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subpic {
+            float: left;
+            width: 24%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subtxt1 {
+            margin-left: 100px; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(4) .sub .subpic {
+            float: left;
+            width: 55%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subpic {
+            width: 24%; }
+      #header_sub .inner .menuWeb .util {
+        position: absolute;
+        bottom: 30px;
+        right: 0px; }
+        #header_sub .inner .menuWeb .util::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #header_sub .inner .menuWeb .util li {
+          float: left; }
+          #header_sub .inner .menuWeb .util li a {
             display: block;
-            position: absolute;
-            top: 0px;
-            left: 100%;
-            background: #f3f3f3; }
-          #header_sub .inner .menuWeb #gnb > li .sub::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            right: 100%;
-            background: #f3f3f3; }
+            font: 400 12px/1 'Open Sans';
+            color: #666;
+            padding: 0px 20px;
+            border-right: 1px solid #aaa; }
+          #header_sub .inner .menuWeb .util li:nth-child(2) a {
+            color: #999; }
+          #header_sub .inner .menuWeb .util li:last-child a {
+            border-right: none;
+            padding-right: 0; }
+        #header_sub .inner .menuWeb .util::after {
+          content: '';
+          display: block;
+          clear: both; }
     #header_sub .inner .btnCall {
       position: absolute;
       right: 30px;
@@ -709,6 +713,37 @@ input, a, img, span, label, select {
           background: #e2e4e3;
           margin-bottom: 50px;
           position: relative; }
+          .department .mainwrap .mem_main .Member_right article .pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(1) .pic {
+            background: url("../img/portrait1.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(2) .pic {
+            background: url("../img/portrai2.png") no-repeat top/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(3) .pic {
+            background: url("../img/portrai3.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(4) .pic {
+            background: url("../img/portrait4.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(5) .pic {
+            background: url("../img/portrait7.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(6) .pic {
+            background: url("../img/portrait6.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(7) .pic {
+            background: url("../img/portrait5.png") no-repeat top/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(8) .pic {
+            background: url("../img/portrait8.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
+          .department .mainwrap .mem_main .Member_right article:nth-of-type(9) .pic {
+            background: url("../img/portrait9.png") no-repeat center/cover;
+            filter: brightness(1.1) saturate(20%); }
           .department .mainwrap .mem_main .Member_right article .txt {
             display: inline-block;
             position: absolute;
@@ -1206,160 +1241,206 @@ body {
 #header {
   width: 100%;
   position: relative;
-  z-index: 2; }
-  #header .util_wrap {
-    width: 100%;
-    height: 30px;
-    background: #f5f5f5; }
-    #header .util_wrap .util_main {
-      width: 1180px;
-      margin: 0px auto;
-      position: relative; }
-      #header .util_wrap .util_main .util {
-        position: absolute;
-        right: 26px; }
-        #header .util_wrap .util_main .util::after {
-          content: "";
-          display: block;
-          clear: both; }
-        #header .util_wrap .util_main .util li {
-          float: left; }
-          #header .util_wrap .util_main .util li a {
-            display: block;
-            font: 400 12px/1 'Open Sans';
-            color: #666;
-            padding: 0px 10px;
-            border-right: 1px solid #aaa;
-            margin-top: 7px; }
-          #header .util_wrap .util_main .util li:nth-child(2) a {
-            color: #999; }
-          #header .util_wrap .util_main .util li:last-child a {
-            border-right: none; }
-        #header .util_wrap .util_main .util::after {
-          content: '';
-          display: block;
-          clear: both; }
+  z-index: 2;
+  border-bottom: 1px solid #ddd;
+    /*
+    .util_wrap {
+        width: 100%;
+        height: 30px;
+        background: #f5f5f5;
+
+        .util_main {
+            width: 1180px;
+            margin: 0px auto;
+            position: relative;
+
+            .util{
+                position: absolute;
+                right: 26px;
+
+                &::after { content: ""; display: block; clear: both; }
+
+                li{
+                    float:left;
+
+                    a{
+                        display:block; 
+                        font: 400 12px/1 'Open Sans'; 
+                        color:#666; 
+                        padding: 0px 10px;
+                        border-right:1px solid #aaa; 
+                        margin-top: 7px;
+                    } 
+
+                    &:nth-child(2) a { color: #999; }
+                    &:last-child a{
+                        border-right: none;
+                    }
+                }
+
+                &::after{
+                    content:''; display:block; clear:both; 
+                }
+            }
+        }
+    }*/ }
   #header .inner {
     width: 1180px;
-    height: 120px;
+    height: 100px;
     margin: 0px auto;
     position: relative; }
     #header .inner > h1 {
       position: absolute;
       left: 0;
-      bottom: 19px;
+      bottom: 24px;
       letter-spacing: 2px; }
       #header .inner > h1 a {
-        font: 900 24px/50px 'Nanum Myeongjo';
-        color: #444; }
-    #header .inner .menuWeb #gnb {
+        font: 800 24px/1 'Nanum Myeongjo';
+        color: #444;
+        border: 1px solid #aaa;
+        padding: 8px 18px;
+        box-sizing: border-box;
+        text-align: center; }
+    #header .inner .menuWeb {
+      width: 78%;
+      height: 100%;
       position: absolute;
-      bottom: 0px;
-      right: 0; }
-      #header .inner .menuWeb #gnb::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #header .inner .menuWeb #gnb > li {
-        float: left; }
-        #header .inner .menuWeb #gnb > li > a {
+      right: 0;
+      bottom: 0; }
+      #header .inner .menuWeb #gnb {
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+        left: 0; }
+        #header .inner .menuWeb #gnb::after {
+          content: '';
           display: block;
-          padding: 14px 40px;
-          height: 42px;
-          font: 600 14px/42px 'Nanum Myeongjo';
-          color: #777;
-          transition: all 0.5s; }
-          #header .inner .menuWeb #gnb > li > a:hover {
-            color: #000; }
-        #header .inner .menuWeb #gnb > li .sub {
-          width: 1180px;
-          height: 300px;
-          position: absolute;
-          top: 70px;
-          right: 0px;
-          display: none; }
-          #header .inner .menuWeb #gnb > li .sub .left {
-            width: 65%;
-            height: 100%;
-            background: #f3f3f3;
-            float: left;
-            padding: 64px;
-            box-sizing: border-box; }
-            #header .inner .menuWeb #gnb > li .sub .left .sub_con1, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 {
+          clear: both; }
+        #header .inner .menuWeb #gnb > li {
+          float: left; }
+          #header .inner .menuWeb #gnb > li > a {
+            display: block;
+            padding: 14px 20px;
+            height: 42px;
+            font: 800 14px/42px 'Nanum Myeongjo';
+            color: #555;
+            transition: all 0.5s; }
+            #header .inner .menuWeb #gnb > li > a:hover {
+              color: #000; }
+          #header .inner .menuWeb #gnb > li .sub {
+            width: 1180px;
+            height: 280px;
+            padding: 30px 0px;
+            box-sizing: border-box;
+            background-color: #fff;
+            position: absolute;
+            top: 70px;
+            right: -25%;
+            display: none; }
+            #header .inner .menuWeb #gnb > li .sub .subtxt1, #header .inner .menuWeb #gnb > li .sub .subtxt2 {
+              position: relative;
+              float: left;
+              width: 20%;
+              height: 100%; }
+              #header .inner .menuWeb #gnb > li .sub .subtxt1 h2, #header .inner .menuWeb #gnb > li .sub .subtxt2 h2 {
+                font: bold 16px/1 "Open Sans";
+                color: #555;
+                border-bottom: 1px solid #888;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                width: 70%; }
+              #header .inner .menuWeb #gnb > li .sub .subtxt1 > ul, #header .inner .menuWeb #gnb > li .sub .subtxt2 > ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                #header .inner .menuWeb #gnb > li .sub .subtxt1 > ul li, #header .inner .menuWeb #gnb > li .sub .subtxt2 > ul li {
+                  float: left;
+                  padding-bottom: 15px; }
+                  #header .inner .menuWeb #gnb > li .sub .subtxt1 > ul li a, #header .inner .menuWeb #gnb > li .sub .subtxt2 > ul li a {
+                    font: 16px/2 "Nanum Myeongjo";
+                    color: #666;
+                    transition: 0.5s; }
+                    #header .inner .menuWeb #gnb > li .sub .subtxt1 > ul li a:hover, #header .inner .menuWeb #gnb > li .sub .subtxt2 > ul li a:hover {
+                      color: #ca6262; }
+            #header .inner .menuWeb #gnb > li .sub .subtxt1 {
+              margin-left: 50px; }
+            #header .inner .menuWeb #gnb > li .sub .subpic {
+              float: right;
+              width: 22%;
+              height: 100%;
+              margin-left: 40px; }
+              #header .inner .menuWeb #gnb > li .sub .subpic:nth-of-type(1) {
+                margin-left: 0px; }
+              #header .inner .menuWeb #gnb > li .sub .subpic h2 {
+                font: 600 16px/1 "Open Sans";
+                color: #777;
+                margin-bottom: 10px; }
+              #header .inner .menuWeb #gnb > li .sub .subpic img {
+                width: 100%;
+                height: 85%;
+                object-fit: cover; }
+            #header .inner .menuWeb #gnb > li .sub::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              display: block;
+              position: absolute;
+              top: 0px;
+              left: 100%;
+              background: #fff; }
+            #header .inner .menuWeb #gnb > li .sub::after {
+              content: "";
+              display: block;
               width: 100%;
               height: 100%;
               position: absolute;
-              top: 0;
-              left: 0;
-              padding: 80px 64px; }
-              #header .inner .menuWeb #gnb > li .sub .left .sub_con1 h3, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 h3 {
-                font: bold 16px/1 "Open Sans";
-                color: #555;
-                margin-bottom: 20px; }
-              #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul {
-                float: left;
-                padding-right: 34px;
-                box-sizing: border-box; }
-                #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a {
-                  font: 15px/2.4 "Open Sans";
-                  color: #777;
-                  transition: 0.5s; }
-                  #header .inner .menuWeb #gnb > li .sub .left .sub_con1 > ul li a:hover, #header .inner .menuWeb #gnb > li .sub .left .sub_con3 > ul li a:hover {
-                    color: #ca6262; }
-            #header .inner .menuWeb #gnb > li .sub .left .sub_con3 {
-              left: 480px; }
-          #header .inner .menuWeb #gnb > li .sub .right {
-            width: 35%;
-            height: 100%;
-            background: #f3f3f3;
-            float: right;
-            position: absolute;
-            top: 0;
-            right: 0; }
-            #header .inner .menuWeb #gnb > li .sub .right .box {
-              width: 260px;
-              height: 220px;
-              margin: 0px auto;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
-              #header .inner .menuWeb #gnb > li .sub .right .box img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; }
-              #header .inner .menuWeb #gnb > li .sub .right .box .boxbtn {
-                height: 220px;
-                background: #444;
-                padding: 16px;
-                box-sizing: border-box;
-                position: absolute;
-                top: 50%;
-                left: 85%;
-                transform: translateY(-50%); }
-                #header .inner .menuWeb #gnb > li .sub .right .box .boxbtn span i {
-                  font-size: 16px;
-                  color: #fff;
-                  margin-top: 165px;
-                  cursor: pointer; }
-          #header .inner .menuWeb #gnb > li .sub::before {
-            content: "";
-            width: 100%;
-            height: 100%;
+              top: 0px;
+              right: 100%;
+              background: #fff; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subpic {
+            float: left;
+            width: 23%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt1, #header .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
+            width: 21%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
+            margin-left: 50px; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subpic {
+            width: 32%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subpic {
+            float: left;
+            width: 24%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subtxt1 {
+            margin-left: 100px; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(4) .sub .subpic {
+            float: left;
+            width: 55%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subpic {
+            width: 24%; }
+      #header .inner .menuWeb .util {
+        position: absolute;
+        bottom: 30px;
+        right: 0px; }
+        #header .inner .menuWeb .util::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #header .inner .menuWeb .util li {
+          float: left; }
+          #header .inner .menuWeb .util li a {
             display: block;
-            position: absolute;
-            top: 0px;
-            left: 100%;
-            background: #f3f3f3; }
-          #header .inner .menuWeb #gnb > li .sub::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            right: 100%;
-            background: #f3f3f3; }
+            font: 400 12px/1 'Open Sans';
+            color: #666;
+            padding: 0px 20px;
+            border-right: 1px solid #aaa; }
+          #header .inner .menuWeb .util li:nth-child(2) a {
+            color: #999; }
+          #header .inner .menuWeb .util li:last-child a {
+            border-right: none;
+            padding-right: 0; }
+        #header .inner .menuWeb .util::after {
+          content: '';
+          display: block;
+          clear: both; }
     #header .inner .btnCall {
       position: absolute;
       right: 30px;
@@ -1445,7 +1526,7 @@ body {
 /* visual ------------------------------ */
 #visual {
   width: 100%;
-  height: calc(100vh - 121px);
+  height: calc(100vh - 101px);
   position: relative;
   overflow: hidden; }
   #visual .mainpic {
@@ -1693,7 +1774,22 @@ body {
   box-sizing: border-box;
   background: url("../img/mainbanImg_01.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  filter: brightness(1.3) saturate(65%); }
+  filter: brightness(1.3) saturate(65%);
+  position: relative; }
+  #ban01 .ban01txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #ban01 .ban01txt h2 {
+      font: 800 26px/1.4 "Nanum Myeongjo";
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    #ban01 .ban01txt p {
+      font: 400 15px/1.4 "Open Sans";
+      color: #aaa; }
 
 #highlights {
   width: 100%;
@@ -1730,7 +1826,7 @@ body {
         background: #333;
         color: #c9ab81;
         text-align: center;
-        font: 800 0.8vw/50px "Nanum Myeongjo";
+        font: 800 14px/50px "Nanum Myeongjo";
         letter-spacing: 2px; }
     #highlights .inner .highlights_right {
       float: right;
@@ -1816,7 +1912,7 @@ body {
         background: #333;
         color: #c9ab81;
         text-align: center;
-        font: 800 0.8vw/50px "Nanum Myeongjo";
+        font: 800 14px/50px "Nanum Myeongjo";
         letter-spacing: 2px;
         margin-top: 34px; }
 
@@ -1973,6 +2069,108 @@ body {
     #header .inner .btnCall {
       display: block; }
 
+  #blogPosts {
+    padding: 120px 40px;
+    padding-bottom: 180px; }
+    #blogPosts .inner {
+      width: 100%; }
+      #blogPosts .inner .blogPosts_left {
+        width: 100%; }
+        #blogPosts .inner .blogPosts_left .blogPostsTxt {
+          transform: translateX(0%); }
+        #blogPosts .inner .blogPosts_left .blogPostspic-1 {
+          width: 70%;
+          height: 400px;
+          transform: translate(40%, 40%); }
+        #blogPosts .inner .blogPosts_left .blogPostspic-2 {
+          width: 24%;
+          height: 280px;
+          top: 140px; }
+        #blogPosts .inner .blogPosts_left .blogPostspic-3 {
+          width: 30%;
+          left: 130px; }
+      #blogPosts .inner .blogPosts_right {
+        width: 100%;
+        margin-top: 300px; }
+
+  #ban01 {
+    padding: 200px 0px; }
+    #ban01 .ban01txt h2 {
+      font: 800 25px/1 "Nanum Myeongjo"; }
+    #ban01 .ban01txt p {
+      font: 400 14px/1.4 "Open Sans"; }
+
+  #highlights {
+    padding: 120px 40px;
+    box-sizing: border-box; }
+    #highlights .inner {
+      width: 100%; }
+      #highlights .inner .highlights_left {
+        width: 100%;
+        margin-bottom: 100px; }
+      #highlights .inner .highlights_right {
+        width: 70%; }
+        #highlights .inner .highlights_right .pic1 {
+          width: 100%;
+          height: 300px; }
+        #highlights .inner .highlights_right .pic2 {
+          width: 80%;
+          height: 150px;
+          top: auto;
+          bottom: 50px;
+          left: -25%; }
+
+  #news {
+    padding: 120px 40px; }
+    #news .inner {
+      width: 100%; }
+      #news .inner .news_left {
+        width: 100%; }
+        #news .inner .news_left .newspic {
+          width: 100%;
+          height: 420px; }
+      #news .inner .news_right {
+        width: 100%;
+        padding-left: 0px; }
+        #news .inner .news_right div {
+          margin-top: 60px;
+          margin-bottom: 34px; }
+
+  #ourHouse {
+    width: 100%;
+    padding: 120px 40px; }
+    #ourHouse .inner {
+      width: 100%; }
+      #ourHouse .inner article {
+        width: 100%; }
+        #ourHouse .inner article:nth-of-type(2) {
+          height: 600px; }
+        #ourHouse .inner article div {
+          float: left;
+          width: 50%; }
+          #ourHouse .inner article div:nth-of-type(1) h2, #ourHouse .inner article div:nth-of-type(2) h2 {
+            padding-top: 60px; }
+          #ourHouse .inner article div p {
+            padding-bottom: 60px; }
+
+  #instagrem {
+    padding: 120px 40px; }
+    #instagrem .inner {
+      width: 100%; }
+      #instagrem .inner .instagrem_con {
+        padding: 120px 0px; }
+        #instagrem .inner .instagrem_con article {
+          width: 48%;
+          padding: 40px;
+          box-sizing: border-box; }
+          #instagrem .inner .instagrem_con article div {
+            width: 100%;
+            height: 250px; }
+          #instagrem .inner .instagrem_con article:nth-of-type(2) div {
+            transform: translateY(60%); }
+          #instagrem .inner .instagrem_con article:nth-of-type(4) div {
+            transform: translateY(60%); }
+
   /* footer --------------------------- */
   #footer {
     padding: 80px 30px;
@@ -1981,6 +2179,116 @@ body {
       width: 100%; } }
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
+  #blogPosts {
+    padding: 120px 40px;
+    padding-bottom: 140px; }
+    #blogPosts .inner {
+      width: 100%; }
+      #blogPosts .inner .blogPosts_left {
+        width: 100%; }
+        #blogPosts .inner .blogPosts_left .blogPostsTxt {
+          transform: translateX(0%); }
+        #blogPosts .inner .blogPosts_left .blogPostspic-1 {
+          width: 75%;
+          height: 300px;
+          transform: translate(35%, 110%); }
+        #blogPosts .inner .blogPosts_left .blogPostspic-2 {
+          width: 100%;
+          height: 180px;
+          top: 140px; }
+        #blogPosts .inner .blogPosts_left .blogPostspic-3 {
+          width: 50%;
+          height: 140px;
+          left: 0px;
+          transform: translateY(40%); }
+      #blogPosts .inner .blogPosts_right {
+        margin-top: 360px; }
+
+  #ban01 {
+    padding: 200px 0px; }
+    #ban01 .ban01txt h2 {
+      font: 800 25px/1 "Nanum Myeongjo"; }
+    #ban01 .ban01txt p {
+      font: 400 14px/1.4 "Open Sans"; }
+
+  #highlights {
+    padding: 120px 40px;
+    box-sizing: border-box; }
+    #highlights .inner {
+      width: 100%; }
+      #highlights .inner .highlights_left {
+        width: 100%;
+        margin-bottom: 100px; }
+      #highlights .inner .highlights_right {
+        width: 70%; }
+        #highlights .inner .highlights_right .pic1 {
+          width: 100%;
+          height: 300px; }
+        #highlights .inner .highlights_right .pic2 {
+          width: 80%;
+          height: 150px;
+          top: auto;
+          bottom: 50px;
+          left: -25%; }
+
+  #news {
+    padding: 120px 40px; }
+    #news .inner {
+      width: 100%; }
+      #news .inner .news_left {
+        width: 100%; }
+        #news .inner .news_left .newspic {
+          width: 100%;
+          height: 420px; }
+      #news .inner .news_right {
+        width: 100%;
+        padding-left: 0px; }
+        #news .inner .news_right div {
+          margin-top: 60px;
+          margin-bottom: 34px; }
+
+  #ourHouse {
+    width: 100%;
+    padding: 120px 40px; }
+    #ourHouse .inner {
+      width: 100%; }
+      #ourHouse .inner p {
+        padding-bottom: 40px; }
+      #ourHouse .inner article {
+        width: 100%; }
+        #ourHouse .inner article:nth-of-type(2) {
+          height: 600px; }
+        #ourHouse .inner article div {
+          float: left;
+          width: 50%; }
+          #ourHouse .inner article div h2 {
+            font: 800 18px/1.2 "Nanum Myeongjo"; }
+          #ourHouse .inner article div:nth-of-type(1) h2, #ourHouse .inner article div:nth-of-type(2) h2 {
+            padding-top: 60px; }
+          #ourHouse .inner article div p {
+            padding-bottom: 60px;
+            font: 400 13px/1.2 "Open Sans"; }
+
+  #instagrem {
+    padding: 120px 40px 40px; }
+    #instagrem .inner {
+      width: 100%; }
+      #instagrem .inner .instagrem_con {
+        padding: 0px;
+        padding-top: 80px; }
+        #instagrem .inner .instagrem_con article {
+          width: 100%;
+          padding: 0px;
+          padding-bottom: 60px;
+          box-sizing: border-box; }
+          #instagrem .inner .instagrem_con article div {
+            width: 100%;
+            height: 250px; }
+          #instagrem .inner .instagrem_con article:nth-of-type(2) div {
+            transform: translateY(0%); }
+          #instagrem .inner .instagrem_con article:nth-of-type(4) div {
+            transform: translateY(0%); }
+
   /* footer --------------------------- */
   #footer .inner h1 {
     margin-bottom: 20px; }

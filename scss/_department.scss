@@ -79,7 +79,6 @@
     .mainwrap {
         width: 100%;
         height: 700px;
-        // background: #eee;
         margin-top: 180px;
         padding: 40px;
         box-sizing: border-box;
@@ -100,7 +99,6 @@
                 width: 19%;
                 height: 290px;
                 margin-right: 20px;
-                // border: 1px solid #ccc;
                 background: #444;
 
                 .memtit {
@@ -136,9 +134,56 @@
                     position: relative;
                     
                     .pic {
-
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
 
+                    &:nth-of-type(1) .pic {
+                        background: url("../img/portrait1.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(2) .pic {
+                        background: url("../img/portrai2.png") no-repeat top/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(3) .pic {
+                        background: url("../img/portrai3.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(4) .pic {
+                        background: url("../img/portrait4.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(5) .pic {
+                        background: url("../img/portrait7.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(6) .pic {
+                        background: url("../img/portrait6.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(7) .pic {
+                        background: url("../img/portrait5.png") no-repeat top/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(8) .pic {
+                        background: url("../img/portrait8.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+
+                    &:nth-of-type(9) .pic {
+                        background: url("../img/portrait9.png") no-repeat center/cover;
+                        filter: brightness(1.1) saturate(20%);
+                    }
+                    
                     .txt {
                         display: inline-block;
                         position: absolute;
