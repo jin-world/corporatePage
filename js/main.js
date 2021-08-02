@@ -1,7 +1,27 @@
+//슬라이드시 텍스트 등 애니메이션 효과적용시
+//1.slick-active 클래스를 사용하여 css 애니메이션을 적용하거나,
+//2.slideChange 이벤트에 애니메이션 스크립트 코드를 작성 
+
+
 //main visual slide  -------------------------------------------
 const swiper1 = new Swiper("#visual", {
     loop: true,
     effect: "fade",
+    simulateTouch: false,
+    // on:{
+    //     slideChangeTransitionStart: function () {
+    //             //텍스트 숨김
+    //             $('.swiper-slide-active .mainCon h3').css({
+    //                 opacity: 0
+    //             });
+    //         },
+    //     slideChangeTransitionEnd: function () {
+    //             //텍스트 표시
+    //             $('.swiper-slide-active .mainCon h3').stop().animate({
+    //                 opacity: 1,
+    //             }, 400);
+    //         }
+    // },
     speed: 700,
     
     navigation: {
@@ -9,6 +29,13 @@ const swiper1 = new Swiper("#visual", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+
+// $(function(){
+//     $('.swiper-slide-active .mainCon h3').animate({
+//         opacity:1
+//     });
+// }); 
 
 
 //Sliding Text Event --------------------------------------------------------------------

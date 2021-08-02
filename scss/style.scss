@@ -29,7 +29,7 @@ body { width: 100%; overflow-x: hidden; }
 #header{
     width:100%; 
     position: relative;
-    z-index: 2;
+    z-index: 3;
     // border-bottom: 1px solid #ddd;
 
     .inner{
@@ -388,6 +388,7 @@ body { width: 100%; overflow-x: hidden; }
         position: absolute;
         top: 14vh;
         left: 19vw;
+        z-index: 2;
 
         p {
             display: block;
@@ -417,17 +418,16 @@ body { width: 100%; overflow-x: hidden; }
 
         article {
             width: 20%;
-            
+
             h3 {
                 display: inline-block;
                 font: 14px/1.6 "Open Sans";
                 color: #444;
                 padding: 40px;
                 box-sizing: border-box;
-                background: transparent;
             }
-           
-            .Conpic {
+
+            .conpic {
                 width: 100%;
                 height: 240px;
             }
@@ -443,20 +443,20 @@ body { width: 100%; overflow-x: hidden; }
 
             &:nth-child(1) h2 { background: #c9ab81; color: #fff; }
             &:nth-child(1) h3 { color: #c9ab81; }
-            &:nth-of-type(1) .Conpic {
+            &:nth-of-type(1) .conpic {
                 background: url("../img/mainvisual_center1.jpg") no-repeat center/cover;
             }
 
-            &:nth-of-type(2) .Conpic {
+            &:nth-of-type(2) .conpic {
                 background: url("../img/mainvisual_center2.jpg") no-repeat center/cover;
             }
 
-            &:nth-of-type(3) .Conpic {
+            &:nth-of-type(3) .conpic {
                 background: url("../img/mainvisual_center3.jpg") no-repeat center/cover;
                 filter: brightness(1.2) saturate(60%);
             }
 
-            &:nth-of-type(4) .Conpic {
+            &:nth-of-type(4) .conpic {
                 background: url("../img/mainvisual_center4.jpg") no-repeat center/cover;
                 filter: brightness(1.2) saturate(65%);
             }
@@ -464,44 +464,44 @@ body { width: 100%; overflow-x: hidden; }
     }
 
     .cont2 article {
-        &:nth-of-type(1) .Conpic {
+        &:nth-of-type(1) .conpic {
             background: url("../img/mainvisual_geometric1.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(60%);
         }
 
-        &:nth-of-type(2) .Conpic {
+        &:nth-of-type(2) .conpic {
             background: url("../img/mainvisual_geometric2.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(50%);
         }
 
-        &:nth-of-type(3) .Conpic {
+        &:nth-of-type(3) .conpic {
             background: url("../img/mainvisual_geometric3.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(50%);
         }
 
-        &:nth-of-type(4) .Conpic {
+        &:nth-of-type(4) .conpic {
             background: url("../img/mainvisual_geometric4.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(60%);
         }
     }
 
     .cont3 article {
-        &:nth-of-type(1) .Conpic {
+        &:nth-of-type(1) .conpic {
             background: url("../img/mainvisual_art1.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(60%);
         }
 
-        &:nth-of-type(2) .Conpic {
+        &:nth-of-type(2) .conpic {
             background: url("../img/mainvisual_art2.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(50%);
         }
 
-        &:nth-of-type(3) .Conpic {
+        &:nth-of-type(3) .conpic {
             background: url("../img/mainvisual_art3.jpg") no-repeat center/cover;
             filter: brightness(1.3) saturate(50%);
         }
 
-        &:nth-of-type(4) .Conpic {
+        &:nth-of-type(4) .conpic {
             background: url("../img/mainvisual_art4.jpg") no-repeat center/cover;
             filter: brightness(1.2) saturate(60%);
         }
