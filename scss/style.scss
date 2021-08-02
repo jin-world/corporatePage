@@ -24,58 +24,16 @@ $mobile:539px;
     margin-bottom:$mb; 
 }
 
-body { widtH: 100%; overflow-x: hidden; }
+body { width: 100%; overflow-x: hidden; }
 
 #header{
     width:100%; 
     position: relative;
     z-index: 2;
-    border-bottom: 1px solid #ddd;
-
-    /*
-    .util_wrap {
-        width: 100%;
-        height: 30px;
-        background: #f5f5f5;
-
-        .util_main {
-            width: 1180px;
-            margin: 0px auto;
-            position: relative;
-
-            .util{
-                position: absolute;
-                right: 26px;
-
-                &::after { content: ""; display: block; clear: both; }
-
-                li{
-                    float:left;
-
-                    a{
-                        display:block; 
-                        font: 400 12px/1 'Open Sans'; 
-                        color:#666; 
-                        padding: 0px 10px;
-                        border-right:1px solid #aaa; 
-                        margin-top: 7px;
-                    } 
-
-                    &:nth-child(2) a { color: #999; }
-                    &:last-child a{
-                        border-right: none;
-                    }
-                }
-
-                &::after{
-                    content:''; display:block; clear:both; 
-                }
-            }
-        }
-    }*/
+    // border-bottom: 1px solid #ddd;
 
     .inner{
-        width:1180px; 
+        width:90%; 
         height:100px; 
         margin:0px auto; 
         position:relative;
@@ -97,7 +55,7 @@ body { widtH: 100%; overflow-x: hidden; }
         }
 
         .menuWeb{
-            width: 75%;
+            width: 70%;
             height: 100%;
             position: absolute;
             right: 0;
@@ -105,7 +63,7 @@ body { widtH: 100%; overflow-x: hidden; }
 
             #gnb{
                 position:absolute;
-                width: 80%;
+                width: 100%;
                 bottom:0; 
                 left: 0;
                 
@@ -125,6 +83,7 @@ body { widtH: 100%; overflow-x: hidden; }
                         font: 800 14px/42px 'Nanum Myeongjo'; 
                         color:#555; 
                         transition:all 0.5s;
+                        letter-spacing: 1px;
 
                         &:hover{
                             color:#000;
@@ -132,14 +91,14 @@ body { widtH: 100%; overflow-x: hidden; }
                     }
                     
                     .sub {
-                        width: 1180px;
+                        width: 80vw;
                         height: 280px;
                         padding: 30px 0px;
                         box-sizing: border-box;
                         background-color: #fff;
                         position: absolute;
                         top: 70px;
-                        right: -25%;
+                        left: -35%;
                         display: none;
 
                         .subtxt1, .subtxt2 {
@@ -243,6 +202,10 @@ body { widtH: 100%; overflow-x: hidden; }
                         margin-left: 50px;
                     }
 
+                    &:nth-of-type(2) .sub .subtxt1 {
+                        margin-left: 0px;
+                    }
+
                     &:nth-of-type(2) .sub .subpic {
                         width: 32%;
                     }
@@ -263,6 +226,10 @@ body { widtH: 100%; overflow-x: hidden; }
 
                     &:nth-of-type(5) .sub .subpic {
                         width: 24%;
+                    }
+
+                    &:nth-of-type(5) .sub .subtxt1 {
+                        margin-left: 0px;
                     }
                 }
             }
@@ -403,7 +370,6 @@ body { widtH: 100%; overflow-x: hidden; }
     }
 }
 
-/* visual ------------------------------ */
 #visual{
     width:100%; 
     height:calc(100vh - 101px);  
@@ -411,18 +377,30 @@ body { widtH: 100%; overflow-x: hidden; }
     overflow:hidden;
 
     .mainpic {
-        width: 83%;
+        position: absolute;
+        width: 86%;
         height: 650px;
-        background: #e6e6e6;
-        // background: url("../img/mainvisual_img1.jpg") no-repeat center/cover;
-        // filter: brightness(1.3) saturate(25%);
+        background: url("../img/departmentImg3.jpg") no-repeat center/cover;
+        filter: brightness(1.1); // saturate(25%)
+    }
 
-        h1 {
-            position: absolute;
-            top: 12vh;
-            left: 19vw;
-            font: 800 40px/1.6 "Nanum Myeongjo";
-            color: #333;
+    .visualTit {
+        position: absolute;
+        top: 14vh;
+        left: 19vw;
+
+        p {
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            span {
+                font: 800 44px/1.4 "Nanum Myeongjo";
+                opacity: 0;
+            }
+
+            &.txt1 span { color: #444; }
+            &.txt2 span { color: #a59277; }
         }
     }
 
@@ -431,28 +409,24 @@ body { widtH: 100%; overflow-x: hidden; }
         height: auto;
         position: absolute;
         bottom: 0;
-        
+        display: flex;
+        justify-content: flex-start;
+        z-index: 1;
+                
         &::after { content: ""; display: block; clear: both; }
 
         article {
-            float: left;
             width: 20%;
             
             h3 {
                 display: inline-block;
                 font: 14px/1.6 "Open Sans";
-                color: #777;
-                padding: 50px 74px;
+                color: #444;
+                padding: 40px;
                 box-sizing: border-box;
+                background: transparent;
             }
-            
-            .line {
-                display: inline-block;
-                width: 1px;
-                height: 20px;
-                background: #555;
-            }
-
+           
             .Conpic {
                 width: 100%;
                 height: 240px;
@@ -460,40 +434,111 @@ body { widtH: 100%; overflow-x: hidden; }
 
             h2 {
                 width: 100%;
-                height: 100px;
+                height: 80px;
                 background: #fff;
                 text-align: center;
-                font: 16px/100px "Open Sans";
-                color: #333;
+                font: 16px/80px "Open Sans";
+                color: #c9ab81;
             }
 
-            &:nth-child(1) h2 { background: #000; color: #fff; }
+            &:nth-child(1) h2 { background: #c9ab81; color: #fff; }
+            &:nth-child(1) h3 { color: #c9ab81; }
+            &:nth-of-type(1) .Conpic {
+                background: url("../img/mainvisual_center1.jpg") no-repeat center/cover;
+            }
 
-            &:nth-of-type(odd) .Conpic { background: #555; }
-            &:nth-of-type(even) .Conpic { background: #111; }
+            &:nth-of-type(2) .Conpic {
+                background: url("../img/mainvisual_center2.jpg") no-repeat center/cover;
+            }
 
-            &:nth-child(4) .line { display: none; }
+            &:nth-of-type(3) .Conpic {
+                background: url("../img/mainvisual_center3.jpg") no-repeat center/cover;
+                filter: brightness(1.2) saturate(60%);
+            }
+
+            &:nth-of-type(4) .Conpic {
+                background: url("../img/mainvisual_center4.jpg") no-repeat center/cover;
+                filter: brightness(1.2) saturate(65%);
+            }
+        }
+    }
+
+    .cont2 article {
+        &:nth-of-type(1) .Conpic {
+            background: url("../img/mainvisual_geometric1.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(60%);
+        }
+
+        &:nth-of-type(2) .Conpic {
+            background: url("../img/mainvisual_geometric2.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(50%);
+        }
+
+        &:nth-of-type(3) .Conpic {
+            background: url("../img/mainvisual_geometric3.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(50%);
+        }
+
+        &:nth-of-type(4) .Conpic {
+            background: url("../img/mainvisual_geometric4.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(60%);
+        }
+    }
+
+    .cont3 article {
+        &:nth-of-type(1) .Conpic {
+            background: url("../img/mainvisual_art1.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(60%);
+        }
+
+        &:nth-of-type(2) .Conpic {
+            background: url("../img/mainvisual_art2.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(50%);
+        }
+
+        &:nth-of-type(3) .Conpic {
+            background: url("../img/mainvisual_art3.jpg") no-repeat center/cover;
+            filter: brightness(1.3) saturate(50%);
+        }
+
+        &:nth-of-type(4) .Conpic {
+            background: url("../img/mainvisual_art4.jpg") no-repeat center/cover;
+            filter: brightness(1.2) saturate(60%);
         }
     }
 
     .mainBtn {
+        width: 18vw;
+        height: 80px;
         position: absolute;
-        top: 37vh;
-        right: 0vw;
-        font-size: 0;
+        top: 38vh;
+        left: auto;
+        right: 0px;
 
-        a {
-            display: inline-block;
-            padding: 55px 90px;
-            box-sizing: border-box;
-            background: #666;
-            font: 800 20px/1 'Nanum Myeongjo';
+        .swiper-button-prev::after, .swiper-button-next::after {
+            font-size: 26px;
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            left: 0px;
+            width: 50%;
+            height: 140px;
+            background: #a59277;
             color: #fff;
+        }
 
-            &:nth-of-type(1) { background: #333; }
+        .swiper-button-next {
+            position: absolute;
+            right: 0px;
+            width: 50%;
+            height: 140px;
+            background: #c9ab81;
+            color: #fff;
         }
     }
 }
+
 
 #galleryV_Tit {
     width: 100%;
@@ -537,10 +582,8 @@ body { widtH: 100%; overflow-x: hidden; }
 
         .swiper-slide{
             width:500px; height:100px; 
-            // background:#ddd; 
             position:relative; 
             top:50%; margin-top:-140px; 
-            // padding:50px; 
             box-sizing:border-box; 
 
             .inner {
@@ -1104,6 +1147,12 @@ body { widtH: 100%; overflow-x: hidden; }
         }
     }
 }
+
+//애니메이션
+// @keyframes ani {
+//     0% {}
+//     100% {}
+// }
 
 /* tablet  ------------------------------------------ */
 @media screen and (max-width:$tablet){

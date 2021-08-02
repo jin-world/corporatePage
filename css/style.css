@@ -48,7 +48,7 @@ input, a, img, span, label, select {
         box-sizing: border-box;
         text-align: center; }
     #header_sub .inner .menuWeb {
-      width: 75%;
+      width: 76%;
       height: 100%;
       position: absolute;
       right: 0;
@@ -70,7 +70,8 @@ input, a, img, span, label, select {
             height: 42px;
             font: 800 14px/42px 'Nanum Myeongjo';
             color: #555;
-            transition: all 0.5s; }
+            transition: all 0.5s;
+            letter-spacing: 1px; }
             #header_sub .inner .menuWeb #gnb > li > a:hover {
               color: #000; }
           #header_sub .inner .menuWeb #gnb > li .sub {
@@ -150,6 +151,8 @@ input, a, img, span, label, select {
             width: 21%; }
           #header_sub .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
             margin-left: 50px; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subtxt1 {
+            margin-left: 0px; }
           #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subpic {
             width: 32%; }
           #header_sub .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subpic {
@@ -162,6 +165,8 @@ input, a, img, span, label, select {
             width: 55%; }
           #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subpic {
             width: 24%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subtxt1 {
+            margin-left: 0px; }
       #header_sub .inner .menuWeb .util {
         position: absolute;
         bottom: 30px;
@@ -1232,57 +1237,15 @@ input, a, img, span, label, select {
         color: #444; }
 
 body {
-  widtH: 100%;
+  width: 100%;
   overflow-x: hidden; }
 
 #header {
   width: 100%;
   position: relative;
-  z-index: 2;
-  border-bottom: 1px solid #ddd;
-    /*
-    .util_wrap {
-        width: 100%;
-        height: 30px;
-        background: #f5f5f5;
-
-        .util_main {
-            width: 1180px;
-            margin: 0px auto;
-            position: relative;
-
-            .util{
-                position: absolute;
-                right: 26px;
-
-                &::after { content: ""; display: block; clear: both; }
-
-                li{
-                    float:left;
-
-                    a{
-                        display:block; 
-                        font: 400 12px/1 'Open Sans'; 
-                        color:#666; 
-                        padding: 0px 10px;
-                        border-right:1px solid #aaa; 
-                        margin-top: 7px;
-                    } 
-
-                    &:nth-child(2) a { color: #999; }
-                    &:last-child a{
-                        border-right: none;
-                    }
-                }
-
-                &::after{
-                    content:''; display:block; clear:both; 
-                }
-            }
-        }
-    }*/ }
+  z-index: 2; }
   #header .inner {
-    width: 1180px;
+    width: 90%;
     height: 100px;
     margin: 0px auto;
     position: relative; }
@@ -1299,14 +1262,14 @@ body {
         box-sizing: border-box;
         text-align: center; }
     #header .inner .menuWeb {
-      width: 75%;
+      width: 70%;
       height: 100%;
       position: absolute;
       right: 0;
       bottom: 0; }
       #header .inner .menuWeb #gnb {
         position: absolute;
-        width: 80%;
+        width: 100%;
         bottom: 0;
         left: 0; }
         #header .inner .menuWeb #gnb::after {
@@ -1321,18 +1284,19 @@ body {
             height: 42px;
             font: 800 14px/42px 'Nanum Myeongjo';
             color: #555;
-            transition: all 0.5s; }
+            transition: all 0.5s;
+            letter-spacing: 1px; }
             #header .inner .menuWeb #gnb > li > a:hover {
               color: #000; }
           #header .inner .menuWeb #gnb > li .sub {
-            width: 1180px;
+            width: 80vw;
             height: 280px;
             padding: 30px 0px;
             box-sizing: border-box;
             background-color: #fff;
             position: absolute;
             top: 70px;
-            right: -25%;
+            left: -35%;
             display: none; }
             #header .inner .menuWeb #gnb > li .sub .subtxt1, #header .inner .menuWeb #gnb > li .sub .subtxt2 {
               position: relative;
@@ -1401,6 +1365,8 @@ body {
             width: 21%; }
           #header .inner .menuWeb #gnb > li:nth-of-type(1) .sub .subtxt2 {
             margin-left: 50px; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subtxt1 {
+            margin-left: 0px; }
           #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .subpic {
             width: 32%; }
           #header .inner .menuWeb #gnb > li:nth-of-type(3) .sub .subpic {
@@ -1413,6 +1379,8 @@ body {
             width: 55%; }
           #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subpic {
             width: 24%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .subtxt1 {
+            margin-left: 0px; }
       #header .inner .menuWeb .util {
         position: absolute;
         bottom: 30px;
@@ -1520,78 +1488,125 @@ body {
       #header .inner .menuMo.on {
         left: 0; }
 
-/* visual ------------------------------ */
 #visual {
   width: 100%;
   height: calc(100vh - 101px);
   position: relative;
   overflow: hidden; }
   #visual .mainpic {
-    width: 83%;
+    position: absolute;
+    width: 86%;
     height: 650px;
-    background: #e6e6e6; }
-    #visual .mainpic h1 {
-      position: absolute;
-      top: 12vh;
-      left: 19vw;
-      font: 800 40px/1.6 "Nanum Myeongjo";
-      color: #333; }
+    background: url("../img/departmentImg3.jpg") no-repeat center/cover;
+    filter: brightness(1.1); }
+  #visual .visualTit {
+    position: absolute;
+    top: 14vh;
+    left: 19vw; }
+    #visual .visualTit p {
+      display: block;
+      position: relative;
+      overflow: hidden; }
+      #visual .visualTit p span {
+        font: 800 44px/1.4 "Nanum Myeongjo";
+        opacity: 0; }
+      #visual .visualTit p.txt1 span {
+        color: #444; }
+      #visual .visualTit p.txt2 span {
+        color: #a59277; }
   #visual .mainCon {
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1; }
     #visual .mainCon::after {
       content: "";
       display: block;
       clear: both; }
     #visual .mainCon article {
-      float: left;
       width: 20%; }
       #visual .mainCon article h3 {
         display: inline-block;
         font: 14px/1.6 "Open Sans";
-        color: #777;
-        padding: 50px 74px;
-        box-sizing: border-box; }
-      #visual .mainCon article .line {
-        display: inline-block;
-        width: 1px;
-        height: 20px;
-        background: #555; }
+        color: #444;
+        padding: 40px;
+        box-sizing: border-box;
+        background: transparent; }
       #visual .mainCon article .Conpic {
         width: 100%;
         height: 240px; }
       #visual .mainCon article h2 {
         width: 100%;
-        height: 100px;
+        height: 80px;
         background: #fff;
         text-align: center;
-        font: 16px/100px "Open Sans";
-        color: #333; }
+        font: 16px/80px "Open Sans";
+        color: #c9ab81; }
       #visual .mainCon article:nth-child(1) h2 {
-        background: #000;
+        background: #c9ab81;
         color: #fff; }
-      #visual .mainCon article:nth-of-type(odd) .Conpic {
-        background: #555; }
-      #visual .mainCon article:nth-of-type(even) .Conpic {
-        background: #111; }
-      #visual .mainCon article:nth-child(4) .line {
-        display: none; }
+      #visual .mainCon article:nth-child(1) h3 {
+        color: #c9ab81; }
+      #visual .mainCon article:nth-of-type(1) .Conpic {
+        background: url("../img/mainvisual_center1.jpg") no-repeat center/cover; }
+      #visual .mainCon article:nth-of-type(2) .Conpic {
+        background: url("../img/mainvisual_center2.jpg") no-repeat center/cover; }
+      #visual .mainCon article:nth-of-type(3) .Conpic {
+        background: url("../img/mainvisual_center3.jpg") no-repeat center/cover;
+        filter: brightness(1.2) saturate(60%); }
+      #visual .mainCon article:nth-of-type(4) .Conpic {
+        background: url("../img/mainvisual_center4.jpg") no-repeat center/cover;
+        filter: brightness(1.2) saturate(65%); }
+  #visual .cont2 article:nth-of-type(1) .Conpic {
+    background: url("../img/mainvisual_geometric1.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(60%); }
+  #visual .cont2 article:nth-of-type(2) .Conpic {
+    background: url("../img/mainvisual_geometric2.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(50%); }
+  #visual .cont2 article:nth-of-type(3) .Conpic {
+    background: url("../img/mainvisual_geometric3.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(50%); }
+  #visual .cont2 article:nth-of-type(4) .Conpic {
+    background: url("../img/mainvisual_geometric4.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(60%); }
+  #visual .cont3 article:nth-of-type(1) .Conpic {
+    background: url("../img/mainvisual_art1.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(60%); }
+  #visual .cont3 article:nth-of-type(2) .Conpic {
+    background: url("../img/mainvisual_art2.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(50%); }
+  #visual .cont3 article:nth-of-type(3) .Conpic {
+    background: url("../img/mainvisual_art3.jpg") no-repeat center/cover;
+    filter: brightness(1.3) saturate(50%); }
+  #visual .cont3 article:nth-of-type(4) .Conpic {
+    background: url("../img/mainvisual_art4.jpg") no-repeat center/cover;
+    filter: brightness(1.2) saturate(60%); }
   #visual .mainBtn {
+    width: 18vw;
+    height: 80px;
     position: absolute;
-    top: 37vh;
-    right: 0vw;
-    font-size: 0; }
-    #visual .mainBtn a {
-      display: inline-block;
-      padding: 55px 90px;
-      box-sizing: border-box;
-      background: #666;
-      font: 800 20px/1 'Nanum Myeongjo';
+    top: 38vh;
+    left: auto;
+    right: 0px; }
+    #visual .mainBtn .swiper-button-prev::after, #visual .mainBtn .swiper-button-next::after {
+      font-size: 26px; }
+    #visual .mainBtn .swiper-button-prev {
+      position: absolute;
+      left: 0px;
+      width: 50%;
+      height: 140px;
+      background: #a59277;
       color: #fff; }
-      #visual .mainBtn a:nth-of-type(1) {
-        background: #333; }
+    #visual .mainBtn .swiper-button-next {
+      position: absolute;
+      right: 0px;
+      width: 50%;
+      height: 140px;
+      background: #c9ab81;
+      color: #fff; }
 
 #galleryV_Tit {
   width: 100%;

@@ -29,7 +29,7 @@
         }
 
         .menuWeb{
-            width: 75%;
+            width: 76%;
             height: 100%;
             position: absolute;
             right: 0;
@@ -57,6 +57,7 @@
                         font: 800 14px/42px 'Nanum Myeongjo'; 
                         color:#555; 
                         transition:all 0.5s;
+                        letter-spacing: 1px;
 
                         &:hover{
                             color:#000;
@@ -175,6 +176,10 @@
                         margin-left: 50px;
                     }
 
+                    &:nth-of-type(2) .sub .subtxt1 {
+                        margin-left: 0px;
+                    }
+                    
                     &:nth-of-type(2) .sub .subpic {
                         width: 32%;
                     }
@@ -195,6 +200,10 @@
 
                     &:nth-of-type(5) .sub .subpic {
                         width: 24%;
+                    }
+
+                    &:nth-of-type(5) .sub .subtxt1 {
+                        margin-left: 0px;
                     }
                 }
             }
