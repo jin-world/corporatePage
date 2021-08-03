@@ -1408,10 +1408,6 @@ body { width: 100%; overflow-x: hidden; }
 
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width:$mobile){  
-    .swiper-wrapper {
-        height: 99% !important;
-    }
-
     #visual{
         .mainpic {
             height: 520px;
