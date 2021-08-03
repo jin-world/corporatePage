@@ -1413,50 +1413,51 @@ body { width: 100%; overflow-x: hidden; }
         }
     
         .visualTit {
-            left: 12vw;
+            top: 9vh;
+            left: 10vw;
     
             p {
                 span {
-                    font: 800 26px/1.4 "Nanum Myeongjo";
+                    font: 800 22px/1.2 "Nanum Myeongjo";
                 }
             }
         }
     
         .mainCon {
+            flex-wrap: wrap;
+
             article {
                 width: 100%;
     
                 h3 {
-                    font: 10px/1.4 "Open Sans";
-                    padding: 40px;
-                    // display: none;
+                    display: none;
                 }
     
                 .conpic {
-                    height: 220px;
+                    height: 110px;
                 }
     
                 h2 {
-                    height: 60px;
-                    font: 14px/60px "Open Sans";
+                    height: 40px;
+                    font: 13px/40px "Open Sans";
                 }
             }
         }
 
         .mainBtn {
             width: 24vw;
-            top: 30vh;
+            top: 16vh;
 
             .swiper-button-prev::after, .swiper-button-next::after {
-                font-size: 18px;
+                font-size: 14px;
             }
     
             .swiper-button-prev {
-                height: 80px;
+                height: 50px;
             }
     
             .swiper-button-next {
-                height: 80px;
+                height: 50px;
             }
         }
     }
