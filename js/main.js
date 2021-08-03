@@ -7,21 +7,10 @@
 const swiper1 = new Swiper("#visual", {
     loop: true,
     effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
     simulateTouch: false,
-    // on:{
-    //     slideChangeTransitionStart: function () {
-    //             //텍스트 숨김
-    //             $('.swiper-slide-active .mainCon h3').css({
-    //                 opacity: 0
-    //             });
-    //         },
-    //     slideChangeTransitionEnd: function () {
-    //             //텍스트 표시
-    //             $('.swiper-slide-active .mainCon h3').stop().animate({
-    //                 opacity: 1,
-    //             }, 400);
-    //         }
-    // },
     speed: 700,
     
     navigation: {
