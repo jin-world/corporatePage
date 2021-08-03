@@ -2218,6 +2218,11 @@ body {
             font-size: 20px; } }
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
+  .swiper-wrapper {
+    height: 90% !important; }
+
+  #visual .mainpic {
+    height: 520px; }
   #visual .visualTit {
     left: 10vw; }
     #visual .visualTit p span {

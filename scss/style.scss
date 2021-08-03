@@ -1408,7 +1408,15 @@ body { width: 100%; overflow-x: hidden; }
 
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width:$mobile){  
+    .swiper-wrapper {
+        height: 90% !important;
+    }
+
     #visual{
+        .mainpic {
+            height: 520px;
+        }
+
         .visualTit {
             left: 10vw;
     
