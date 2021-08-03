@@ -1407,57 +1407,51 @@ body { width: 100%; overflow-x: hidden; }
 
 
 /* mobile ----------------------------------------------------------- */
-@media screen and (max-width:$mobile){   
+@media screen and (max-width:$mobile){  
     #visual{
-        .mainpic {
-        }
-    
         .visualTit {
-            top: 9vh;
             left: 10vw;
     
             p {
                 span {
-                    font: 800 22px/1.2 "Nanum Myeongjo";
+                    font: 800 26px/1.2 "Nanum Myeongjo";
                 }
             }
         }
     
         .mainCon {
-            flex-wrap: wrap;
-
             article {
-                width: 100%;
+                width: 25%;
     
                 h3 {
-                    display: none;
+                    padding: 20px;
                 }
     
                 .conpic {
-                    height: 90px;
+                    height: 160px;
                 }
     
                 h2 {
-                    height: 30px;
-                    font: 12px/30px "Open Sans";
+                    height: 40px;
+                    font: 12px/40px "Open Sans";
                 }
             }
         }
 
         .mainBtn {
-            width: 24vw;
-            top: 16vh;
+            width: 35vw;
+            top: 30vh;
 
             .swiper-button-prev::after, .swiper-button-next::after {
                 font-size: 14px;
             }
     
             .swiper-button-prev {
-                height: 50px;
+                height: 70px;
             }
     
             .swiper-button-next {
-                height: 50px;
+                height: 70px;
             }
         }
     }

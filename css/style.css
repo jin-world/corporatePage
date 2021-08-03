@@ -2219,30 +2219,27 @@ body {
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
   #visual .visualTit {
-    top: 9vh;
     left: 10vw; }
     #visual .visualTit p span {
-      font: 800 22px/1.2 "Nanum Myeongjo"; }
-  #visual .mainCon {
-    flex-wrap: wrap; }
-    #visual .mainCon article {
-      width: 100%; }
-      #visual .mainCon article h3 {
-        display: none; }
-      #visual .mainCon article .conpic {
-        height: 90px; }
-      #visual .mainCon article h2 {
-        height: 30px;
-        font: 12px/30px "Open Sans"; }
+      font: 800 26px/1.2 "Nanum Myeongjo"; }
+  #visual .mainCon article {
+    width: 25%; }
+    #visual .mainCon article h3 {
+      padding: 20px; }
+    #visual .mainCon article .conpic {
+      height: 160px; }
+    #visual .mainCon article h2 {
+      height: 40px;
+      font: 12px/40px "Open Sans"; }
   #visual .mainBtn {
-    width: 24vw;
-    top: 16vh; }
+    width: 35vw;
+    top: 30vh; }
     #visual .mainBtn .swiper-button-prev::after, #visual .mainBtn .swiper-button-next::after {
       font-size: 14px; }
     #visual .mainBtn .swiper-button-prev {
-      height: 50px; }
+      height: 70px; }
     #visual .mainBtn .swiper-button-next {
-      height: 50px; }
+      height: 70px; }
 
   #blogPosts {
     padding: 120px 40px;
