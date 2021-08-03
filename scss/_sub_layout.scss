@@ -300,8 +300,8 @@
         .menuMo{
             position:fixed; 
             top:0; 
-            left:-360px; 
-            width:360px; 
+            left:-250px; 
+            width:250px; 
             height:100vh; 
             background:#444; 
             transition:0.5s; 
@@ -314,13 +314,13 @@
 
                 a{
                     display:inline-block; 
-                    font: 800 28px/42px 'Nanum Myeongjo'; 
+                    font: 800 24px/35px 'Nanum Myeongjo'; 
                     color:#fff; 
                     text-align: center; 
                     border: 1px solid #aaa;
                     margin: 0 auto;
-                    width: 50px;
-                    height: 45px;
+                    width: 40px;
+                    height: 35px;
                 }
 
                 span{
@@ -333,11 +333,10 @@
                     a{
                         display:block; 
                         width:100%; 
-                        padding:40px 0; 
-                        border-bottom:1px solid #666; 
+                        padding:20px 0;  
                         font: 800 22px/1 'Nanum Myeongjo'; 
                         color:#fff; 
-                        text-align:center; 
+                        text-align:left; 
                         letter-spacing: 2px;
                     }
                 }
@@ -545,6 +544,28 @@
 
 /* mobile -------------------------------------- */
 @media screen and (max-width:$mobile){
+    #header {
+        .inner { 
+            z-index: 3;
+            >h1{
+                position:absolute; 
+                // top: 21px;
+                top: 50%;
+                transform: translateY(-50%);
+                bottom: auto;
+
+                a{
+                    font: 800 22px/1 'Nanum Myeongjo'; 
+                    color:#444;
+                    border: 1px solid #aaa;
+                    padding: 6px 14px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+            }
+        }
+    }  
+
     .content{
         padding:0px 0px 80px; 
 
