@@ -2230,10 +2230,10 @@ body {
       #visual .mainCon article h3 {
         display: none; }
       #visual .mainCon article .conpic {
-        height: 110px; }
+        height: 90px; }
       #visual .mainCon article h2 {
-        height: 40px;
-        font: 13px/40px "Open Sans"; }
+        height: 30px;
+        font: 12px/30px "Open Sans"; }
   #visual .mainBtn {
     width: 24vw;
     top: 16vh; }
