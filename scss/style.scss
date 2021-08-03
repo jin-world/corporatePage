@@ -57,7 +57,6 @@ body { width: 100%; overflow-x: hidden; }
 
         >h1{
             position:absolute; 
-            top: 50px;
             left:0; 
             bottom:24px; 
             letter-spacing: 2px;
@@ -344,8 +343,8 @@ body { width: 100%; overflow-x: hidden; }
         .menuMo{
             position:fixed; 
             top:0; 
-            left:-360px; 
-            width:360px; 
+            left:-250px; 
+            width:250px; 
             height:100vh; 
             background:#444; 
             transition:0.5s; 
@@ -358,13 +357,13 @@ body { width: 100%; overflow-x: hidden; }
 
                 a{
                     display:inline-block; 
-                    font: 800 28px/42px 'Nanum Myeongjo'; 
+                    font: 800 24px/35px 'Nanum Myeongjo'; 
                     color:#fff; 
                     text-align: center; 
                     border: 1px solid #aaa;
                     margin: 0 auto;
-                    width: 50px;
-                    height: 45px;
+                    width: 40px;
+                    height: 35px;
                 }
 
                 span{
@@ -377,11 +376,11 @@ body { width: 100%; overflow-x: hidden; }
                     a{
                         display:block; 
                         width:100%; 
-                        padding:40px 0; 
-                        border-bottom:1px solid #666; 
+                        padding:20px 0; 
+                        // border-bottom:1px solid #666; 
                         font: 800 22px/1 'Nanum Myeongjo'; 
                         color:#fff; 
-                        text-align:center; 
+                        text-align:left; 
                         letter-spacing: 2px;
                     }
                 }
@@ -1431,7 +1430,25 @@ body { width: 100%; overflow-x: hidden; }
 
 
 /* mobile ----------------------------------------------------------- */
-@media screen and (max-width:$mobile){  
+@media screen and (max-width:$mobile){
+    #header {
+        .inner { 
+            >h1{
+                position:absolute; 
+                top: 21px;
+                bottom: auto;
+
+                a{
+                    font: 800 22px/1 'Nanum Myeongjo'; 
+                    color:#444;
+                    border: 1px solid #aaa;
+                    padding: 6px 14px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+            }
+        }
+    }  
     #visual{
         .mainpic {
             height: 520px;
