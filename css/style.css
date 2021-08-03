@@ -2219,7 +2219,7 @@ body {
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
   .swiper-wrapper {
-    height: 90% !important; }
+    height: 95% !important; }
 
   #visual .mainpic {
     height: 520px; }
