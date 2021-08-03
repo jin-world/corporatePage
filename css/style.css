@@ -2078,6 +2078,31 @@ body {
     #header .inner .btnCall {
       display: block; }
 
+  #visual .mainpic {
+    width: 100%; }
+  #visual .visualTit {
+    left: 15vw; }
+    #visual .visualTit p span {
+      font: 800 38px/1.4 "Nanum Myeongjo"; }
+  #visual .mainCon article {
+    width: 100%; }
+    #visual .mainCon article h3 {
+      font: 12px/1.4 "Open Sans";
+      padding: 40px; }
+    #visual .mainCon article .conpic {
+      height: 220px; }
+    #visual .mainCon article h2 {
+      height: 60px;
+      font: 14px/60px "Open Sans"; }
+  #visual .mainBtn {
+    top: 30vh; }
+    #visual .mainBtn .swiper-button-prev::after, #visual .mainBtn .swiper-button-next::after {
+      font-size: 18px; }
+    #visual .mainBtn .swiper-button-prev {
+      height: 80px; }
+    #visual .mainBtn .swiper-button-next {
+      height: 80px; }
+
   #blogPosts {
     padding: 120px 40px;
     padding-bottom: 180px; }
@@ -2193,6 +2218,30 @@ body {
             font-size: 20px; } }
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
+  #visual .visualTit {
+    left: 12vw; }
+    #visual .visualTit p span {
+      font: 800 26px/1.4 "Nanum Myeongjo"; }
+  #visual .mainCon article {
+    width: 100%; }
+    #visual .mainCon article h3 {
+      font: 10px/1.4 "Open Sans";
+      padding: 40px; }
+    #visual .mainCon article .conpic {
+      height: 220px; }
+    #visual .mainCon article h2 {
+      height: 60px;
+      font: 14px/60px "Open Sans"; }
+  #visual .mainBtn {
+    width: 24vw;
+    top: 30vh; }
+    #visual .mainBtn .swiper-button-prev::after, #visual .mainBtn .swiper-button-next::after {
+      font-size: 18px; }
+    #visual .mainBtn .swiper-button-prev {
+      height: 80px; }
+    #visual .mainBtn .swiper-button-next {
+      height: 80px; }
+
   #blogPosts {
     padding: 120px 40px;
     padding-bottom: 140px; }

@@ -539,7 +539,6 @@ body { width: 100%; overflow-x: hidden; }
     }
 }
 
-
 #galleryV_Tit {
     width: 100%;
     padding: 100px;
@@ -1148,11 +1147,6 @@ body { width: 100%; overflow-x: hidden; }
     }
 }
 
-//애니메이션
-// @keyframes ani {
-//     0% {}
-//     100% {}
-// }
 
 /* tablet  ------------------------------------------ */
 @media screen and (max-width:$tablet){
@@ -1164,6 +1158,58 @@ body { width: 100%; overflow-x: hidden; }
             >h1{left:20px; }    
             .menuWeb{ display:none;  }    
             .btnCall{ display:block; }     
+        }
+    }
+
+    #visual{
+        .mainpic {
+            width: 100%;
+        }
+    
+        .visualTit {
+            left: 15vw;
+    
+            p {
+                span {
+                    font: 800 38px/1.4 "Nanum Myeongjo";
+                }
+            }
+        }
+    
+        .mainCon {
+            article {
+                width: 100%;
+    
+                h3 {
+                    font: 12px/1.4 "Open Sans";
+                    padding: 40px;
+                }
+    
+                .conpic {
+                    height: 220px;
+                }
+    
+                h2 {
+                    height: 60px;
+                    font: 14px/60px "Open Sans";
+                }
+            }
+        }
+
+        .mainBtn {
+            top: 30vh;
+
+            .swiper-button-prev::after, .swiper-button-next::after {
+                font-size: 18px;
+            }
+    
+            .swiper-button-prev {
+                height: 80px;
+            }
+    
+            .swiper-button-next {
+                height: 80px;
+            }
         }
     }
 
@@ -1362,6 +1408,59 @@ body { width: 100%; overflow-x: hidden; }
 
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width:$mobile){   
+    #visual{
+        .mainpic {
+        }
+    
+        .visualTit {
+            left: 12vw;
+    
+            p {
+                span {
+                    font: 800 26px/1.4 "Nanum Myeongjo";
+                }
+            }
+        }
+    
+        .mainCon {
+            article {
+                width: 100%;
+    
+                h3 {
+                    font: 10px/1.4 "Open Sans";
+                    padding: 40px;
+                    // display: none;
+                }
+    
+                .conpic {
+                    height: 220px;
+                }
+    
+                h2 {
+                    height: 60px;
+                    font: 14px/60px "Open Sans";
+                }
+            }
+        }
+
+        .mainBtn {
+            width: 24vw;
+            top: 30vh;
+
+            .swiper-button-prev::after, .swiper-button-next::after {
+                font-size: 18px;
+            }
+    
+            .swiper-button-prev {
+                height: 80px;
+            }
+    
+            .swiper-button-next {
+                height: 80px;
+            }
+        }
+    }
+
     #blogPosts{
         padding: 120px 40px;
         padding-bottom: 140px;
