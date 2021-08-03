@@ -2225,7 +2225,8 @@ body {
   #visual .mainCon article {
     width: 25%; }
     #visual .mainCon article h3 {
-      padding: 20px; }
+      padding: 20px;
+      display: none; }
     #visual .mainCon article .conpic {
       height: 160px; }
     #visual .mainCon article h2 {
