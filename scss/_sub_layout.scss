@@ -547,9 +547,9 @@
     #header {
         .inner { 
             z-index: 3;
+
             >h1{
                 position:absolute; 
-                // top: 21px;
                 top: 50%;
                 transform: translateY(-50%);
                 bottom: auto;

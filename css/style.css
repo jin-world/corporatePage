@@ -2255,14 +2255,14 @@ body {
             font-size: 20px; } }
 /* mobile ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
-  #header .inner {
+  #header_sub .inner {
     z-index: 3; }
-    #header .inner > h1 {
+    #header_sub .inner > h1 {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       bottom: auto; }
-      #header .inner > h1 a {
+      #header_sub .inner > h1 a {
         font: 800 22px/1 'Nanum Myeongjo';
         color: #444;
         border: 1px solid #aaa;
