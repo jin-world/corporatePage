@@ -1440,18 +1440,18 @@ body { width: 100%; overflow-x: hidden; }
 
         .mainBtn {
             width: 35vw;
-            top: 30vh;
+            top: 28vh;
 
             .swiper-button-prev::after, .swiper-button-next::after {
                 font-size: 14px;
             }
     
             .swiper-button-prev {
-                height: 70px;
+                height: 60px;
             }
     
             .swiper-button-next {
-                height: 70px;
+                height: 60px;
             }
         }
     }

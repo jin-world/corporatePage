@@ -2233,13 +2233,13 @@ body {
       font: 12px/40px "Open Sans"; }
   #visual .mainBtn {
     width: 35vw;
-    top: 30vh; }
+    top: 28vh; }
     #visual .mainBtn .swiper-button-prev::after, #visual .mainBtn .swiper-button-next::after {
       font-size: 14px; }
     #visual .mainBtn .swiper-button-prev {
-      height: 70px; }
+      height: 60px; }
     #visual .mainBtn .swiper-button-next {
-      height: 70px; }
+      height: 60px; }
 
   #blogPosts {
     padding: 120px 40px;
