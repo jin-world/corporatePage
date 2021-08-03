@@ -9,6 +9,15 @@ btnCall.onclick = function(e){
   menuMo.classList.toggle("on"); 
 }
 
+//skip ------------------------------------------------
+$("#skipnavi a").on("focusin", function () {
+  $(this).addClass("skip");
+});
+
+$("#skipnavi a").on("focusout", function () {
+  $(this).removeClass("skip");
+});
+
 
 // GNB menu ------------------------------------------------------------------------------------------
 //마우스 호버시 2depth 활성화

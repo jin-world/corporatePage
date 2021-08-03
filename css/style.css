@@ -244,33 +244,37 @@ input, a, img, span, label, select {
     #header_sub .inner .menuMo {
       position: fixed;
       top: 0;
-      left: -270px;
-      width: 270px;
+      left: -360px;
+      width: 360px;
       height: 100vh;
-      background: #333;
+      background: #444;
       transition: 0.5s;
-      padding: 35px 30px;
+      padding: 35px;
       box-sizing: border-box;
-      z-index: 10; }
+      z-index: 12; }
       #header_sub .inner .menuMo h1 {
-        border-bottom: 1px solid #666;
-        padding-bottom: 30px; }
+        padding-bottom: 80px; }
         #header_sub .inner .menuMo h1 a {
-          display: block;
-          font: bold 24px/1 'Open Sansl';
+          display: inline-block;
+          font: 800 28px/42px 'Nanum Myeongjo';
           color: #fff;
-          text-align: center; }
+          text-align: center;
+          border: 1px solid #aaa;
+          margin: 0 auto;
+          width: 50px;
+          height: 45px; }
         #header_sub .inner .menuMo h1 span {
           font-size: 12px;
           color: #aaa; }
       #header_sub .inner .menuMo #gnbMo li a {
         display: block;
         width: 100%;
-        padding: 20px 0;
-        border-bottom: 1px solid #444;
-        font: bold 14px/1 'Open Sans';
-        color: #888;
-        text-align: center; }
+        padding: 40px 0;
+        border-bottom: 1px solid #666;
+        font: 800 22px/1 'Nanum Myeongjo';
+        color: #fff;
+        text-align: center;
+        letter-spacing: 2px; }
       #header_sub .inner .menuMo.on {
         left: 0; }
 
@@ -1240,6 +1244,21 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
+#skipnavi > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #333;
+  position: fixed;
+  top: -40px;
+  left: 0;
+  font: 800 14px/40px "Open Sans";
+  color: #fff;
+  text-align: center;
+  z-index: 10; }
+  #skipnavi > a.skip {
+    top: 0; }
+
 #header {
   width: 100%;
   position: relative;
@@ -1251,6 +1270,7 @@ body {
     position: relative; }
     #header .inner > h1 {
       position: absolute;
+      top: 50px;
       left: 0;
       bottom: 24px;
       letter-spacing: 2px; }
@@ -1458,33 +1478,37 @@ body {
     #header .inner .menuMo {
       position: fixed;
       top: 0;
-      left: -270px;
-      width: 270px;
+      left: -360px;
+      width: 360px;
       height: 100vh;
-      background: #333;
+      background: #444;
       transition: 0.5s;
-      padding: 35px 30px;
+      padding: 35px;
       box-sizing: border-box;
-      z-index: 10; }
+      z-index: 12; }
       #header .inner .menuMo h1 {
-        border-bottom: 1px solid #666;
-        padding-bottom: 30px; }
+        padding-bottom: 80px; }
         #header .inner .menuMo h1 a {
-          display: block;
-          font: bold 24px/1 'Open Sansl';
+          display: inline-block;
+          font: 800 28px/42px 'Nanum Myeongjo';
           color: #fff;
-          text-align: center; }
+          text-align: center;
+          border: 1px solid #aaa;
+          margin: 0 auto;
+          width: 50px;
+          height: 45px; }
         #header .inner .menuMo h1 span {
           font-size: 12px;
           color: #aaa; }
       #header .inner .menuMo #gnbMo li a {
         display: block;
         width: 100%;
-        padding: 20px 0;
-        border-bottom: 1px solid #444;
-        font: bold 14px/1 'Open Sans';
-        color: #888;
-        text-align: center; }
+        padding: 40px 0;
+        border-bottom: 1px solid #666;
+        font: 800 22px/1 'Nanum Myeongjo';
+        color: #fff;
+        text-align: center;
+        letter-spacing: 2px; }
       #header .inner .menuMo.on {
         left: 0; }
 
@@ -2072,7 +2096,8 @@ body {
     width: 100%;
     height: 100px; }
     #header .inner > h1 {
-      left: 20px; }
+      left: 30px;
+      top: 21px; }
     #header .inner .menuWeb {
       display: none; }
     #header .inner .btnCall {
@@ -2104,7 +2129,7 @@ body {
       height: 80px; }
 
   #blogPosts {
-    padding: 120px 40px;
+    padding: 80px 40px;
     padding-bottom: 180px; }
     #blogPosts .inner {
       width: 100%; }
@@ -2269,15 +2294,23 @@ body {
       #blogPosts .inner .blogPosts_right {
         margin-top: 360px; }
 
+  #galleryV_Tit {
+    padding: 80px;
+    padding-top: 140px; }
+    #galleryV_Tit h2 {
+      font: 800 32px/1.4 "Nanum Myeongjo"; }
+    #galleryV_Tit p {
+      font: 800 13px/1.4 "Nanum Myeongjo"; }
+
   #ban01 {
     padding: 200px 0px; }
     #ban01 .ban01txt h2 {
       font: 800 25px/1 "Nanum Myeongjo"; }
     #ban01 .ban01txt p {
-      font: 400 14px/1.4 "Open Sans"; }
+      font: 400 12px/1.3 "Open Sans"; }
 
   #highlights {
-    padding: 120px 40px;
+    padding: 80px 40px;
     box-sizing: border-box; }
     #highlights .inner {
       width: 100%; }
@@ -2297,7 +2330,7 @@ body {
           left: -25%; }
 
   #news {
-    padding: 120px 40px; }
+    padding: 80px 40px; }
     #news .inner {
       width: 100%; }
       #news .inner .news_left {
@@ -2314,7 +2347,7 @@ body {
 
   #ourHouse {
     width: 100%;
-    padding: 120px 40px; }
+    padding: 80px 40px; }
     #ourHouse .inner {
       width: 100%; }
       #ourHouse .inner p {
@@ -2335,9 +2368,16 @@ body {
             font: 400 13px/1.2 "Open Sans"; }
 
   #instagrem {
-    padding: 120px 40px 40px; }
+    padding: 80px 40px 40px; }
     #instagrem .inner {
       width: 100%; }
+      #instagrem .inner .instagrem_tit h2 {
+        width: 100%;
+        display: block; }
+      #instagrem .inner .instagrem_tit h3 {
+        right: auto;
+        left: 0;
+        bottom: auto; }
       #instagrem .inner .instagrem_con {
         padding: 0px;
         padding-top: 80px; }
