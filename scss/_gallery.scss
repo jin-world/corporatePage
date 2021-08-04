@@ -154,23 +154,33 @@
 
 /* mobile ----------------------------------------- */
 @media screen and (max-width:$mobile){
-    .search {
-        input[type=text] {
-            width: 50%;
-        }
-    
-        button {
-            width: 20%;
-        }
-    }
+    .content {
+        .inner {
+            padding: 0px;
 
-    .gallery {
-        #gallery {
-            width: 100%;
+            h2, p { padding: 0 30px; }
+
+            .search {
+                padding: 0 30px;
+
+                input[type=text] {
+                    width: 50%;
+                }
+            
+                button {
+                    width: 20%;
+                }
+            }
         
-            article {
-                width: 100%;
-                padding: 0px !important;
+            .gallery {
+                #gallery {
+                    width: 100%;
+                
+                    article {
+                        width: 100%;
+                        padding: 0px !important;
+                    }
+                }
             }
         }
     }

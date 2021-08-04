@@ -1056,16 +1056,21 @@ input, a, img, span, label, select {
       width: 50%; } }
 /* mobile ----------------------------------------- */
 @media screen and (max-width: 539px) {
-  .search input[type=text] {
-    width: 50%; }
-  .search button {
-    width: 20%; }
-
-  .gallery #gallery {
-    width: 100%; }
-    .gallery #gallery article {
-      width: 100%;
-      padding: 0px !important; } }
+  .content .inner {
+    padding: 0px; }
+    .content .inner h2, .content .inner p {
+      padding: 0 30px; }
+    .content .inner .search {
+      padding: 0 30px; }
+      .content .inner .search input[type=text] {
+        width: 50%; }
+      .content .inner .search button {
+        width: 20%; }
+    .content .inner .gallery #gallery {
+      width: 100%; }
+      .content .inner .gallery #gallery article {
+        width: 100%;
+        padding: 0px !important; } }
 .youtube {
   padding: 0px; }
   .youtube .sub_visual {
