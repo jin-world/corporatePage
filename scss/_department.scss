@@ -141,47 +141,47 @@
 
                     &:nth-of-type(1) .pic {
                         background: url("../img/portrait1.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(2) .pic {
-                        background: url("../img/portrai2.png") no-repeat top/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        background: url("../img/portrai2.png") no-repeat center/cover;
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(3) .pic {
                         background: url("../img/portrai3.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(4) .pic {
                         background: url("../img/portrait4.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(5) .pic {
                         background: url("../img/portrait7.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(6) .pic {
                         background: url("../img/portrait6.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(7) .pic {
                         background: url("../img/portrait5.png") no-repeat top/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(8) .pic {
                         background: url("../img/portrait8.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
 
                     &:nth-of-type(9) .pic {
                         background: url("../img/portrait9.png") no-repeat center/cover;
-                        filter: brightness(1.1) saturate(20%);
+                        filter: saturate(60%);
                     }
                     
                     .txt {
@@ -223,7 +223,7 @@
                     font: 800 20px/1 "Nanum Myeongjo";
                     
                     &::before {
-                        widtH: 40px;
+                        width: 40px;
                         height: 40px;
                         font: 200 26px/39px "Open Sansl";
                     }
@@ -252,7 +252,7 @@
                 }
     
                 .Member_right {
-                    float: auto;
+                    float: none;
                     width: 100%;
 
                     article {
@@ -286,16 +286,15 @@
                 }
             }
         }
-    
+        
         .mainwrap {
+            padding: 0px;
+
             .mem_main {
-                top: 0%;
-                transform: translateX(-50%);
+                position: relative;
 
                 .Member_right {
-                    article {
-                        width: 80%;
-                    }
+                    h3 { display: none; }
                 }
             }
         }

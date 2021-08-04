@@ -687,31 +687,31 @@ input, a, img, span, label, select {
           object-fit: cover; }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(1) .pic {
           background: url("../img/portrait1.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(2) .pic {
-          background: url("../img/portrai2.png") no-repeat top/cover;
-          filter: brightness(1.1) saturate(20%); }
+          background: url("../img/portrai2.png") no-repeat center/cover;
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(3) .pic {
           background: url("../img/portrai3.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(4) .pic {
           background: url("../img/portrait4.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(5) .pic {
           background: url("../img/portrait7.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(6) .pic {
           background: url("../img/portrait6.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(7) .pic {
           background: url("../img/portrait5.png") no-repeat top/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(8) .pic {
           background: url("../img/portrait8.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article:nth-of-type(9) .pic {
           background: url("../img/portrait9.png") no-repeat center/cover;
-          filter: brightness(1.1) saturate(20%); }
+          filter: saturate(60%); }
         .department .mainwrap .mem_main .Member_right article .txt {
           display: inline-block;
           position: absolute;
@@ -736,7 +736,7 @@ input, a, img, span, label, select {
     .department .contentTxt_wrap .conTxt h2 {
       font: 800 20px/1 "Nanum Myeongjo"; }
       .department .contentTxt_wrap .conTxt h2::before {
-        widtH: 40px;
+        width: 40px;
         height: 40px;
         font: 200 26px/39px "Open Sansl"; }
     .department .contentTxt_wrap .conTxt p {
@@ -752,7 +752,7 @@ input, a, img, span, label, select {
       .department .mainwrap .mem_main .Member_left {
         display: none; }
       .department .mainwrap .mem_main .Member_right {
-        float: auto;
+        float: none;
         width: 100%; }
         .department .mainwrap .mem_main .Member_right article {
           width: 26%; } }
@@ -768,11 +768,12 @@ input, a, img, span, label, select {
         font: 200 24px/34px "Open Sansl"; }
     .department .contentTxt_wrap .conTxt p {
       font: 11px/1.2 "Open Sansl"; }
-  .department .mainwrap .mem_main {
-    top: 0%;
-    transform: translateX(-50%); }
-    .department .mainwrap .mem_main .Member_right article {
-      width: 80%; } }
+  .department .mainwrap {
+    padding: 0px; }
+    .department .mainwrap .mem_main {
+      position: relative; }
+      .department .mainwrap .mem_main .Member_right h3 {
+        display: none; } }
 .join {
   padding: 0px 0px 100px; }
   .join .sub_visual {
