@@ -117,3 +117,60 @@
         }
     }
 }
+
+/* tablet ----------------------------------------- */
+@media screen and (max-width:$tablet){
+    .search {
+        input[type=text] {
+            width: 30%;
+            height: 40px;
+            border: none;
+            background: #f3f3f3;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        button {
+            width: 14%;
+            height: 40px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    
+    .gallery {
+        #gallery {
+            width: 100%;
+        
+            article {
+                width: 50%;
+            }
+        }
+    }
+
+}
+
+/* mobile ----------------------------------------- */
+@media screen and (max-width:$mobile){
+    .search {
+        input[type=text] {
+            width: 50%;
+        }
+    
+        button {
+            width: 20%;
+        }
+    }
+
+    .gallery {
+        #gallery {
+            width: 100%;
+        
+            article {
+                width: 100%;
+            }
+        }
+    }
+}
