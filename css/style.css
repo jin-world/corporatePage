@@ -1124,7 +1124,7 @@ input, a, img, span, label, select {
     .youtube .vidList article:nth-child(1) {
       height: 300px !important; }
       .youtube .vidList article:nth-child(1) .pic {
-        height: 180px !important; }
+        height: 170px !important; }
       .youtube .vidList article:nth-child(1) .con {
         width: 100% !important;
         height: 40% !important;
@@ -1137,16 +1137,13 @@ input, a, img, span, label, select {
         .youtube .vidList article:nth-child(1) .con p {
           display: none; }
     .youtube .vidList article .pic {
-      width: 100%;
-      height: 40%; }
-    .youtube .vidList article .con {
-      height: 40%; }
-      .youtube .vidList article .con h2 {
-        font: 600 16px/1 "Open Sans";
-        color: #444;
-        margin-bottom: 15px; }
-      .youtube .vidList article .con p {
-        display: none; } }
+      height: 170px !important; }
+    .youtube .vidList article .con p {
+      display: none; }
+
+  .vidPop > span {
+    top: 4vw;
+    right: 4vw; } }
 .location .sub_visual {
   background: url(../img/locationImg5.jpg) no-repeat center/cover;
   position: relative; }

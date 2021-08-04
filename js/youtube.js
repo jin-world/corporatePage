@@ -55,13 +55,22 @@ $.ajax({
     console.error(err);
 });
 
-
+//유튜브 팝업 생성 이벤트
 $("body").on("click",".vidList article",function(e){
     e.preventDefault();
     var vidSrc = $(this).find(".pic").attr("href");
+    
     $(".vidPop").fadeIn();
-
     $(".vidPop .inner").append(
+        $("<img src='img/loading.gif'>")
+            .css({
+                width:"100%",
+                position:"absolute",
+                top:"50%",
+                left:"50%",
+                transform:"translate(-50%, -50%)",
+                
+            }),
         $("<iframe>").attr({
             src: "https://www.youtube.com/embed/"+vidSrc,
             frameborder: 0,
@@ -70,8 +79,14 @@ $("body").on("click",".vidList article",function(e){
             height: "75%"
         })
     );
+    setTimeout(function(){
+        $(".vidPop .inner iframe").fadeIn(500, function(){
+            $(this).prev().remove();
+        })
+    },500)
 });
 
+//팝업창 닫기 이벤트
 $("body").on("click", ".vidPop span", function(){
     $(this).parent().fadeOut(400, function(){
         $(this).find("iframe").remove();
