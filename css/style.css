@@ -543,10 +543,69 @@ input, a, img, span, label, select {
       border: 0px; }
 
 /* tablet ----------------------------------------- */
+@media screen and (max-width: 1179px) {
+  .community .faq {
+    margin-bottom: 100px; }
+    .community .faq .faq_left {
+      width: 100%;
+      height: 250px;
+      float: none;
+      margin-right: 0px; }
+    .community .faq .faq_right {
+      width: 100%;
+      float: none; } }
 /* mobile ----------------------------------------- */
 @media screen and (max-width: 539px) {
   .community .inner h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  .community .inner .faq .faq_right dt {
+    font: 600 18px/1 'Nanum Myeongjo'; }
+  .community .inner .faq .faq_right dd {
+    font: 12px/1.4 'Nanum Myeongjo'; }
+  .community table th:nth-of-type(1) {
+    width: 10%; }
+  .community table th:nth-of-type(2) {
+    width: 60%; }
+  .community table th:nth-of-type(3) {
+    display: none; }
+  .community table th:nth-of-type(4) {
+    display: none; }
+  .community table td:nth-of-type(3) {
+    display: none; }
+  .community table td:nth-of-type(4) {
+    display: none; }
+  .community .pagination .numbers a:nth-of-type(4), .community .pagination .numbers a:nth-of-type(5), .community .pagination .numbers a:nth-of-type(6), .community .pagination .numbers a:nth-of-type(7), .community .pagination .numbers a:nth-of-type(8), .community .pagination .numbers a:nth-of-type(9), .community .pagination .numbers a:nth-of-type(10) {
+    display: none; }
+  .community .pagination .prev {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font: 15px/40px "Open Sans";
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    transition: 0.5s; }
+    .community .pagination .prev:hover {
+      background: #333;
+      color: #fff;
+      border: 0px; }
+  .community .pagination .next {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font: 15px/40px "Open Sans";
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    transition: 0.5s; }
+    .community .pagination .next:hover {
+      background: #333;
+      color: #fff;
+      border: 0px; } }
 .department .sub_visual {
   background: url(../img/departmentImg3.jpg) no-repeat top/cover;
   position: relative; }
