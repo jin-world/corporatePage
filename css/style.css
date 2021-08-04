@@ -579,209 +579,200 @@ input, a, img, span, label, select {
 @media screen and (max-width: 539px) {
   .community .inner h1 {
     font-size: 45px; } }
-.department {
-    /*
-    .mainwrap {
-        width: 100%;
-        height: 700px;
-        // background: #eee;
-        padding: 40px;
-        box-sizing: border-box;
-        position: relative;
-
-        .mem_main {
-            width: 1180px;
-            margin: 0px auto;
-            position: absolute;
-            left: 50%;
-            top: 48%;
-            transform: translate(-50%,-50%);
-
-            &::after { content: ""; display: block; clear: both; }
-
-            .Member_left {
-                float: left;
-                width: 20%;
-                height: 320px;
-                margin-right: 20px;
-                background:#cf9999;
-            }
-
-            .Member_right {
-                float: right;
-                width: 75%;
-                // height: 400px;
-                // background: #333;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-
-                article {
-                    width: 180px;
-                    height: 220px;
-                    background: #ddd;
-                    margin-bottom: 50px;
-
-                    h2 {
-                        font: 12px/1 "arial";
-                        color: #555;
-                    }
-                }
-            }
-        }
-    }
-    */ }
-  .department .sub_visual {
-    background: url(../img/departmentImg3.jpg) no-repeat top/cover;
-    position: relative; }
-  .department .inner {
-    min-height: 0px; }
-    .department .inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.8; }
-  .department .contentTxt_wrap {
-    width: 75%;
-    background: #fafafa;
-    padding: 80px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-evenly; }
-    .department .contentTxt_wrap .conTxt {
-      position: relative; }
-      .department .contentTxt_wrap .conTxt h2 {
-        font: 800 22px/1 "Nanum Myeongjo";
-        color: #676767;
-        margin-bottom: 30px; }
-        .department .contentTxt_wrap .conTxt h2::before {
-          content: "+";
-          display: block;
-          widtH: 50px;
-          height: 50px;
-          border-radius: 50px;
-          background: #fff;
-          box-shadow: 2px 2px 8px 2px rgba(83, 83, 83, 0.1);
-          text-align: center;
-          font: 200 26px/49px "Open Sansl";
-          color: #444;
-          margin-bottom: 20px; }
-        .department .contentTxt_wrap .conTxt h2:hover {
-          color: #000;
-          cursor: pointer; }
-      .department .contentTxt_wrap .conTxt p {
-        font: 14px/1.5 "Open Sansl";
-        color: #aaa; }
-        .department .contentTxt_wrap .conTxt p::before {
-          content: "";
-          display: block;
-          border: 0px solid #111;
-          width: 30%;
-          height: 0.5px;
-          background: #666;
-          margin-bottom: 10px; }
-      .department .contentTxt_wrap .conTxt span {
-        font: 800 140px/1 "Nanum Myeongjo";
-        color: rgba(214, 214, 214, 0.2);
-        position: absolute;
-        top: 50px;
-        left: 100px; }
-  .department .mainwrap {
+.department .sub_visual {
+  background: url(../img/departmentImg3.jpg) no-repeat top/cover;
+  position: relative; }
+.department .inner {
+  min-height: 0px; }
+  .department .inner img {
     width: 100%;
-    height: 700px;
-    margin-top: 180px;
-    padding: 40px;
-    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; }
+.department .contentTxt_wrap {
+  width: 75%;
+  background: #fafafa;
+  padding: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly; }
+  .department .contentTxt_wrap .conTxt {
     position: relative; }
-    .department .mainwrap .mem_main {
-      width: 1180px;
-      margin: 0px auto;
-      position: absolute;
-      left: 50%;
-      top: 48%;
-      transform: translate(-50%, -50%); }
-      .department .mainwrap .mem_main::after {
+    .department .contentTxt_wrap .conTxt h2 {
+      font: 800 22px/1 "Nanum Myeongjo";
+      color: #676767;
+      margin-bottom: 30px; }
+      .department .contentTxt_wrap .conTxt h2::before {
+        content: "+";
+        display: block;
+        widtH: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: #fff;
+        box-shadow: 2px 2px 8px 2px rgba(83, 83, 83, 0.1);
+        text-align: center;
+        font: 200 26px/49px "Open Sansl";
+        color: #444;
+        margin-bottom: 20px; }
+      .department .contentTxt_wrap .conTxt h2:hover {
+        color: #000;
+        cursor: pointer; }
+    .department .contentTxt_wrap .conTxt p {
+      font: 14px/1.5 "Open Sansl";
+      color: #aaa; }
+      .department .contentTxt_wrap .conTxt p::before {
         content: "";
         display: block;
-        clear: both; }
-      .department .mainwrap .mem_main .Member_left {
-        float: left;
-        width: 19%;
-        height: 290px;
-        margin-right: 20px;
-        background: #444; }
-        .department .mainwrap .mem_main .Member_left .memtit {
-          padding: 26px;
-          box-sizing: border-box; }
-          .department .mainwrap .mem_main .Member_left .memtit span {
-            display: inline-block;
-            font: 11px/1 "Open Sansl";
-            color: #888;
-            margin-bottom: 12px; }
-          .department .mainwrap .mem_main .Member_left .memtit p {
-            font: 600 15px/1.8 "Open Sansl";
-            color: #ccc; }
-      .department .mainwrap .mem_main .Member_right {
-        float: right;
-        width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around; }
-        .department .mainwrap .mem_main .Member_right article {
-          width: 26%;
-          height: 220px;
-          background: #e2e4e3;
-          margin-bottom: 50px;
-          position: relative; }
-          .department .mainwrap .mem_main .Member_right article .pic {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(1) .pic {
-            background: url("../img/portrait1.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(2) .pic {
-            background: url("../img/portrai2.png") no-repeat top/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(3) .pic {
-            background: url("../img/portrai3.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(4) .pic {
-            background: url("../img/portrait4.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(5) .pic {
-            background: url("../img/portrait7.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(6) .pic {
-            background: url("../img/portrait6.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(7) .pic {
-            background: url("../img/portrait5.png") no-repeat top/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(8) .pic {
-            background: url("../img/portrait8.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article:nth-of-type(9) .pic {
-            background: url("../img/portrait9.png") no-repeat center/cover;
-            filter: brightness(1.1) saturate(20%); }
-          .department .mainwrap .mem_main .Member_right article .txt {
-            display: inline-block;
-            position: absolute;
-            bottom: 0;
-            left: -10px;
-            transform-origin: bottom left;
-            transform: rotate(-90deg); }
-            .department .mainwrap .mem_main .Member_right article .txt h3 {
-              font: 800 16px/1 "Nanum Myeongjo";
-              color: #333; }
-              .department .mainwrap .mem_main .Member_right article .txt h3::after {
-                content: " / Web Designer";
-                display: inline-block;
-                font: 11px/1 "Open Sansl";
-                color: #999; }
+        border: 0px solid #111;
+        width: 30%;
+        height: 0.5px;
+        background: #666;
+        margin-bottom: 10px; }
+    .department .contentTxt_wrap .conTxt span {
+      font: 800 140px/1 "Nanum Myeongjo";
+      color: rgba(214, 214, 214, 0.2);
+      position: absolute;
+      top: 50px;
+      left: 100px; }
+.department .mainwrap {
+  width: 100%;
+  height: 700px;
+  margin-top: 180px;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative; }
+  .department .mainwrap .mem_main {
+    width: 1180px;
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%); }
+    .department .mainwrap .mem_main::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .department .mainwrap .mem_main .Member_left {
+      float: left;
+      width: 19%;
+      height: 290px;
+      margin-right: 20px;
+      background: #444; }
+      .department .mainwrap .mem_main .Member_left .memtit {
+        padding: 26px;
+        box-sizing: border-box; }
+        .department .mainwrap .mem_main .Member_left .memtit span {
+          display: inline-block;
+          font: 11px/1 "Open Sansl";
+          color: #888;
+          margin-bottom: 12px; }
+        .department .mainwrap .mem_main .Member_left .memtit p {
+          font: 600 15px/1.8 "Open Sansl";
+          color: #ccc; }
+    .department .mainwrap .mem_main .Member_right {
+      float: right;
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .department .mainwrap .mem_main .Member_right article {
+        width: 26%;
+        height: 220px;
+        background: #e2e4e3;
+        margin-bottom: 50px;
+        position: relative; }
+        .department .mainwrap .mem_main .Member_right article .pic {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(1) .pic {
+          background: url("../img/portrait1.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(2) .pic {
+          background: url("../img/portrai2.png") no-repeat top/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(3) .pic {
+          background: url("../img/portrai3.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(4) .pic {
+          background: url("../img/portrait4.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(5) .pic {
+          background: url("../img/portrait7.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(6) .pic {
+          background: url("../img/portrait6.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(7) .pic {
+          background: url("../img/portrait5.png") no-repeat top/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(8) .pic {
+          background: url("../img/portrait8.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article:nth-of-type(9) .pic {
+          background: url("../img/portrait9.png") no-repeat center/cover;
+          filter: brightness(1.1) saturate(20%); }
+        .department .mainwrap .mem_main .Member_right article .txt {
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: -10px;
+          transform-origin: bottom left;
+          transform: rotate(-90deg); }
+          .department .mainwrap .mem_main .Member_right article .txt h3 {
+            font: 800 16px/1 "Nanum Myeongjo";
+            color: #333; }
+            .department .mainwrap .mem_main .Member_right article .txt h3::after {
+              content: " / Web Designer";
+              display: inline-block;
+              font: 11px/1 "Open Sansl";
+              color: #999; }
 
 /* tablet ------------------------------ */
+@media screen and (max-width: 1179px) {
+  .department .contentTxt_wrap {
+    width: 90%;
+    padding: 40px; }
+    .department .contentTxt_wrap .conTxt h2 {
+      font: 800 20px/1 "Nanum Myeongjo"; }
+      .department .contentTxt_wrap .conTxt h2::before {
+        widtH: 40px;
+        height: 40px;
+        font: 200 26px/39px "Open Sansl"; }
+    .department .contentTxt_wrap .conTxt p {
+      font: 12px/1.4 "Open Sansl"; }
+    .department .contentTxt_wrap .conTxt span {
+      font: 800 10vw/1 "Nanum Myeongjo";
+      top: 30%;
+      left: 50%; }
+  .department .mainwrap {
+    width: 100%; }
+    .department .mainwrap .mem_main {
+      width: 100%; }
+      .department .mainwrap .mem_main .Member_left {
+        display: none; }
+      .department .mainwrap .mem_main .Member_right {
+        float: auto;
+        width: 100%; }
+        .department .mainwrap .mem_main .Member_right article {
+          width: 26%; } }
 /* mobile ---------------------------------- */
+@media screen and (max-width: 539px) {
+  .department .contentTxt_wrap {
+    width: 100%; }
+    .department .contentTxt_wrap .conTxt h2 {
+      font: 800 16px/1 "Nanum Myeongjo"; }
+      .department .contentTxt_wrap .conTxt h2::before {
+        widtH: 35px;
+        height: 35px;
+        font: 200 24px/34px "Open Sansl"; }
+    .department .contentTxt_wrap .conTxt p {
+      font: 11px/1.2 "Open Sansl"; }
+  .department .mainwrap .mem_main {
+    top: 0%;
+    transform: translateX(-50%); }
+    .department .mainwrap .mem_main .Member_right article {
+      width: 80%; } }
 .join {
   padding: 0px 0px 100px; }
   .join .sub_visual {

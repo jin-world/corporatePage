@@ -209,66 +209,95 @@
             }
         }
     }
+}
 
-    /*
-    .mainwrap {
-        width: 100%;
-        height: 700px;
-        // background: #eee;
-        padding: 40px;
-        box-sizing: border-box;
-        position: relative;
-
-        .mem_main {
-            width: 1180px;
-            margin: 0px auto;
-            position: absolute;
-            left: 50%;
-            top: 48%;
-            transform: translate(-50%,-50%);
-
-            &::after { content: ""; display: block; clear: both; }
-
-            .Member_left {
-                float: left;
-                width: 20%;
-                height: 320px;
-                margin-right: 20px;
-                background:#cf9999;
+/* tablet ------------------------------ */
+@media screen and (max-width:$tablet){
+    .department {
+        .contentTxt_wrap {
+            width: 90%;
+            padding: 40px;
+    
+            .conTxt {
+                h2 {
+                    font: 800 20px/1 "Nanum Myeongjo";
+                    
+                    &::before {
+                        widtH: 40px;
+                        height: 40px;
+                        font: 200 26px/39px "Open Sansl";
+                    }
+                }
+    
+                p {
+                    font: 12px/1.4 "Open Sansl";
+                }
+    
+                span {
+                    font: 800 10vw/1 "Nanum Myeongjo";
+                    top: 30%;
+                    left: 50%;
+                }
             }
+        }
+    
+        .mainwrap {
+            width: 100%;
 
-            .Member_right {
-                float: right;
-                width: 75%;
-                // height: 400px;
-                // background: #333;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
+            .mem_main {
+                width: 100%;
+                
+                .Member_left {
+                    display: none;
+                }
+    
+                .Member_right {
+                    float: auto;
+                    width: 100%;
 
-                article {
-                    width: 180px;
-                    height: 220px;
-                    background: #ddd;
-                    margin-bottom: 50px;
-
-                    h2 {
-                        font: 12px/1 "arial";
-                        color: #555;
+                    article {
+                        width: 26%;
                     }
                 }
             }
         }
     }
-    */
-}
-
-/* tablet ------------------------------ */
-@media screen and (max-width:$tablet){
-    
 }
 
 /* mobile ---------------------------------- */
 @media screen and (max-width:$mobile){
+    .department {
+        .contentTxt_wrap {
+            width: 100%;
     
+            .conTxt {
+                h2 {
+                    font: 800 16px/1 "Nanum Myeongjo";
+                    
+                    &::before {
+                        widtH: 35px;
+                        height: 35px;
+                        font: 200 24px/34px "Open Sansl";
+                    }
+                }
+    
+                p {
+                    font: 11px/1.2 "Open Sansl";
+                }
+            }
+        }
+    
+        .mainwrap {
+            .mem_main {
+                top: 0%;
+                transform: translateX(-50%);
+
+                .Member_right {
+                    article {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
 }
