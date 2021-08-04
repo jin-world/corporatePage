@@ -1064,7 +1064,8 @@ input, a, img, span, label, select {
   .gallery #gallery {
     width: 100%; }
     .gallery #gallery article {
-      width: 100%; } }
+      width: 100%;
+      padding: 0px !important; } }
 .youtube {
   padding: 0px; }
   .youtube .sub_visual {
