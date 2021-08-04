@@ -303,39 +303,7 @@ input, a, img, span, label, select {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      letter-spacing: 2px;
-        /*
-        span{
-            font: 600 16px/1 'Nanum Myeongjo'; 
-            color:#eee; 
-
-            &::before{
-                content:'/';
-                margin-right:20px; 
-                margin-left:10px; 
-            }
-        }
-        */ }
-      .content .sub_visual > h1::after {
-        content: "";
-        display: inline-block;
-        width: 170px;
-        height: 1px;
-        background-color: currentColor;
-        opacity: 0.4;
-        position: absolute;
-        top: 50%;
-        left: 150%; }
-      .content .sub_visual > h1::before {
-        content: "";
-        display: inline-block;
-        width: 170px;
-        height: 1px;
-        background-color: currentColor;
-        opacity: 0.4;
-        position: absolute;
-        top: 50%;
-        left: -150%; }
+      letter-spacing: 2px; }
   .content .inner {
     width: 1180px;
     margin: 0px auto;
@@ -1088,33 +1056,30 @@ input, a, img, span, label, select {
           font: bold 16px/1 "Open Sans";
           color: orange;
           margin-bottom: 20px; }
-
-.vidPop {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 5; }
-  .vidPop .inner {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  .youtube .inner .vidPop {
+    display: none;
+    position: fixed;
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .vidPop > span {
-    position: absolute;
-    top: 80px;
-    right: 100px;
-    color: orange;
-    cursor: pointer;
-    font: 800 20px/1 "Nanum Myeongjo";
-    color: #eee; }
+    z-index: 5; }
+    .youtube .inner .vidPop .inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .youtube .inner .vidPop > span {
+      display: block;
+      position: absolute;
+      top: 5vh;
+      right: 5vw;
+      color: orange;
+      cursor: pointer;
+      font: 800 20px/1 "Nanum Myeongjo";
+      color: #eee; }
 
 /* mobile ---------------------------------- */
 @media screen and (max-width: 539px) {
@@ -1140,8 +1105,7 @@ input, a, img, span, label, select {
       height: 170px !important; }
     .youtube .vidList article .con p {
       display: none; }
-
-  .vidPop > span {
+  .youtube .vidPop > span {
     top: 4vw;
     right: 4vw; } }
 .location .sub_visual {

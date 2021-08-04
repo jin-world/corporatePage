@@ -64,7 +64,7 @@ $("body").on("click",".vidList article",function(e){
     $(".vidPop .inner").append(
         $("<img src='img/loading.gif'>")
             .css({
-                width:"100%",
+                width:80,
                 position:"absolute",
                 top:"50%",
                 left:"50%",

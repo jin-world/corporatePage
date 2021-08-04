@@ -375,46 +375,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: 1;
         letter-spacing: 2px;
-
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 170px;
-            height: 1px;
-            background-color: currentColor;
-            opacity: 0.4;
-            position: absolute;
-            top: 50%;
-            left: 150%;
-        }
-
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 170px;
-            height: 1px;
-            background-color: currentColor;
-            opacity: 0.4;
-            position: absolute;
-            top: 50%;
-            left: -150%;
-        }
-
-        /*
-        span{
-            font: 600 16px/1 'Nanum Myeongjo'; 
-            color:#eee; 
-
-            &::before{
-                content:'/';
-                margin-right:20px; 
-                margin-left:10px; 
-            }
-        }
-        */
         }
     }
 
