@@ -197,12 +197,57 @@
     }
 }
 
-/* tablet ----------------------------------------- */
-@media screen and (max-width:$tablet){
-    
-}
+/* mobile -------------------------------------- */
+@media screen and (max-width:$mobile) {
+    .join {
+        .inner {
+            form {
+                .join_main {
+                    width: 90%;
+                    margin: 0 auto;
 
-/* mobile ----------------------------------------- */
-@media screen and (max-width:$mobile){
-   
+                    .member_join {
+                        width: 100%;
+    
+                        tr {
+                            th {
+                                width: 12%;
+                                font: 800 14px/1 "Nanum Myeongjo";
+                            }
+                        }
+    
+                        td {
+                            input[type=text],
+                            input[type=password] {
+                                width: 100%;
+                                height: 40px;
+                            }
+
+                            input[type=checkbox] {
+                                margin-right: 4px;
+                            }
+
+                            select {
+                                padding: 10px;
+                            }
+
+                            label { 
+                                margin-right: 0px; font-size: 13px;
+                            }
+    
+                            textarea {
+                                width: 100%;
+                                height: 220px;
+                            }
+                        }
+                    }
+                }
+    
+                .agree_wrap {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }

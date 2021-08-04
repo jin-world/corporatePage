@@ -922,8 +922,33 @@ input, a, img, span, label, select {
           border: 1px solid orangered;
           background: #fff0f0; }
 
-/* tablet ----------------------------------------- */
-/* mobile ----------------------------------------- */
+/* mobile -------------------------------------- */
+@media screen and (max-width: 539px) {
+  .join .inner form .join_main {
+    width: 90%;
+    margin: 0 auto; }
+    .join .inner form .join_main .member_join {
+      width: 100%; }
+      .join .inner form .join_main .member_join tr th {
+        width: 12%;
+        font: 800 14px/1 "Nanum Myeongjo"; }
+      .join .inner form .join_main .member_join td input[type=text],
+      .join .inner form .join_main .member_join td input[type=password] {
+        width: 100%;
+        height: 40px; }
+      .join .inner form .join_main .member_join td input[type=checkbox] {
+        margin-right: 4px; }
+      .join .inner form .join_main .member_join td select {
+        padding: 10px; }
+      .join .inner form .join_main .member_join td label {
+        margin-right: 0px;
+        font-size: 13px; }
+      .join .inner form .join_main .member_join td textarea {
+        width: 100%;
+        height: 220px; }
+  .join .inner form .agree_wrap {
+    width: 90%;
+    margin: 0 auto; } }
 .search {
   margin-bottom: 100px;
   text-align: left; }
