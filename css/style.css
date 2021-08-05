@@ -1327,6 +1327,7 @@ input, a, img, span, label, select {
 @media screen and (max-width: 539px) {
   .location .inner #map {
     width: 90%;
+    height: 360px;
     margin: 0 auto; }
   .location .inner .branch {
     width: 90%; }
