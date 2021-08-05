@@ -1323,6 +1323,25 @@ input, a, img, span, label, select {
         font: 400 14px/1 "Open Sans";
         color: #444; }
 
+/* mobile -------------------------------------- */
+@media screen and (max-width: 539px) {
+  .location .inner #map {
+    width: 90%;
+    margin: 0 auto; }
+  .location .inner .branch {
+    width: 90%; }
+  .location .inner .mapcont {
+    width: 90%;
+    margin: 0 auto; }
+    .location .inner .mapcont article .mapcont_left {
+      display: none; }
+    .location .inner .mapcont article .mapcont_right {
+      float: none;
+      width: 100%;
+      padding-left: 20px; }
+      .location .inner .mapcont article .mapcont_right p {
+        font: 400 13px/1 "Open Sans";
+        padding: 0px; } }
 body {
   width: 100%;
   overflow-x: hidden; }
