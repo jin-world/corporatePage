@@ -157,6 +157,10 @@
 
 /* mobile ---------------------------------- */
 @media screen and (max-width:$mobile){
+    .content {
+        >h2 { padding: 0 0px !important; }
+    }
+
     .youtube {
         .vidList {
             width: 90% !important;

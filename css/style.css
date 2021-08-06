@@ -1062,7 +1062,7 @@ input, a, img, span, label, select {
 @media screen and (max-width: 539px) {
   .content .inner {
     padding: 0px; }
-    .content .inner h2, .content .inner p {
+    .content .inner > h2, .content .inner p {
       padding: 0 30px; }
     .content .inner .search {
       padding: 0 30px; }
@@ -1190,6 +1190,9 @@ input, a, img, span, label, select {
 
 /* mobile ---------------------------------- */
 @media screen and (max-width: 539px) {
+  .content > h2 {
+    padding: 0 0px !important; }
+
   .youtube .vidList {
     width: 90% !important;
     margin: 0px auto !important; }
