@@ -1561,6 +1561,19 @@ body { width: 100%; overflow-x: hidden; }
     
     }
 
+    #galleryView {
+        height: 650px;
+        
+        .swiper-wrapper {
+            width:100%; height:100%;
+    
+            .swiper-slide{
+                width:90%; height:100px; 
+                top:50%; margin-top:-140px; 
+            }
+        }
+    }
+
     #ban01 {
         padding: 200px 0px;
        

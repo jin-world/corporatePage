@@ -2425,6 +2425,17 @@ body {
     #galleryV_Tit p {
       font: 800 13px/1.4 "Nanum Myeongjo"; }
 
+  #galleryView {
+    height: 650px; }
+    #galleryView .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+      #galleryView .swiper-wrapper .swiper-slide {
+        width: 90%;
+        height: 100px;
+        top: 50%;
+        margin-top: -140px; }
+
   #ban01 {
     padding: 200px 0px; }
     #ban01 .ban01txt h2 {
