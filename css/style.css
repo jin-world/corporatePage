@@ -1190,28 +1190,31 @@ input, a, img, span, label, select {
 
 /* mobile ---------------------------------- */
 @media screen and (max-width: 539px) {
-  .youtube .vidList article {
-    width: 100% !important;
-    height: 180px !important; }
-    .youtube .vidList article:nth-child(1) {
-      height: 300px !important; }
-      .youtube .vidList article:nth-child(1) .pic {
+  .youtube .vidList {
+    width: 90% !important;
+    margin: 0px auto !important; }
+    .youtube .vidList article {
+      width: 100% !important;
+      height: 180px !important; }
+      .youtube .vidList article:nth-child(1) {
+        height: 300px !important; }
+        .youtube .vidList article:nth-child(1) .pic {
+          height: 170px !important; }
+        .youtube .vidList article:nth-child(1) .con {
+          width: 100% !important;
+          height: 40% !important;
+          bottom: auto !important;
+          left: auto !important; }
+          .youtube .vidList article:nth-child(1) .con h2 {
+            width: auto !important;
+            height: auto !important;
+            padding: 0px !important; }
+          .youtube .vidList article:nth-child(1) .con p {
+            display: none; }
+      .youtube .vidList article .pic {
         height: 170px !important; }
-      .youtube .vidList article:nth-child(1) .con {
-        width: 100% !important;
-        height: 40% !important;
-        bottom: auto !important;
-        left: auto !important; }
-        .youtube .vidList article:nth-child(1) .con h2 {
-          width: auto !important;
-          height: auto !important;
-          padding: 0px !important; }
-        .youtube .vidList article:nth-child(1) .con p {
-          display: none; }
-    .youtube .vidList article .pic {
-      height: 170px !important; }
-    .youtube .vidList article .con p {
-      display: none; }
+      .youtube .vidList article .con p {
+        display: none; }
   .youtube .vidPop > span {
     top: 4vw;
     right: 4vw; } }
